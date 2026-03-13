@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../ip/correlatorFIFO/sim/correlatorFIFO.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

@@ -1,0 +1,700 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Mar  6 15:10:00 2026
+# Process ID: 25548
+# Current directory: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/impl_xem7310
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/impl_xem7310/design_1_wrapper.vdi
+# Journal file: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/impl_xem7310\vivado.jou
+# Running On: JohnWorkstat, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 29706 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.ipdefs/dcs_analyzer_axil'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.ipdefs/correlator_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.cache/ip 
+add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 584.262 ; gain = 94.031
+Command: link_design -top design_1_wrapper -part xc7a75tfgg484-3
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a75tfgg484-3
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_DCS_Analyzer_0_0/design_1_DCS_Analyzer_0_0.dcp' for cell 'design_1_i/DCS_Analyzer_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_axi_fifo_mm_s_0_1/design_1_axi_fifo_mm_s_0_1.dcp' for cell 'design_1_i/analyzer_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0.dcp' for cell 'design_1_i/correlation_bram'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0.dcp' for cell 'design_1_i/correlator_bram_ctrl'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_countCorrelateWrapper_0_0/design_1_countCorrelateWrapper_0_0.dcp' for cell 'design_1_i/countCorrelateWrapper_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_intensityRebin_0_0/design_1_intensityRebin_0_0.dcp' for cell 'design_1_i/intensityRebin_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_mdm_1_1/design_1_mdm_1_1.dcp' for cell 'design_1_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1.dcp' for cell 'design_1_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_1/design_1_microblaze_0_axi_intc_1.dcp' for cell 'design_1_i/microblaze_0_axi_intc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_100M_0/design_1_rst_clk_wiz_100M_0.dcp' for cell 'design_1_i/rst_clk_wiz_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0.dcp' for cell 'design_1_i/system_ila_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_uart_aggregator_0_0/design_1_uart_aggregator_0_0.dcp' for cell 'design_1_i/uart_aggregator_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_s00_mmu_0/design_1_s00_mmu_0.dcp' for cell 'design_1_i/microblaze_0_axi_periph/s00_mmu'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_xbar_0_1/design_1_xbar_0.dcp' for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_1/design_1_dlmb_bram_if_cntlr_1.dcp' for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_1/design_1_dlmb_v10_1.dcp' for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_1/design_1_ilmb_bram_if_cntlr_1.dcp' for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_1/design_1_ilmb_v10_1.dcp' for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_1/design_1_lmb_bram_1.dcp' for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/correlator_mt.dcp' for cell 'design_1_i/countCorrelateWrapper_0/U0/correlator'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/impl_xem7310/.Xil/Vivado-25548-JohnWorkstat/correlatorFIFO/correlatorFIFO.dcp' for cell 'design_1_i/uart_aggregator_0/U0/aggregator.correlation_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/impl_xem7310/.Xil/Vivado-25548-JohnWorkstat/intensityFIFO/intensityFIFO.dcp' for cell 'design_1_i/uart_aggregator_0/U0/aggregator.intensity_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/impl_xem7310/.Xil/Vivado-25548-JohnWorkstat/uart_fifo/uart_fifo.dcp' for cell 'design_1_i/uart_aggregator_0/U0/main_fifo'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.649 . Memory (MB): peak = 1198.949 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2907 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: design_1_i/system_ila_0/U0/ila_lib UUID: e0698dbb-7e4f-5bce-a82c-fc5d3d48baa4 
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1978.746 ; gain = 612.281
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1.xdc] for cell 'design_1_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1.xdc] for cell 'design_1_i/microblaze_0/U0'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_1/design_1_microblaze_0_axi_intc_1.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_1/design_1_microblaze_0_axi_intc_1.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_100M_0/design_1_rst_clk_wiz_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_100M/U0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_100M_0/design_1_rst_clk_wiz_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_100M/U0'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_100M_0/design_1_rst_clk_wiz_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_100M/U0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_100M_0/design_1_rst_clk_wiz_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_100M/U0'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'design_1_i/system_ila_0/U0/ila_lib/U0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'design_1_i/system_ila_0/U0/ila_lib/U0'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_i/system_ila_0/U0/ila_lib/U0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_i/system_ila_0/U0/ila_lib/U0'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/intensityFIFO/intensityFIFO.xdc] for cell 'design_1_i/uart_aggregator_0/U0/aggregator.intensity_fifo/U0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/intensityFIFO/intensityFIFO.xdc] for cell 'design_1_i/uart_aggregator_0/U0/aggregator.intensity_fifo/U0'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/uart_fifo/uart_fifo.xdc] for cell 'design_1_i/uart_aggregator_0/U0/main_fifo/U0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/uart_fifo/uart_fifo.xdc] for cell 'design_1_i/uart_aggregator_0/U0/main_fifo/U0'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/correlatorFIFO/correlatorFIFO.xdc] for cell 'design_1_i/uart_aggregator_0/U0/aggregator.correlation_fifo/U0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/correlatorFIFO/correlatorFIFO.xdc] for cell 'design_1_i/uart_aggregator_0/U0/aggregator.correlation_fifo/U0'
+Parsing XDC File [C:/Users/johny/BOILresearch/xem7310.xdc]
+WARNING: [Vivado 12-584] No ports matched 'okHU[0]'. [C:/Users/johny/BOILresearch/xem7310.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okHU[1]'. [C:/Users/johny/BOILresearch/xem7310.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okHU[2]'. [C:/Users/johny/BOILresearch/xem7310.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUH[0]'. [C:/Users/johny/BOILresearch/xem7310.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUH[1]'. [C:/Users/johny/BOILresearch/xem7310.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUH[2]'. [C:/Users/johny/BOILresearch/xem7310.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUH[3]'. [C:/Users/johny/BOILresearch/xem7310.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUH[4]'. [C:/Users/johny/BOILresearch/xem7310.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUH[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[0]'. [C:/Users/johny/BOILresearch/xem7310.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[1]'. [C:/Users/johny/BOILresearch/xem7310.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[2]'. [C:/Users/johny/BOILresearch/xem7310.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[3]'. [C:/Users/johny/BOILresearch/xem7310.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[4]'. [C:/Users/johny/BOILresearch/xem7310.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[5]'. [C:/Users/johny/BOILresearch/xem7310.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[6]'. [C:/Users/johny/BOILresearch/xem7310.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[7]'. [C:/Users/johny/BOILresearch/xem7310.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[8]'. [C:/Users/johny/BOILresearch/xem7310.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[9]'. [C:/Users/johny/BOILresearch/xem7310.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[10]'. [C:/Users/johny/BOILresearch/xem7310.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[11]'. [C:/Users/johny/BOILresearch/xem7310.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[12]'. [C:/Users/johny/BOILresearch/xem7310.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[13]'. [C:/Users/johny/BOILresearch/xem7310.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[14]'. [C:/Users/johny/BOILresearch/xem7310.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[15]'. [C:/Users/johny/BOILresearch/xem7310.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[16]'. [C:/Users/johny/BOILresearch/xem7310.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[17]'. [C:/Users/johny/BOILresearch/xem7310.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[18]'. [C:/Users/johny/BOILresearch/xem7310.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[19]'. [C:/Users/johny/BOILresearch/xem7310.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[20]'. [C:/Users/johny/BOILresearch/xem7310.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[21]'. [C:/Users/johny/BOILresearch/xem7310.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[22]'. [C:/Users/johny/BOILresearch/xem7310.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[23]'. [C:/Users/johny/BOILresearch/xem7310.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[24]'. [C:/Users/johny/BOILresearch/xem7310.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[25]'. [C:/Users/johny/BOILresearch/xem7310.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[26]'. [C:/Users/johny/BOILresearch/xem7310.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[27]'. [C:/Users/johny/BOILresearch/xem7310.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[28]'. [C:/Users/johny/BOILresearch/xem7310.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[29]'. [C:/Users/johny/BOILresearch/xem7310.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[30]'. [C:/Users/johny/BOILresearch/xem7310.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[31]'. [C:/Users/johny/BOILresearch/xem7310.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okAA'. [C:/Users/johny/BOILresearch/xem7310.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okAA'. [C:/Users/johny/BOILresearch/xem7310.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/johny/BOILresearch/xem7310.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'okUH[0]'. [C:/Users/johny/BOILresearch/xem7310.xdc:70]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports {okUH[0]}]'. [C:/Users/johny/BOILresearch/xem7310.xdc:70]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'okUH0'. [C:/Users/johny/BOILresearch/xem7310.xdc:72]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/xem7310.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'okUH[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:72]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {okUH[*]}]'. [C:/Users/johny/BOILresearch/xem7310.xdc:72]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'okUH0'. [C:/Users/johny/BOILresearch/xem7310.xdc:73]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/xem7310.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'okUH[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:73]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {okUH[*]}]'. [C:/Users/johny/BOILresearch/xem7310.xdc:73]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'okUH[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:74]
+CRITICAL WARNING: [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-from [get_ports {okUH[*]}]'. [C:/Users/johny/BOILresearch/xem7310.xdc:74]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'okUH0'. [C:/Users/johny/BOILresearch/xem7310.xdc:76]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/xem7310.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'okUHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:76]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {okUHU[*]}]'. [C:/Users/johny/BOILresearch/xem7310.xdc:76]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'okUH0'. [C:/Users/johny/BOILresearch/xem7310.xdc:77]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/xem7310.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'okUHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:77]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {okUHU[*]}]'. [C:/Users/johny/BOILresearch/xem7310.xdc:77]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'okUHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:78]
+CRITICAL WARNING: [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-from [get_ports {okUHU[*]}]'. [C:/Users/johny/BOILresearch/xem7310.xdc:78]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'okUH0'. [C:/Users/johny/BOILresearch/xem7310.xdc:80]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/xem7310.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'okHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:80]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {okHU[*]}]'. [C:/Users/johny/BOILresearch/xem7310.xdc:80]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'okUH0'. [C:/Users/johny/BOILresearch/xem7310.xdc:81]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/xem7310.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'okHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:81]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {okHU[*]}]'. [C:/Users/johny/BOILresearch/xem7310.xdc:81]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'okUH0'. [C:/Users/johny/BOILresearch/xem7310.xdc:83]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/xem7310.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'okUHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:83]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {okUHU[*]}]'. [C:/Users/johny/BOILresearch/xem7310.xdc:83]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'okUH0'. [C:/Users/johny/BOILresearch/xem7310.xdc:84]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/xem7310.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'okUHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:84]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports {okUHU[*]}]'. [C:/Users/johny/BOILresearch/xem7310.xdc:84]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-1055] Clock 'sys_clk' completely overrides clock 'sys_clkp', which is referenced by one or more other constraints. Any constraints that refer to the overridden clock will be ignored.
+New: create_clock -period 5.000 -name sys_clk [get_ports sys_clkp], [C:/Users/johny/BOILresearch/xem7310.xdc:98]
+Previous: create_clock -period 5.000 [get_ports sys_clkp], [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:56]
+Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/johny/BOILresearch/xem7310.xdc:99]
+WARNING: [Vivado 12-627] No clocks matched 'mmcm0_clk0'. [C:/Users/johny/BOILresearch/xem7310.xdc:99]
+WARNING: [Vivado 12-627] No clocks matched 'okUH0'. [C:/Users/johny/BOILresearch/xem7310.xdc:99]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/xem7310.xdc:99]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks {mmcm0_clk0 okUH0}]'. [C:/Users/johny/BOILresearch/xem7310.xdc:99]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [C:/Users/johny/BOILresearch/xem7310.xdc:99]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [C:/Users/johny/BOILresearch/xem7310.xdc:99]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [C:/Users/johny/BOILresearch/xem7310.xdc:106]
+Finished Parsing XDC File [C:/Users/johny/BOILresearch/xem7310.xdc]
+Parsing XDC File [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc]
+Finished Parsing XDC File [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc]
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_mdm_1_1/design_1_mdm_1_1.xdc] for cell 'design_1_i/mdm_1/U0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_mdm_1_1/design_1_mdm_1_1.xdc] for cell 'design_1_i/mdm_1/U0'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_1/design_1_microblaze_0_axi_intc_1_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_1/design_1_microblaze_0_axi_intc_1_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+INFO: [Project 1-1714] 5 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'design_1_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2004.500 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 299 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 168 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 32 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 19 instances
+
+51 Infos, 70 Warnings, 62 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 2004.500 ; gain = 1420.238
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a75t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2004.500 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 176760a39
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2005.504 ; gain = 1.004
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:xsdbm:3.0, cache-ID = 158ef3885afc6692.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 2390.539 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 162ac4ed9
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 2390.539 ; gain = 19.844
+
+Phase 2 Retarget
+INFO: [Opt 31-1566] Pulled 8 inverters resulting in an inversion of 59 pins
+INFO: [Opt 31-138] Pushed 18 inverter(s) to 348 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 1f6e2fb7c
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:24 . Memory (MB): peak = 2390.539 ; gain = 19.844
+INFO: [Opt 31-389] Phase Retarget created 902 cells and removed 1098 cells
+INFO: [Opt 31-1021] In phase Retarget, 103 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 4 load pin(s).
+Phase 3 Constant propagation | Checksum: 1aa08f573
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:25 . Memory (MB): peak = 2390.539 ; gain = 19.844
+INFO: [Opt 31-389] Phase Constant propagation created 131 cells and removed 689 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 84 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: 21e0ea8ea
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:26 . Memory (MB): peak = 2390.539 ; gain = 19.844
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 442 cells
+INFO: [Opt 31-1021] In phase Sweep, 1291 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG design_1_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG_inst to drive 42 load(s) on clock net design_1_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 5 BUFG optimization | Checksum: 25cdef4a3
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 2390.539 ; gain = 19.844
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
+
+Phase 6 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 6 Shift Register Optimization | Checksum: 10ac1c281
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:27 . Memory (MB): peak = 2390.539 ; gain = 19.844
+INFO: [Opt 31-389] Phase Shift Register Optimization created 5 cells and removed 15 cells
+
+Phase 7 Post Processing Netlist
+Phase 7 Post Processing Netlist | Checksum: 150858b08
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:28 . Memory (MB): peak = 2390.539 ; gain = 19.844
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 102 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             902  |            1098  |                                            103  |
+|  Constant propagation         |             131  |             689  |                                             84  |
+|  Sweep                        |               0  |             442  |                                           1291  |
+|  BUFG optimization            |               1  |               0  |                                              0  |
+|  Shift Register Optimization  |               5  |              15  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            102  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 2390.539 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 161d84a9e
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:28 . Memory (MB): peak = 2390.539 ; gain = 19.844
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 3 BRAM(s) out of a total of 35 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-201] Structural ODC has moved 2 WE to EN ports
+Number of BRAM Ports augmented: 23 newly gated: 2 Total Ports: 70
+Ending PowerOpt Patch Enables Task | Checksum: 147391ee9
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2737.023 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 147391ee9
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 2737.023 ; gain = 346.484
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 147391ee9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2737.023 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 2737.023 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 2216d4ed5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 2737.023 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+87 Infos, 70 Warnings, 62 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 2737.023 ; gain = 732.523
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/impl_xem7310/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.095 . Memory (MB): peak = 2737.023 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/impl_xem7310/design_1_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2737.023 ; gain = 0.000
+Command: read_checkpoint -auto_incremental -incremental C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/impl_1/design_1_wrapper_routed.dcp
+INFO: [Vivado 12-9151] Incremental flow is being run with directive 'RuntimeOptimized'. This will override place_design, post-place phys_opt_design and route_design directives being called in high reuse mode.
+
+Starting Incremental read checkpoint Task
+
+Phase 1 Process Reference Checkpoint Netlist
+INFO: [Netlist 29-17] Analyzing 2808 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2737.023 ; gain = 0.000
+
+Phase 2 Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2737.023 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2737.023 ; gain = 0.000
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2737.023 ; gain = 0.000
+
+Phase 3 Replay Physical Synthesis Transforms
+INFO: [Vivado_Tcl 4-521] iPhys_opt_design summary: tried 0 changes and 0 changes are successfully applied
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2737.023 ; gain = 0.000
+
+Phase 4 Build Reuse DB
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 2737.023 ; gain = 0.000
+Reading placer database...
+Read XDEF Files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2737.023 ; gain = 0.000
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2737.023 ; gain = 0.000
+INFO: [Designutils 20-2297] Reference Design: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/impl_1/design_1_wrapper_routed.dcp, Summary | WNS = 0.096 | WHS = 0.018 | State = POST_ROUTE |
+WARNING: [Constraints 20-4181]  
+WARNING: [Constraints 20-4181]  
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2737.023 ; gain = 0.000
+
+Phase 5 Checking legality
+Phase 5 Checking legality | Checksum: 169285582
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:31 . Memory (MB): peak = 2750.367 ; gain = 13.344
+
+Phase 6 Reporting
+WARNING: [Place 46-192] Reference checkpoint was generated on a different version of Vivado to 2023.1. Updating is not required but cell matching could be impacted.
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Fri Mar  6 15:12:05 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Design       : design_1_wrapper
+| Device       : xc7a75t
+| Design State : Unknown
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Incremental Implementation Information
+
+Table of Contents
+-----------------
+1. Incremental Flow Summary
+2. Reuse Summary
+3. Reference Checkpoint Information
+4. Comparison with Reference Run
+5. Optimization Comparison With Reference Run
+5.1 iphys_opt_replay Optimizations
+5.2 QoR Suggestion Optimizations
+6. Command Comparison with Reference Run
+6.1 Reference:
+6.2 Incremental:
+7. Non Reuse Information
+
+1. Incremental Flow Summary
+---------------------------
+
++-----------------------+------------------+
+|    Flow Information   |       Value      |
++-----------------------+------------------+
+| Synthesis Flow        |          Default |
+| Auto Incremental      |              Yes |
+| Incremental Directive | RuntimeOptimized |
+| Target WNS            |              0.0 |
+| QoR Suggestions       |                0 |
++-----------------------+------------------+
+
+
+2. Reuse Summary
+----------------
+
++-------+----------------------+----------------------------+--------------------+--------+
+|  Type | Matched % (of Total) | Current Reuse % (of Total) | Fixed % (of Total) |  Total |
++-------+----------------------+----------------------------+--------------------+--------+
+| Cells |                97.65 |                      97.54 |               0.01 |  45567 |
+| Nets  |                97.65 |                      92.45 |               0.00 |  34858 |
+| Pins  |                    - |                      93.32 |                  - | 163760 |
+| Ports |                66.66 |                     100.00 |              66.66 |      6 |
++-------+----------------------+----------------------------+--------------------+--------+
+
+
+3. Reference Checkpoint Information
+-----------------------------------
+
++----------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+| DCP Location:  | C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/impl_1/design_1_wrapper_routed.dcp |
++----------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------+----------------------------+
+|         DCP Information        |            Value           |
++--------------------------------+----------------------------+
+| Vivado Version                 |                     2022.1 |
+| DCP State                      |                 POST_ROUTE |
+| Recorded WNS                   |                      0.096 |
+| Recorded WHS                   |                      0.018 |
+| Reference Speed File Version   | PRODUCTION 1.23 2018-06-13 |
+| Incremental Speed File Version | PRODUCTION 1.23 2018-06-13 |
++--------------------------------+----------------------------+
+* Recorded WNS/WHS timing numbers are estimated timing numbers. They may vary slightly from sign-off timing numbers.
+
+
+4. Comparison with Reference Run
+--------------------------------
+
++-----------------+---------------------------+---------------------------+---------------------------+
+|                 |          WNS(ns)          |  Runtime(elapsed)(hh:mm)  |    Runtime(cpu)(hh:mm)    |
++-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|      Stage      |  Reference  | Incremental |  Reference  | Incremental |  Reference  | Incremental |
++-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
+| synth_design    |             |             |       00:01 |     < 1 min |       00:01 |     < 1 min |
+| opt_design      |             |             |       00:01 |     < 1 min |       00:01 |     < 1 min |
+| read_checkpoint |             |             |             |             |             |             |
+| place_design    |       0.486 |             |       00:02 |             |       00:04 |             |
+| phys_opt_design |       0.486 |             |     < 1 min |             |     < 1 min |             |
+| route_design    |       0.096 |             |       00:03 |             |       00:05 |             |
++-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+
+5. Optimization Comparison With Reference Run
+---------------------------------------------
+
+5.1 iphys_opt_replay Optimizations
+----------------------------------
+
++-------------------------+--------+------------+
+| iphys_opt_design replay | Reused | Not Reused |
++-------------------------+--------+------------+
+
+
+5.2 QoR Suggestion Optimizations
+--------------------------------
+
++-----------------+-------+
+| QoR Suggestions | Value |
++-----------------+-------+
+
+
+6. Command Comparison with Reference Run
+----------------------------------------
+
+6.1 Reference:
+--------------
+synth_design-verilog_define default::[not_specified] -top  design_1_wrapper -part  xc7a100tcsg324-1 
+opt_design
+read_checkpoint -incremental -auto_incremental C:/Users/Christopher/Desktop/Research/full_dcs_system/impl_1/design_1_wrapper_routed.dcp
+place_design
+phys_opt_design
+route_design
+
+6.2 Incremental:
+----------------
+synth_design-verilog_define default::[not_specified] -top  design_1_wrapper -part  xc7a75tfgg484-3 
+opt_design
+read_checkpoint -directive RuntimeOptimized  -incremental -auto_incremental C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/impl_1/design_1_wrapper_routed.dcp
+
+7. Non Reuse Information
+------------------------
+
++------------------------------------------------------+------+
+|                         Type                         |   %  |
++------------------------------------------------------+------+
+| Non-Reused Cells                                     | 2.45 |
+|   New                                                | 1.92 |
+|   Discarded illegal placement due to netlist changes | 0.52 |
+|   Discarded to improve timing                        | 0.01 |
+| Partially reused nets                                | 3.25 |
+| Non-Reused nets                                      | 4.28 |
+| Non-Reused Ports                                     | 0.00 |
++------------------------------------------------------+------+
+
+
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:32 . Memory (MB): peak = 2768.156 ; gain = 31.133
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:33 . Memory (MB): peak = 2768.156 ; gain = 31.133
+read_checkpoint: Time (s): cpu = 00:00:39 ; elapsed = 00:00:33 . Memory (MB): peak = 2768.156 ; gain = 31.133
+WARNING: [Place 46-192] Reference checkpoint was generated on a different version of Vivado to 2023.1. Updating is not required but cell matching could be impacted.
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a75t'
+
+Starting Incremental Placer Task
+INFO: [Vivado_Tcl 4-24] Running Incremental Placer flow for unplaced cells using reference design-checkpoint 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/impl_1/design_1_wrapper_routed.dcp'.
+INFO: [Place 46-42] Incremental Compile is being run in High Reuse Mode.
+INFO: [Place 46-44] place_design is using directive Default with target WNS of 0 ns.
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 2768.156 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 169285582
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.402 . Memory (MB): peak = 2768.156 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-172] Sub-optimal placement for a clock-capable IO pin and PLL pair. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.
+	< set_property CLOCK_DEDICATED_ROUTE BACKBONE [get_nets design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0] >
+
+	design_1_i/clk_wiz_0/inst/clkin1_ibufgds (IBUFDS.O) is locked to IOB_X0Y26
+	design_1_i/clk_wiz_0/inst/plle2_adv_inst (PLLE2_ADV.CLKIN1) is provisionally placed by clockplacer on PLLE2_ADV_X1Y2
+
+	The above error could possibly be related to other connected instances. Following is a list of 
+	all the related clock rules and their respective instances.
+
+	Clock Rule: rule_pll_bufg
+	Status: PASS 
+	Rule Description: A PLL driving a BUFG must be placed on the same half side (top/bottom) of the device
+	design_1_i/clk_wiz_0/inst/plle2_adv_inst (PLLE2_ADV.CLKFBOUT) is provisionally placed by clockplacer on PLLE2_ADV_X1Y2
+	design_1_i/clk_wiz_0/inst/clkf_buf (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y18
+
+Resolution: A dedicated routing path between the two can be used if: (a) The clock-capable IO (CCIO) is placed on a CCIO capable site (b) The PLL is placed in the same clock region as the CCIO pin. Both the above conditions must be met at the same time, else it may lead to longer and less predictable clock insertion delays.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 128cb290a
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2808.090 ; gain = 39.934
+Phase 1 Placer Initialization | Checksum: 128cb290a
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2808.090 ; gain = 39.934
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Incremental Placer Task | Checksum: 169285582
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2808.090 ; gain = 39.934
+INFO: [Common 17-83] Releasing license: Implementation
+106 Infos, 74 Warnings, 62 Critical Warnings and 2 Errors encountered.
+place_design completed successfully
+ERROR: [Common 17-39] 'place_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  6 15:12:09 2026...

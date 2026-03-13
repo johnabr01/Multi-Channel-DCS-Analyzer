@@ -1,0 +1,414 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Mar  6 15:07:07 2026
+# Process ID: 36440
+# Current directory: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/design_1_countCorrelateWrapper_0_0_synth_1
+# Command line: vivado.exe -log design_1_countCorrelateWrapper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_countCorrelateWrapper_0_0.tcl
+# Log file: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/design_1_countCorrelateWrapper_0_0_synth_1/design_1_countCorrelateWrapper_0_0.vds
+# Journal file: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/design_1_countCorrelateWrapper_0_0_synth_1\vivado.jou
+# Running On: JohnWorkstat, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 29706 MB
+#-----------------------------------------------------------
+source design_1_countCorrelateWrapper_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 455.934 ; gain = 162.059
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.ipdefs/dcs_analyzer_axil'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.ipdefs/correlator_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.cache/ip 
+Command: synth_design -top design_1_countCorrelateWrapper_0_0 -part xc7a75tfgg484-3 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Device 21-403] Loading part xc7a75tfgg484-3
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 33028
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1299.012 ; gain = 408.605
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_countCorrelateWrapper_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_countCorrelateWrapper_0_0/synth/design_1_countCorrelateWrapper_0_0.vhd:74]
+INFO: [Synth 8-3491] module 'countCorrelateWrapper' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/countCorrelateWrapper.vhd:4' bound to instance 'U0' of component 'countCorrelateWrapper' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_countCorrelateWrapper_0_0/synth/design_1_countCorrelateWrapper_0_0.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'countCorrelateWrapper' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/countCorrelateWrapper.vhd:26]
+	Parameter binSizeNs bound to: 1000 - type: integer 
+	Parameter countOutSize bound to: 8 - type: integer 
+	Parameter binsPerCorrelation bound to: 1000000 - type: integer 
+INFO: [Synth 8-3491] module 'count_and_bin_100' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/count_and_bin_100.vhd:6' bound to instance 'acquisition' of component 'count_and_bin_100' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/countCorrelateWrapper.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'count_and_bin_100' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/count_and_bin_100.vhd:29]
+	Parameter binSize bound to: 1000000000 - type: long integer 
+	Parameter countOutSize bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'count_and_bin' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/count_and_bin.vhd:6' bound to instance 'count_binner' of component 'count_and_bin' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/count_and_bin_100.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'count_and_bin' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/count_and_bin.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'count_and_bin' (0#1) [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/count_and_bin.vhd:26]
+	Parameter countOutSize bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'binned_CDC' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/binned_CDC.vhd:7' bound to instance 'to100Mhz' of component 'binned_CDC' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/count_and_bin_100.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'binned_CDC' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/binned_CDC.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'binned_CDC' (0#1) [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/binned_CDC.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'count_and_bin_100' (0#1) [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/count_and_bin_100.vhd:29]
+INFO: [Synth 8-3491] module 'correlator_mt' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/design_1_countCorrelateWrapper_0_0_synth_1/.Xil/Vivado-36440-JohnWorkstat/realtime/correlator_mt_stub.vhdl:6' bound to instance 'correlator' of component 'correlator_mt' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/countCorrelateWrapper.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'correlator_mt' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/design_1_countCorrelateWrapper_0_0_synth_1/.Xil/Vivado-36440-JohnWorkstat/realtime/correlator_mt_stub.vhdl:22]
+	Parameter countSize bound to: 8 - type: integer 
+	Parameter numCombiners bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'intensity_normalize' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/intensity_normalize.vhd:5' bound to instance 'normalizer' of component 'intensity_normalize' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/countCorrelateWrapper.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'intensity_normalize' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/intensity_normalize.vhd:27]
+INFO: [Synth 8-3491] module 'uint32_to_single' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/uint32_to_single/synth/uint32_to_single.v:53' bound to instance 'to_float_accum' of component 'uint32_to_single' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/intensity_normalize.vhd:132]
+INFO: [Synth 8-6157] synthesizing module 'uint32_to_single' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/uint32_to_single/synth/uint32_to_single.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79430]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79430]
+INFO: [Synth 8-6155] done synthesizing module 'uint32_to_single' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/uint32_to_single/synth/uint32_to_single.v:53]
+INFO: [Synth 8-3491] module 'uint32_to_single' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/uint32_to_single/synth/uint32_to_single.v:53' bound to instance 'to_float_count' of component 'uint32_to_single' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/intensity_normalize.vhd:142]
+INFO: [Synth 8-3491] module 'single_multiply' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/single_multiply/synth/single_multiply.v:53' bound to instance 'square' of component 'single_multiply' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/intensity_normalize.vhd:152]
+INFO: [Synth 8-6157] synthesizing module 'single_multiply' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/single_multiply/synth/single_multiply.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'single_multiply' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/single_multiply/synth/single_multiply.v:53]
+INFO: [Synth 8-3491] module 'single_divide_fast' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/single_divide_fast/synth/single_divide_fast.v:53' bound to instance 'shared_divider' of component 'single_divide_fast' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/intensity_normalize.vhd:259]
+INFO: [Synth 8-6157] synthesizing module 'single_divide_fast' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/single_divide_fast/synth/single_divide_fast.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'single_divide_fast' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/single_divide_fast/synth/single_divide_fast.v:53]
+	Parameter sr_depth bound to: 1 - type: integer 
+	Parameter sr_width bound to: 34 - type: integer 
+INFO: [Synth 8-3491] module 'shift_register' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/shift_register.vhd:4' bound to instance 'delayer' of component 'shift_register' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/intensity_normalize.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'shift_register' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/shift_register.vhd:18]
+	Parameter sr_depth bound to: 1 - type: integer 
+	Parameter sr_width bound to: 34 - type: integer 
+WARNING: [Synth 8-11358] null range expression ignored [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/shift_register.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'shift_register' (0#1) [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/shift_register.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'intensity_normalize' (0#1) [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/intensity_normalize.vhd:27]
+INFO: [Synth 8-3491] module 'correlator_write_controller' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/correlator_write_controller.vhd:5' bound to instance 'ramWriteController' of component 'correlator_write_controller' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/countCorrelateWrapper.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'correlator_write_controller' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/correlator_write_controller.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'correlator_write_controller' (0#1) [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/correlator_write_controller.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'countCorrelateWrapper' (0#1) [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/new/countCorrelateWrapper.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'design_1_countCorrelateWrapper_0_0' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_countCorrelateWrapper_0_0/synth/design_1_countCorrelateWrapper_0_0.vhd:74]
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op_lat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op_lat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op_lat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op_lat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[7] in module carry_chain__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized56 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized56 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized56 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized56 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized56 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port NORMALIZE[1] in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIXED_POINT in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIX_MANT_SIGN in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SIGN in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized54 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized54 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized54 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized54 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized54 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized83 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized83 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized83 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized81 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized81 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized81 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized50 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized50 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized50 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized50 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized50 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[31] in module special_detect__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ROUND_EXP_INC in module flt_div_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized71 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized71 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized71 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized63 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized63 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized63 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized63 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1532.664 ; gain = 642.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1532.664 ; gain = 642.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1532.664 ; gain = 642.258
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 1532.664 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1576 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/correlator_mt/correlator_mt_in_context.xdc] for cell 'U0/correlator'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/correlator_mt/correlator_mt_in_context.xdc] for cell 'U0/correlator'
+Parsing XDC File [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/design_1_countCorrelateWrapper_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/design_1_countCorrelateWrapper_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1541.000 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  FDE => FDRE: 3 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 1543.652 ; gain = 2.652
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1543.652 ; gain = 653.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a75tfgg484-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1543.652 ; gain = 653.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0/normalizer/\divider_sharing.shared_divider . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/normalizer/\intensity_squared.square . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/normalizer/\intensity_squared.to_float_accum . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/normalizer/\intensity_squared.to_float_count . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/correlator. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1543.652 ; gain = 653.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1543.652 ; gain = 653.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'uint32_to_single:/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized1) to 'uint32_to_single:/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'uint32_to_single:/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized1) to 'uint32_to_single:/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'uint32_to_single:/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized12) to 'uint32_to_single:/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'uint32_to_single:/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized12) to 'uint32_to_single:/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'uint32_to_single:/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'uint32_to_single:/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'uint32_to_single:/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'uint32_to_single:/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'uint32_to_single:/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'uint32_to_single:/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'uint32_to_single:/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'uint32_to_single:/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'uint32_to_single:/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'uint32_to_single:/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/normalizer/intensity_squared.square/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXTRA_LSB_BIT_DEL' (delay__parameterized1) to 'U0/normalizer/intensity_squared.square/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/normalizer/intensity_squared.square/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_INC_DELAY' (delay__parameterized1) to 'U0/normalizer/intensity_squared.square/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'U0/normalizer/intensity_squared.square/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized12) to 'U0/normalizer/intensity_squared.square/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/normalizer/intensity_squared.square/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized12) to 'U0/normalizer/intensity_squared.square/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/normalizer/intensity_squared.square/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'U0/normalizer/intensity_squared.square/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/normalizer/intensity_squared.square/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'U0/normalizer/intensity_squared.square/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/normalizer/divider_sharing.shared_divider/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized1) to 'U0/normalizer/divider_sharing.shared_divider/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/normalizer/divider_sharing.shared_divider/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized1) to 'U0/normalizer/divider_sharing.shared_divider/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'U0/normalizer/divider_sharing.shared_divider/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized12) to 'U0/normalizer/divider_sharing.shared_divider/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/normalizer/divider_sharing.shared_divider/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized12) to 'U0/normalizer/divider_sharing.shared_divider/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/normalizer/divider_sharing.shared_divider/inst/i_synth/DELAY_ACCUM_OVERFLOW' (delay__parameterized1) to 'U0/normalizer/divider_sharing.shared_divider/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 180 (col length:80)
+BRAMs: 210 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1543.652 ; gain = 653.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1543.652 ; gain = 653.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1543.652 ; gain = 653.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1547.332 ; gain = 656.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1547.332 ; gain = 656.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1547.332 ; gain = 656.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1547.332 ; gain = 656.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1547.332 ; gain = 656.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1547.332 ; gain = 656.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1547.332 ; gain = 656.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping           | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp         | (C+(A'*B')')'         | 24     | 17     | 0      | -      | 17     | 1    | 1    | 1    | -    | -     | 1    | 1    | 
+|dsp         | (PCIN>>17+(A'*B'')')' | 0      | 7      | -      | -      | 43     | 1    | 2    | -    | -    | -     | 1    | 1    | 
++------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |correlator_mt |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |correlator_mt_bbox |     1|
+|2     |CARRY4             |    32|
+|3     |DSP48E1            |     2|
+|5     |LUT1               |    21|
+|6     |LUT2               |   198|
+|7     |LUT3               |   767|
+|8     |LUT4               |    86|
+|9     |LUT5               |    44|
+|10    |LUT6               |   129|
+|11    |MUXCY              |   800|
+|12    |MUXF7              |     6|
+|13    |SRL16E             |    42|
+|14    |XORCY              |   745|
+|15    |FDE                |     3|
+|16    |FDRE               |  1152|
++------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1547.332 ; gain = 656.926
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 200 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:35 . Memory (MB): peak = 1547.332 ; gain = 645.938
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1547.332 ; gain = 656.926
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1547.332 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1588 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1555.789 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 232 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 229 instances
+  FDE => FDRE: 3 instances
+
+Synth Design complete | Checksum: d215184a
+INFO: [Common 17-83] Releasing license: Synthesis
+79 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:54 . Memory (MB): peak = 1555.789 ; gain = 1065.879
+INFO: [Coretcl 2-1174] Renamed 248 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/design_1_countCorrelateWrapper_0_0_synth_1/design_1_countCorrelateWrapper_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_countCorrelateWrapper_0_0_utilization_synth.rpt -pb design_1_countCorrelateWrapper_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  6 15:08:18 2026...

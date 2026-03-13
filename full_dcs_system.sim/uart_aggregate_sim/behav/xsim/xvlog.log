@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Christopher/Desktop/Research/full_dcs_system/full_dcs_system.ip_user_files/ip/uart_fifo/sim/uart_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Christopher/Desktop/Research/full_dcs_system/full_dcs_system.ip_user_files/ip/correlatorFIFO/sim/correlatorFIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module correlatorFIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Christopher/Desktop/Research/full_dcs_system/full_dcs_system.gen/sources_1/ip/intensityFIFO/sim/intensityFIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module intensityFIFO
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Christopher/Desktop/Research/full_dcs_system/full_dcs_system.sim/uart_aggregate_sim/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

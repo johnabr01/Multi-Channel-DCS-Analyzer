@@ -1,0 +1,722 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Dec 23 11:56:57 2025
+# Process ID: 14564
+# Current directory: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5444 C:\Users\johny\BOILresearch\full_dcs_system_6_23_23.xpr\full_dcs_system\full_dcs_system.xpr
+# Log file: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/vivado.log
+# Journal file: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system\vivado.jou
+# Running On: JohnWorkstat, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 29706 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Christopher/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-109332-Topher-Spectre/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/full_dcs_system/full_dcs_system.srcs/utils_1/imports/synth_1' of run 'synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/synth_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/full_dcs_system/full_dcs_system.srcs/utils_1/imports/synth_1' of run 'synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/synth_1'.
+WARNING: [Project 1-865] Could not find the file C:/../../../Desktop/Research/full_dcs_system/impl_1/design_1_wrapper_routed.dcp
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_clk_wiz_0_0_synth_1' of run 'design_1_clk_wiz_0_0_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_clk_wiz_0_0_synth_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_clk_wiz_0_0_synth_1' of run 'design_1_clk_wiz_0_0_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_clk_wiz_0_0_synth_1'.
+WARNING: [Project 1-865] Could not find the file C:/../../../Desktop/full_dcs_system/full_dcs_system.srcs/utils_1/imports/impl_1/design_1_wrapper_routed.dcp
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_DCS_Analyzer_0_0_synth_1' of run 'design_1_DCS_Analyzer_0_0_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_DCS_Analyzer_0_0_synth_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_DCS_Analyzer_0_0_synth_1' of run 'design_1_DCS_Analyzer_0_0_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_DCS_Analyzer_0_0_synth_1'.
+WARNING: [Project 1-865] Could not find the file C:/../../../Desktop/Research/full_dcs_system/impl_1/design_1_wrapper_routed.dcp
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_microblaze_0_axi_intc_1_synth_1' of run 'design_1_microblaze_0_axi_intc_1_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_microblaze_0_axi_intc_1_synth_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_microblaze_0_axi_intc_1_synth_1' of run 'design_1_microblaze_0_axi_intc_1_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_microblaze_0_axi_intc_1_synth_1'.
+WARNING: [Project 1-865] Could not find the file C:/../../../Desktop/Research/full_dcs_system/impl_1/design_1_wrapper_routed.dcp
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/correlator_mt_synth_1' of run 'correlator_mt_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/correlator_mt_synth_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/correlator_mt_synth_1' of run 'correlator_mt_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/correlator_mt_synth_1'.
+WARNING: [Project 1-865] Could not find the file C:/../../../Desktop/Research/full_dcs_system/impl_1/design_1_wrapper_routed.dcp
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_xbar_0_synth_1' of run 'design_1_xbar_0_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_xbar_0_synth_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_xbar_0_synth_1' of run 'design_1_xbar_0_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_xbar_0_synth_1'.
+WARNING: [Project 1-865] Could not find the file C:/../../../Desktop/Research/full_dcs_system/impl_1/design_1_wrapper_routed.dcp
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_intensityRebin_0_0_synth_1' of run 'design_1_intensityRebin_0_0_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_intensityRebin_0_0_synth_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_intensityRebin_0_0_synth_1' of run 'design_1_intensityRebin_0_0_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_intensityRebin_0_0_synth_1'.
+WARNING: [Project 1-865] Could not find the file C:/../../../Desktop/Research/full_dcs_system/impl_1/design_1_wrapper_routed.dcp
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/uart_fifo_synth_1' of run 'uart_fifo_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/uart_fifo_synth_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/uart_fifo_synth_1' of run 'uart_fifo_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/uart_fifo_synth_1'.
+WARNING: [Project 1-865] Could not find the file C:/../../../Desktop/Research/full_dcs_system/impl_1/design_1_wrapper_routed.dcp
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/correlatorFIFO_synth_1' of run 'correlatorFIFO_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/correlatorFIFO_synth_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/correlatorFIFO_synth_1' of run 'correlatorFIFO_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/correlatorFIFO_synth_1'.
+WARNING: [Project 1-865] Could not find the file C:/../../../Desktop/Research/full_dcs_system/impl_1/design_1_wrapper_routed.dcp
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_axi_fifo_mm_s_0_1_synth_1' of run 'design_1_axi_fifo_mm_s_0_1_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_axi_fifo_mm_s_0_1_synth_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_axi_fifo_mm_s_0_1_synth_1' of run 'design_1_axi_fifo_mm_s_0_1_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_axi_fifo_mm_s_0_1_synth_1'.
+WARNING: [Project 1-865] Could not find the file C:/../../../Desktop/Research/full_dcs_system/impl_1/design_1_wrapper_routed.dcp
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_uart_aggregator_0_0_synth_1' of run 'design_1_uart_aggregator_0_0_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_uart_aggregator_0_0_synth_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_uart_aggregator_0_0_synth_1' of run 'design_1_uart_aggregator_0_0_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_uart_aggregator_0_0_synth_1'.
+WARNING: [Project 1-865] Could not find the file C:/../../../Desktop/Research/full_dcs_system/impl_1/design_1_wrapper_routed.dcp
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_rst_clk_wiz_100M_0_synth_1' of run 'design_1_rst_clk_wiz_100M_0_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_rst_clk_wiz_100M_0_synth_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_rst_clk_wiz_100M_0_synth_1' of run 'design_1_rst_clk_wiz_100M_0_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_rst_clk_wiz_100M_0_synth_1'.
+WARNING: [Project 1-865] Could not find the file C:/../../../Desktop/Research/full_dcs_system/impl_1/design_1_wrapper_routed.dcp
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_countCorrelateWrapper_0_0_synth_1' of run 'design_1_countCorrelateWrapper_0_0_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_countCorrelateWrapper_0_0_synth_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_countCorrelateWrapper_0_0_synth_1' of run 'design_1_countCorrelateWrapper_0_0_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_countCorrelateWrapper_0_0_synth_1'.
+WARNING: [Project 1-865] Could not find the file C:/../../../Desktop/Research/full_dcs_system/impl_1/design_1_wrapper_routed.dcp
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_system_ila_0_0_synth_1' of run 'design_1_system_ila_0_0_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_system_ila_0_0_synth_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_system_ila_0_0_synth_1' of run 'design_1_system_ila_0_0_synth_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_system_ila_0_0_synth_1'.
+WARNING: [Project 1-865] Could not find the file C:/../../../Desktop/Research/full_dcs_system/impl_1/design_1_wrapper_routed.dcp
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/full_dcs_system/full_dcs_system.srcs/utils_1/imports/impl_1' of run 'impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/impl_1'.
+WARNING: [Project 1-865] Could not find the file C:/../../../Desktop/Research/full_dcs_system/impl_1/design_1_wrapper_routed.dcp
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_clk_wiz_0_0_impl_1' of run 'design_1_clk_wiz_0_0_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_clk_wiz_0_0_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_clk_wiz_0_0_impl_1' of run 'design_1_clk_wiz_0_0_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_clk_wiz_0_0_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_DCS_Analyzer_0_0_impl_1' of run 'design_1_DCS_Analyzer_0_0_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_DCS_Analyzer_0_0_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_DCS_Analyzer_0_0_impl_1' of run 'design_1_DCS_Analyzer_0_0_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_DCS_Analyzer_0_0_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_microblaze_0_axi_intc_1_impl_1' of run 'design_1_microblaze_0_axi_intc_1_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_microblaze_0_axi_intc_1_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_microblaze_0_axi_intc_1_impl_1' of run 'design_1_microblaze_0_axi_intc_1_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_microblaze_0_axi_intc_1_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/correlator_mt_impl_1' of run 'correlator_mt_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/correlator_mt_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/correlator_mt_impl_1' of run 'correlator_mt_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/correlator_mt_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_xbar_0_impl_1' of run 'design_1_xbar_0_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_xbar_0_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_xbar_0_impl_1' of run 'design_1_xbar_0_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_xbar_0_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_intensityRebin_0_0_impl_1' of run 'design_1_intensityRebin_0_0_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_intensityRebin_0_0_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_intensityRebin_0_0_impl_1' of run 'design_1_intensityRebin_0_0_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_intensityRebin_0_0_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/uart_fifo_impl_1' of run 'uart_fifo_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/uart_fifo_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/uart_fifo_impl_1' of run 'uart_fifo_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/uart_fifo_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/correlatorFIFO_impl_1' of run 'correlatorFIFO_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/correlatorFIFO_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/correlatorFIFO_impl_1' of run 'correlatorFIFO_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/correlatorFIFO_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_axi_fifo_mm_s_0_1_impl_1' of run 'design_1_axi_fifo_mm_s_0_1_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_axi_fifo_mm_s_0_1_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_axi_fifo_mm_s_0_1_impl_1' of run 'design_1_axi_fifo_mm_s_0_1_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_axi_fifo_mm_s_0_1_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_uart_aggregator_0_0_impl_1' of run 'design_1_uart_aggregator_0_0_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_uart_aggregator_0_0_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_uart_aggregator_0_0_impl_1' of run 'design_1_uart_aggregator_0_0_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_uart_aggregator_0_0_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_rst_clk_wiz_100M_0_impl_1' of run 'design_1_rst_clk_wiz_100M_0_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_rst_clk_wiz_100M_0_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_rst_clk_wiz_100M_0_impl_1' of run 'design_1_rst_clk_wiz_100M_0_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_rst_clk_wiz_100M_0_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_countCorrelateWrapper_0_0_impl_1' of run 'design_1_countCorrelateWrapper_0_0_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_countCorrelateWrapper_0_0_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_countCorrelateWrapper_0_0_impl_1' of run 'design_1_countCorrelateWrapper_0_0_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_countCorrelateWrapper_0_0_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_system_ila_0_0_impl_1' of run 'design_1_system_ila_0_0_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_system_ila_0_0_impl_1'.
+INFO: [Project 1-1877] Auto incremental dir location 'C:/../../../Desktop/Research/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_system_ila_0_0_impl_1' of run 'design_1_system_ila_0_0_impl_1' is not writable, setting it to default location 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/utils_1/imports/design_1_system_ila_0_0_impl_1'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.ipdefs/dcs_analyzer_axil'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.ipdefs/correlator_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'single_divide_fast' is locked:
+* IP definition 'Floating-point (7.1)' for IP 'single_divide_fast' (customized with software release 2022.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'single_multiply' is locked:
+* IP definition 'Floating-point (7.1)' for IP 'single_multiply' (customized with software release 2022.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'uint32_to_single' is locked:
+* IP definition 'Floating-point (7.1)' for IP 'uint32_to_single' (customized with software release 2022.1) has a different revision in the IP Catalog.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_microblaze_0_1
+design_1_dlmb_bram_if_cntlr_1
+design_1_ilmb_bram_if_cntlr_1
+design_1_mdm_1_1
+design_1_xbar_0
+design_1_lmb_bram_1
+design_1_auto_pc_0
+design_1_rst_clk_wiz_100M_0
+design_1_microblaze_0_axi_periph_1
+design_1_axi_bram_ctrl_0_0
+design_1_axi_bram_ctrl_0_bram_0
+design_1_DCS_Analyzer_0_0
+design_1_clk_wiz_0_0
+design_1_axi_fifo_mm_s_0_1
+design_1_system_ila_0_0
+
+WARNING: [IP_Flow 19-2162] IP 'correlator_mt' is locked:
+* IP 'correlator_mt' contains one or more locked subcores.
+INFO: [Project 1-230] Project 'full_dcs_system.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1501.008 ; gain = 264.297
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+WARNING: [Vivado 12-4173] The following IPs are not generated and locked, no out-of-context (OOC) run will be created. Please select 'Report IP Status' from 'Tools/Report' or run Tcl command 'report_ip_status' for more information.
+C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/bd/design_1/design_1.bd
+
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-1293] The path 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.cache/wt' already exists, is a directory, but is not writable.
+WARNING: [Vivado 12-4173] The following IPs are not generated and locked, no out-of-context (OOC) run will be created. Please select 'Report IP Status' from 'Tools/Report' or run Tcl command 'report_ip_status' for more information.
+C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/bd/design_1/design_1.bd
+
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+WARNING: [IP_Flow 19-2162] IP 'single_divide_fast' is locked:
+* IP definition 'Floating-point (7.1)' for IP 'single_divide_fast' (customized with software release 2022.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'single_multiply' is locked:
+* IP definition 'Floating-point (7.1)' for IP 'single_multiply' (customized with software release 2022.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'uint32_to_single' is locked:
+* IP definition 'Floating-point (7.1)' for IP 'uint32_to_single' (customized with software release 2022.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'intensityFIFO' is locked:
+* IP definition 'FIFO Generator (13.2)' for IP 'intensityFIFO' (customized with software release 2022.1) has a different revision in the IP Catalog.
+Top: design_1_wrapper
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2299.980 ; gain = 416.730
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/imports/design_1_wrapper.vhd:24]
+INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:2321' bound to instance 'design_1_i' of component 'design_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/imports/design_1_wrapper.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:2335]
+INFO: [Synth 8-3491] module 'design_1_DCS_Analyzer_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_DCS_Analyzer_0_0_stub.vhdl:5' bound to instance 'DCS_Analyzer_0' of component 'design_1_DCS_Analyzer_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:2944]
+INFO: [Synth 8-638] synthesizing module 'design_1_DCS_Analyzer_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_DCS_Analyzer_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_axi_fifo_mm_s_0_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_axi_fifo_mm_s_0_1_stub.vhdl:5' bound to instance 'analyzer_fifo' of component 'design_1_axi_fifo_mm_s_0_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:2969]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_fifo_mm_s_0_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_axi_fifo_mm_s_0_1_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:2997]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_clk_wiz_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'design_1_axi_bram_ctrl_0_bram_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.vhdl:5' bound to instance 'correlation_bram' of component 'design_1_axi_bram_ctrl_0_bram_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3004]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_bram_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.vhdl:27]
+INFO: [Synth 8-3491] module 'design_1_axi_bram_ctrl_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_axi_bram_ctrl_0_0_stub.vhdl:5' bound to instance 'correlator_bram_ctrl' of component 'design_1_axi_bram_ctrl_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3027]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_axi_bram_ctrl_0_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'design_1_countCorrelateWrapper_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_countCorrelateWrapper_0_0_stub.vhdl:5' bound to instance 'countCorrelateWrapper_0' of component 'design_1_countCorrelateWrapper_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3070]
+INFO: [Synth 8-638] synthesizing module 'design_1_countCorrelateWrapper_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_countCorrelateWrapper_0_0_stub.vhdl:24]
+INFO: [Synth 8-3491] module 'design_1_intensityRebin_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_intensityRebin_0_0_stub.vhdl:5' bound to instance 'intensityRebin_0' of component 'design_1_intensityRebin_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3086]
+INFO: [Synth 8-638] synthesizing module 'design_1_intensityRebin_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_intensityRebin_0_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_xlconcat_1' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_1/synth/design_1_microblaze_0_xlconcat_1.v:53' bound to instance 'interrupt_concat' of component 'design_1_microblaze_0_xlconcat_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3095]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_xlconcat_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_1/synth/design_1_microblaze_0_xlconcat_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_xlconcat_1' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_1/synth/design_1_microblaze_0_xlconcat_1.v:53]
+INFO: [Synth 8-3491] module 'design_1_mdm_1_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_mdm_1_1_stub.vhdl:5' bound to instance 'mdm_1' of component 'design_1_mdm_1_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3105]
+INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_mdm_1_1_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_microblaze_0_1_stub.vhdl:5' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3138]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_microblaze_0_1_stub.vhdl:63]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_axi_intc_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_microblaze_0_axi_intc_1_stub.vhdl:5' bound to instance 'microblaze_0_axi_intc' of component 'design_1_microblaze_0_axi_intc_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3224]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_intc_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_microblaze_0_axi_intc_1_stub.vhdl:36]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_periph_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1529]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_8RVYHO' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_8RVYHO' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1UTB3Y5' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_7ANRHB' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:275]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:445]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_auto_pc_0_stub.vhdl:67]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_7ANRHB' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:275]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1W07O72' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:556]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1W07O72' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:556]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_5LX7BU' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:663]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_5LX7BU' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:663]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1RZP34U' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1326]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1RZP34U' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1326]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:2199]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_periph_1' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1529]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:747]
+INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_dlmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:961]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_dlmb_bram_if_cntlr_1_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_dlmb_v10_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_dlmb_v10_1_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1015]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_dlmb_v10_1_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_ilmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1043]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_ilmb_bram_if_cntlr_1_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_ilmb_v10_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_ilmb_v10_1_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1097]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_ilmb_v10_1_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_lmb_bram_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_lmb_bram_1_stub.vhdl:5' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1125]
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_lmb_bram_1_stub.vhdl:27]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:747]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_100M_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_rst_clk_wiz_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_100M' of component 'design_1_rst_clk_wiz_100M_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3414]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_100M_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_rst_clk_wiz_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_system_ila_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_system_ila_0_0_stub.vhdl:5' bound to instance 'system_ila_0' of component 'design_1_system_ila_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3427]
+INFO: [Synth 8-638] synthesizing module 'design_1_system_ila_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_system_ila_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_uart_aggregator_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_uart_aggregator_0_0_stub.vhdl:5' bound to instance 'uart_aggregator_0' of component 'design_1_uart_aggregator_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3452]
+INFO: [Synth 8-638] synthesizing module 'design_1_uart_aggregator_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_uart_aggregator_0_0_stub.vhdl:27]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:2335]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/imports/design_1_wrapper.vhd:24]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'interrupt_concat'. This will prevent further optimization [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3095]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1RZP34U is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1RZP34U is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_1RZP34U is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module s00_couplers_imp_1RZP34U is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m04_couplers_imp_5LX7BU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m04_couplers_imp_5LX7BU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m04_couplers_imp_5LX7BU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m04_couplers_imp_5LX7BU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m03_couplers_imp_1W07O72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m03_couplers_imp_1W07O72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m03_couplers_imp_1W07O72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m03_couplers_imp_1W07O72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[31] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[30] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[29] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[28] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[27] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[26] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[25] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[24] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[23] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[22] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[21] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[20] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[19] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[18] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[17] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[16] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[15] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[14] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[13] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[12] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[31] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[30] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[29] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[28] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[27] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[26] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[25] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[24] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[23] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[22] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[21] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[20] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[19] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[18] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[17] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[16] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[15] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[14] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[13] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[12] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_1UTB3Y5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_1UTB3Y5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_1UTB3Y5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_1UTB3Y5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_8RVYHO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_8RVYHO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_8RVYHO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_8RVYHO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ACLK in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ARESETN in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ACLK in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ARESETN in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2448.160 ; gain = 564.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2448.160 ; gain = 564.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2448.160 ; gain = 564.910
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_DCS_Analyzer_0_0/design_1_DCS_Analyzer_0_0.dcp' for cell 'design_1_i/DCS_Analyzer_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_axi_fifo_mm_s_0_1/design_1_axi_fifo_mm_s_0_1.dcp' for cell 'design_1_i/analyzer_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0.dcp' for cell 'design_1_i/correlation_bram'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0.dcp' for cell 'design_1_i/correlator_bram_ctrl'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_countCorrelateWrapper_0_0/design_1_countCorrelateWrapper_0_0.dcp' for cell 'design_1_i/countCorrelateWrapper_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_intensityRebin_0_0/design_1_intensityRebin_0_0.dcp' for cell 'design_1_i/intensityRebin_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_mdm_1_1/design_1_mdm_1_1.dcp' for cell 'design_1_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1.dcp' for cell 'design_1_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_1/design_1_microblaze_0_axi_intc_1.dcp' for cell 'design_1_i/microblaze_0_axi_intc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_100M_0/design_1_rst_clk_wiz_100M_0.dcp' for cell 'design_1_i/rst_clk_wiz_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0.dcp' for cell 'design_1_i/system_ila_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_uart_aggregator_0_0/design_1_uart_aggregator_0_0.dcp' for cell 'design_1_i/uart_aggregator_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_1/design_1_dlmb_bram_if_cntlr_1.dcp' for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_1/design_1_dlmb_v10_1.dcp' for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_1/design_1_ilmb_bram_if_cntlr_1.dcp' for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_1/design_1_ilmb_v10_1.dcp' for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_1/design_1_lmb_bram_1.dcp' for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/correlator_mt.dcp' for cell 'design_1_i/countCorrelateWrapper_0/U0/correlator'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/correlatorFIFO/correlatorFIFO.dcp' for cell 'design_1_i/uart_aggregator_0/U0/aggregator.correlation_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/intensityFIFO/intensityFIFO.dcp' for cell 'design_1_i/uart_aggregator_0/U0/aggregator.intensity_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/uart_fifo/uart_fifo.dcp' for cell 'design_1_i/uart_aggregator_0/U0/main_fifo'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.608 . Memory (MB): peak = 2491.273 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2813 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+97 Infos, 104 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-275] File does not exist [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/intensityFIFO/intensityFIFO.xdc]
+upgrade_ip -vlnv xilinx.com:ip:fifo_generator:13.2 [get_ips  intensityFIFO] -log ip_upgrade.log
+Upgrading 'intensityFIFO'
+INFO: [IP_Flow 19-3422] Upgraded intensityFIFO (FIFO Generator 13.2) from revision 7 to revision 8
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'intensityFIFO'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips intensityFIFO] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/intensityFIFO/intensityFIFO.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'intensityFIFO'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'intensityFIFO'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'intensityFIFO'...
+catch { config_ip_cache -export [get_ips -all intensityFIFO] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: intensityFIFO
+export_ip_user_files -of_objects [get_files C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/intensityFIFO/intensityFIFO.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/intensityFIFO/intensityFIFO.xci]
+launch_runs intensityFIFO_synth_1 -jobs 8
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: intensityFIFO
+[Tue Dec 23 12:05:07 2025] Launched intensityFIFO_synth_1...
+Run output will be captured here: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/intensityFIFO_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/intensityFIFO/intensityFIFO.xci] -directory C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.ip_user_files -ipstatic_source_dir C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.cache/compile_simlib/modelsim} {questa=C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.cache/compile_simlib/questa} {riviera=C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.cache/compile_simlib/riviera} {activehdl=C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [Vivado 12-4173] The following IPs are not generated and locked, no out-of-context (OOC) run will be created. Please select 'Report IP Status' from 'Tools/Report' or run Tcl command 'report_ip_status' for more information.
+C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/bd/design_1/design_1.bd
+
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+WARNING: [IP_Flow 19-2162] IP 'single_divide_fast' is locked:
+* IP definition 'Floating-point (7.1)' for IP 'single_divide_fast' (customized with software release 2022.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'single_multiply' is locked:
+* IP definition 'Floating-point (7.1)' for IP 'single_multiply' (customized with software release 2022.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'uint32_to_single' is locked:
+* IP definition 'Floating-point (7.1)' for IP 'uint32_to_single' (customized with software release 2022.1) has a different revision in the IP Catalog.
+Top: design_1_wrapper
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2670.828 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/imports/design_1_wrapper.vhd:24]
+INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:2321' bound to instance 'design_1_i' of component 'design_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/imports/design_1_wrapper.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:2335]
+INFO: [Synth 8-3491] module 'design_1_DCS_Analyzer_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_DCS_Analyzer_0_0_stub.vhdl:5' bound to instance 'DCS_Analyzer_0' of component 'design_1_DCS_Analyzer_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:2944]
+INFO: [Synth 8-638] synthesizing module 'design_1_DCS_Analyzer_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_DCS_Analyzer_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_axi_fifo_mm_s_0_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_axi_fifo_mm_s_0_1_stub.vhdl:5' bound to instance 'analyzer_fifo' of component 'design_1_axi_fifo_mm_s_0_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:2969]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_fifo_mm_s_0_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_axi_fifo_mm_s_0_1_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:2997]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_clk_wiz_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'design_1_axi_bram_ctrl_0_bram_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.vhdl:5' bound to instance 'correlation_bram' of component 'design_1_axi_bram_ctrl_0_bram_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3004]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_bram_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.vhdl:27]
+INFO: [Synth 8-3491] module 'design_1_axi_bram_ctrl_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_axi_bram_ctrl_0_0_stub.vhdl:5' bound to instance 'correlator_bram_ctrl' of component 'design_1_axi_bram_ctrl_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3027]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_axi_bram_ctrl_0_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'design_1_countCorrelateWrapper_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_countCorrelateWrapper_0_0_stub.vhdl:5' bound to instance 'countCorrelateWrapper_0' of component 'design_1_countCorrelateWrapper_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3070]
+INFO: [Synth 8-638] synthesizing module 'design_1_countCorrelateWrapper_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_countCorrelateWrapper_0_0_stub.vhdl:24]
+INFO: [Synth 8-3491] module 'design_1_intensityRebin_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_intensityRebin_0_0_stub.vhdl:5' bound to instance 'intensityRebin_0' of component 'design_1_intensityRebin_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3086]
+INFO: [Synth 8-638] synthesizing module 'design_1_intensityRebin_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_intensityRebin_0_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_xlconcat_1' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_1/synth/design_1_microblaze_0_xlconcat_1.v:53' bound to instance 'interrupt_concat' of component 'design_1_microblaze_0_xlconcat_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3095]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_xlconcat_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_1/synth/design_1_microblaze_0_xlconcat_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_xlconcat_1' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_1/synth/design_1_microblaze_0_xlconcat_1.v:53]
+INFO: [Synth 8-3491] module 'design_1_mdm_1_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_mdm_1_1_stub.vhdl:5' bound to instance 'mdm_1' of component 'design_1_mdm_1_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3105]
+INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_mdm_1_1_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_microblaze_0_1_stub.vhdl:5' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3138]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_microblaze_0_1_stub.vhdl:63]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_axi_intc_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_microblaze_0_axi_intc_1_stub.vhdl:5' bound to instance 'microblaze_0_axi_intc' of component 'design_1_microblaze_0_axi_intc_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3224]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_intc_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_microblaze_0_axi_intc_1_stub.vhdl:36]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_periph_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1529]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_8RVYHO' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_8RVYHO' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1UTB3Y5' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_7ANRHB' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:275]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:445]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_auto_pc_0_stub.vhdl:67]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_7ANRHB' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:275]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1W07O72' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:556]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1W07O72' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:556]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_5LX7BU' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:663]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_5LX7BU' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:663]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1RZP34U' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1326]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1RZP34U' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1326]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:2199]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_periph_1' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1529]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:747]
+INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_dlmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:961]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_dlmb_bram_if_cntlr_1_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_dlmb_v10_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_dlmb_v10_1_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1015]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_dlmb_v10_1_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_ilmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1043]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_ilmb_bram_if_cntlr_1_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_ilmb_v10_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_ilmb_v10_1_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1097]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_ilmb_v10_1_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_lmb_bram_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_lmb_bram_1_stub.vhdl:5' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1125]
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_lmb_bram_1_stub.vhdl:27]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:747]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_100M_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_rst_clk_wiz_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_100M' of component 'design_1_rst_clk_wiz_100M_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3414]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_100M_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_rst_clk_wiz_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_system_ila_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_system_ila_0_0_stub.vhdl:5' bound to instance 'system_ila_0' of component 'design_1_system_ila_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3427]
+INFO: [Synth 8-638] synthesizing module 'design_1_system_ila_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_system_ila_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_uart_aggregator_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_uart_aggregator_0_0_stub.vhdl:5' bound to instance 'uart_aggregator_0' of component 'design_1_uart_aggregator_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3452]
+INFO: [Synth 8-638] synthesizing module 'design_1_uart_aggregator_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/realtime/design_1_uart_aggregator_0_0_stub.vhdl:27]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:2335]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/imports/design_1_wrapper.vhd:24]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'interrupt_concat'. This will prevent further optimization [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3095]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1RZP34U is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1RZP34U is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_1RZP34U is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module s00_couplers_imp_1RZP34U is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m04_couplers_imp_5LX7BU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m04_couplers_imp_5LX7BU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m04_couplers_imp_5LX7BU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m04_couplers_imp_5LX7BU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m03_couplers_imp_1W07O72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m03_couplers_imp_1W07O72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m03_couplers_imp_1W07O72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m03_couplers_imp_1W07O72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[31] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[30] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[29] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[28] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[27] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[26] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[25] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[24] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[23] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[22] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[21] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[20] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[19] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[18] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[17] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[16] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[15] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[14] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[13] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_araddr[12] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[31] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[30] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[29] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[28] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[27] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[26] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[25] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[24] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[23] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[22] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[21] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[20] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[19] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[18] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[17] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[16] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[15] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[14] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[13] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_awaddr[12] in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_1UTB3Y5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_1UTB3Y5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_1UTB3Y5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_1UTB3Y5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_8RVYHO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_8RVYHO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_8RVYHO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_8RVYHO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ACLK in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ARESETN in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ACLK in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ARESETN in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_microblaze_0_axi_periph_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2670.828 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2670.828 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2670.828 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_DCS_Analyzer_0_0/design_1_DCS_Analyzer_0_0.dcp' for cell 'design_1_i/DCS_Analyzer_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_axi_fifo_mm_s_0_1/design_1_axi_fifo_mm_s_0_1.dcp' for cell 'design_1_i/analyzer_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0.dcp' for cell 'design_1_i/correlation_bram'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0.dcp' for cell 'design_1_i/correlator_bram_ctrl'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_countCorrelateWrapper_0_0/design_1_countCorrelateWrapper_0_0.dcp' for cell 'design_1_i/countCorrelateWrapper_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_intensityRebin_0_0/design_1_intensityRebin_0_0.dcp' for cell 'design_1_i/intensityRebin_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_mdm_1_1/design_1_mdm_1_1.dcp' for cell 'design_1_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1.dcp' for cell 'design_1_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_1/design_1_microblaze_0_axi_intc_1.dcp' for cell 'design_1_i/microblaze_0_axi_intc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_100M_0/design_1_rst_clk_wiz_100M_0.dcp' for cell 'design_1_i/rst_clk_wiz_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0.dcp' for cell 'design_1_i/system_ila_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_uart_aggregator_0_0/design_1_uart_aggregator_0_0.dcp' for cell 'design_1_i/uart_aggregator_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_1/design_1_dlmb_bram_if_cntlr_1.dcp' for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_1/design_1_dlmb_v10_1.dcp' for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_1/design_1_ilmb_bram_if_cntlr_1.dcp' for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_1/design_1_ilmb_v10_1.dcp' for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_1/design_1_lmb_bram_1.dcp' for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/correlator_mt.dcp' for cell 'design_1_i/countCorrelateWrapper_0/U0/correlator'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/correlatorFIFO/correlatorFIFO.dcp' for cell 'design_1_i/uart_aggregator_0/U0/aggregator.correlation_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/intensityFIFO/intensityFIFO.dcp' for cell 'design_1_i/uart_aggregator_0/U0/aggregator.intensity_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil/Vivado-14564-JohnWorkstat/uart_fifo/uart_fifo.dcp' for cell 'design_1_i/uart_aggregator_0/U0/main_fifo'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.605 . Memory (MB): peak = 2670.828 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2813 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1.xdc] for cell 'design_1_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1.xdc] for cell 'design_1_i/microblaze_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_1/design_1_microblaze_0_axi_intc_1.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_1/design_1_microblaze_0_axi_intc_1.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_100M_0/design_1_rst_clk_wiz_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_100M/U0'
+CRITICAL WARNING: [Constraints 18-638] Undefined BOARD_PART property for current project while applying board-derived constraints. [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_100M_0/design_1_rst_clk_wiz_100M_0_board.xdc:3]
+Resolution: Please set the correct BOARD_PART property for the current project and reapply the constraints.
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_100M_0/design_1_rst_clk_wiz_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_100M/U0'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_100M_0/design_1_rst_clk_wiz_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_100M/U0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_100M_0/design_1_rst_clk_wiz_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_100M/U0'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_i/system_ila_0/U0/ila_lib/U0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_i/system_ila_0/U0/ila_lib/U0'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/uart_fifo/uart_fifo.xdc] for cell 'design_1_i/uart_aggregator_0/U0/main_fifo/U0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/uart_fifo/uart_fifo.xdc] for cell 'design_1_i/uart_aggregator_0/U0/main_fifo/U0'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/correlatorFIFO/correlatorFIFO.xdc] for cell 'design_1_i/uart_aggregator_0/U0/aggregator.correlation_fifo/U0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/correlatorFIFO/correlatorFIFO.xdc] for cell 'design_1_i/uart_aggregator_0/U0/aggregator.correlation_fifo/U0'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/intensityFIFO/intensityFIFO.xdc] for cell 'design_1_i/uart_aggregator_0/U0/aggregator.intensity_fifo/U0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/intensityFIFO/intensityFIFO.xdc] for cell 'design_1_i/uart_aggregator_0/U0/aggregator.intensity_fifo/U0'
+ERROR: [Common 17-1293] The path 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil' already exists, is a directory, but is not writable.
+Parsing XDC File [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/imports/new/Arty-A7-100-Master.xdc]
+Finished Parsing XDC File [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/imports/new/Arty-A7-100-Master.xdc]
+Parsing XDC File [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc:3]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc:8]
+Finished Parsing XDC File [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+ERROR: [Common 17-1293] The path 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil' already exists, is a directory, but is not writable.
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_1/design_1_microblaze_0_axi_intc_1_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_1/design_1_microblaze_0_axi_intc_1_clocks.xdc] for cell 'design_1_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_mdm_1_1/design_1_mdm_1_1.xdc] for cell 'design_1_i/mdm_1/U0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_mdm_1_1/design_1_mdm_1_1.xdc] for cell 'design_1_i/mdm_1/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_mdm_1_1/design_1_mdm_1_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 5 XPM XDC files have been applied to the design.
+ERROR: [Common 17-1293] The path 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/.Xil' already exists, is a directory, but is not writable.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2827.805 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 299 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 168 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 32 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 19 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 3003.816 ; gain = 332.988
+104 Infos, 104 Warnings, 1 Critical Warnings and 3 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 3003.816 ; gain = 332.988
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 24 22:10:56 2025...

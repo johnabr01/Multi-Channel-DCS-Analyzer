@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../full_dcs_system.gen/sources_1/ip/uint32_to_single/sim/uint32_to_single.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

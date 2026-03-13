@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../full_dcs_system.srcs/sources_1/new/correlator_write_controller.vhd" \
+"../../../../full_dcs_system.srcs/sim_1/new/correlator_write_tstbench.vhd" \
+
+# Do not sort compile order
+nosort

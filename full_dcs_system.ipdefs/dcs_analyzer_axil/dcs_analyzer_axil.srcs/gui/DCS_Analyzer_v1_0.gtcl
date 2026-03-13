@@ -1,0 +1,2 @@
+# This file is automatically written.  Do not modify.
+proc gen_USERPARAMETER_C_S_AXI_ADDR_WIDTH_VALUE {correlation_length } {expr ceil(log(($correlation_length * 2 + 15)*4)/log(2))}

@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../full_dcs_system.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../full_dcs_system.gen/sources_1/bd/design_1/ipshared/4e49" \
+"../../../../full_dcs_system.gen/sources_1/ip/single_divide_fast/sim/single_divide_fast.v" \
+"../../../../full_dcs_system.gen/sources_1/ip/single_multiply/sim/single_multiply.v" \
+"../../../../full_dcs_system.gen/sources_1/ip/uint32_to_single/sim/uint32_to_single.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

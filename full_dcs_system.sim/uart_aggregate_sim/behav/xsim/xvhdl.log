@@ -1,0 +1,16 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Christopher/Desktop/Research/full_dcs_system/full_dcs_system.srcs/sources_1/imports/rtl/comp/uart_clk_div.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'UART_CLK_DIV'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Christopher/Desktop/Research/full_dcs_system/full_dcs_system.srcs/sources_1/imports/rtl/comp/uart_debouncer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'UART_DEBOUNCER'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Christopher/Desktop/Research/full_dcs_system/full_dcs_system.srcs/sources_1/imports/rtl/comp/uart_parity.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'UART_PARITY'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Christopher/Desktop/Research/full_dcs_system/full_dcs_system.srcs/sources_1/imports/rtl/comp/uart_rx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'UART_RX'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Christopher/Desktop/Research/full_dcs_system/full_dcs_system.srcs/sources_1/imports/rtl/comp/uart_tx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'UART_TX'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Christopher/Desktop/Research/full_dcs_system/full_dcs_system.srcs/sources_1/imports/rtl/uart.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'UART'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Christopher/Desktop/Research/full_dcs_system/full_dcs_system.srcs/sources_1/new/uart_aggregator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart_aggregator'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Christopher/Desktop/Research/full_dcs_system/full_dcs_system.srcs/uart_aggregate_sim/new/uart_aggregate_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart_aggregate_test'

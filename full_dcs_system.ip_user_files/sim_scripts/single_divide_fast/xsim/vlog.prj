@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../full_dcs_system.gen/sources_1/ip/single_divide_fast/sim/single_divide_fast.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

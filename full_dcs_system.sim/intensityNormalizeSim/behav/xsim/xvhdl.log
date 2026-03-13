@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Christopher/Desktop/Research/full_dcs_system/full_dcs_system.srcs/sources_1/new/intensity_normalize.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'intensity_normalize'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Christopher/Desktop/Research/full_dcs_system/full_dcs_system.srcs/sources_1/new/shift_register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'shift_register'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Christopher/Desktop/Research/full_dcs_system/full_dcs_system.srcs/intensityNormalizeSim/new/intensityNormalizeTest.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'intensityNormalizeTest'

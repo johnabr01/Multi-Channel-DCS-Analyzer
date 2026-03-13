@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="intensityRebinTest_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="intensityRebinTest" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="858.334 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,368.335 ns"></ZoomEndTime>
+      <Cursor1Time time="1,100.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="198"></NameColumnWidth>
+      <ValueColumnWidth column_width="78"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/intensityRebinTest/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityRebinTest/resetn" type="logic">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityRebinTest/countInReg" type="array">
+      <obj_property name="ElementShortName">countInReg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">countInReg[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityRebinTest/countInValidReg" type="logic">
+      <obj_property name="ElementShortName">countInValidReg</obj_property>
+      <obj_property name="ObjectShortName">countInValidReg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityRebinTest/intensityOut" type="array">
+      <obj_property name="ElementShortName">intensityOut[15:0]</obj_property>
+      <obj_property name="ObjectShortName">intensityOut[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityRebinTest/intensityOutValid" type="logic">
+      <obj_property name="ElementShortName">intensityOutValid</obj_property>
+      <obj_property name="ObjectShortName">intensityOutValid</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider22">
+      <obj_property name="label">Internal</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityRebinTest/DUT/countIn" type="array">
+      <obj_property name="ElementShortName">countIn[7:0]</obj_property>
+      <obj_property name="ObjectShortName">countIn[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityRebinTest/DUT/countInValid" type="logic">
+      <obj_property name="ElementShortName">countInValid</obj_property>
+      <obj_property name="ObjectShortName">countInValid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityRebinTest/DUT/intensityOut" type="array">
+      <obj_property name="ElementShortName">intensityOut[15:0]</obj_property>
+      <obj_property name="ObjectShortName">intensityOut[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityRebinTest/DUT/intensityOutValid" type="logic">
+      <obj_property name="ElementShortName">intensityOutValid</obj_property>
+      <obj_property name="ObjectShortName">intensityOutValid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityRebinTest/DUT/intensityOutValidLocal" type="logic">
+      <obj_property name="ElementShortName">intensityOutValidLocal</obj_property>
+      <obj_property name="ObjectShortName">intensityOutValidLocal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityRebinTest/DUT/accumulation" type="array">
+      <obj_property name="ElementShortName">accumulation[15:0]</obj_property>
+      <obj_property name="ObjectShortName">accumulation[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityRebinTest/DUT/accumReg" type="array">
+      <obj_property name="ElementShortName">accumReg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">accumReg[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityRebinTest/DUT/rebinCounter" type="array">
+      <obj_property name="ElementShortName">rebinCounter[6:0]</obj_property>
+      <obj_property name="ObjectShortName">rebinCounter[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

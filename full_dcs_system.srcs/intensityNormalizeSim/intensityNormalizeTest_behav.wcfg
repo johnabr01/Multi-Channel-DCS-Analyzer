@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="intensityNormalizeTest_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="intensityNormalizeTest" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="525.303 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,914.349 ns"></ZoomEndTime>
+      <Cursor1Time time="1,710.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="198"></NameColumnWidth>
+      <ValueColumnWidth column_width="78"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="41" />
+   <wvobject fp_name="/intensityNormalizeTest/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/resetn" type="logic">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/countIn" type="array">
+      <obj_property name="ElementShortName">countIn[7:0]</obj_property>
+      <obj_property name="ObjectShortName">countIn[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/countInValid" type="logic">
+      <obj_property name="ElementShortName">countInValid</obj_property>
+      <obj_property name="ObjectShortName">countInValid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/countInLast" type="logic">
+      <obj_property name="ElementShortName">countInLast</obj_property>
+      <obj_property name="ObjectShortName">countInLast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/inputCorrelation" type="array">
+      <obj_property name="ElementShortName">inputCorrelation[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inputCorrelation[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/inputCorrelationValid" type="logic">
+      <obj_property name="ElementShortName">inputCorrelationValid</obj_property>
+      <obj_property name="ObjectShortName">inputCorrelationValid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/inputCorrelationLast" type="logic">
+      <obj_property name="ElementShortName">inputCorrelationLast</obj_property>
+      <obj_property name="ObjectShortName">inputCorrelationLast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/normalizedCorrelation" type="array">
+      <obj_property name="ElementShortName">normalizedCorrelation[31:0]</obj_property>
+      <obj_property name="ObjectShortName">normalizedCorrelation[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/normalizedCorrelationValid" type="logic">
+      <obj_property name="ElementShortName">normalizedCorrelationValid</obj_property>
+      <obj_property name="ObjectShortName">normalizedCorrelationValid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/normalizedCorrelationLast" type="logic">
+      <obj_property name="ElementShortName">normalizedCorrelationLast</obj_property>
+      <obj_property name="ObjectShortName">normalizedCorrelationLast</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider13">
+      <obj_property name="label">Internals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/accumulateandcount/accumulation" type="array">
+      <obj_property name="ElementShortName">accumulation[31:0]</obj_property>
+      <obj_property name="ObjectShortName">accumulation[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/accumulateandcount/count" type="array">
+      <obj_property name="ElementShortName">count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">count[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider159">
+      <obj_property name="label">Divider</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/divider_sharing/dividerNumeratorIn" type="array">
+      <obj_property name="ElementShortName">dividerNumeratorIn[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dividerNumeratorIn[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/divider_sharing/dividerDenomIn" type="array">
+      <obj_property name="ElementShortName">dividerDenomIn[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dividerDenomIn[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/divider_sharing/dividerInputValid" type="logic">
+      <obj_property name="ElementShortName">dividerInputValid</obj_property>
+      <obj_property name="ObjectShortName">dividerInputValid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/divider_sharing/dividerInputLast" type="logic">
+      <obj_property name="ElementShortName">dividerInputLast</obj_property>
+      <obj_property name="ObjectShortName">dividerInputLast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/divider_sharing/dividerOut" type="array">
+      <obj_property name="ElementShortName">dividerOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dividerOut[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/divider_sharing/dividerOutValid" type="logic">
+      <obj_property name="ElementShortName">dividerOutValid</obj_property>
+      <obj_property name="ObjectShortName">dividerOutValid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/divider_sharing/dividerOutLast" type="logic">
+      <obj_property name="ElementShortName">dividerOutLast</obj_property>
+      <obj_property name="ObjectShortName">dividerOutLast</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider166">
+      <obj_property name="label">Square</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/intensityDivideResult" type="array">
+      <obj_property name="ElementShortName">intensityDivideResult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">intensityDivideResult[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/intensityDivideResultValid" type="logic">
+      <obj_property name="ElementShortName">intensityDivideResultValid</obj_property>
+      <obj_property name="ObjectShortName">intensityDivideResultValid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/intensity_squared/squareResult" type="array">
+      <obj_property name="ElementShortName">squareResult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">squareResult[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/intensity_squared/squareResultValid" type="logic">
+      <obj_property name="ElementShortName">squareResultValid</obj_property>
+      <obj_property name="ObjectShortName">squareResultValid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/storedSquareResult" type="array">
+      <obj_property name="ElementShortName">storedSquareResult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">storedSquareResult[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/storedSquareResultValid" type="logic">
+      <obj_property name="ElementShortName">storedSquareResultValid</obj_property>
+      <obj_property name="ObjectShortName">storedSquareResultValid</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider175">
+      <obj_property name="label">To float</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/finalAccumulation" type="array">
+      <obj_property name="ElementShortName">finalAccumulation[31:0]</obj_property>
+      <obj_property name="ObjectShortName">finalAccumulation[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/finalCount" type="array">
+      <obj_property name="ElementShortName">finalCount[31:0]</obj_property>
+      <obj_property name="ObjectShortName">finalCount[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/finalDataValid" type="logic">
+      <obj_property name="ElementShortName">finalDataValid</obj_property>
+      <obj_property name="ObjectShortName">finalDataValid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/floatAccum" type="array">
+      <obj_property name="ElementShortName">floatAccum[31:0]</obj_property>
+      <obj_property name="ObjectShortName">floatAccum[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/floatCount" type="array">
+      <obj_property name="ElementShortName">floatCount[31:0]</obj_property>
+      <obj_property name="ObjectShortName">floatCount[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/floatAccumValid" type="logic">
+      <obj_property name="ElementShortName">floatAccumValid</obj_property>
+      <obj_property name="ObjectShortName">floatAccumValid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/floatCountValid" type="logic">
+      <obj_property name="ElementShortName">floatCountValid</obj_property>
+      <obj_property name="ObjectShortName">floatCountValid</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider219">
+      <obj_property name="label">Delayer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/delayedCorrelation" type="array">
+      <obj_property name="ElementShortName">delayedCorrelation[31:0]</obj_property>
+      <obj_property name="ObjectShortName">delayedCorrelation[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/delayedCorrelationValid" type="logic">
+      <obj_property name="ElementShortName">delayedCorrelationValid</obj_property>
+      <obj_property name="ObjectShortName">delayedCorrelationValid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/intensityNormalizeTest/DUT/delayedCorrelationLast" type="logic">
+      <obj_property name="ElementShortName">delayedCorrelationLast</obj_property>
+      <obj_property name="ObjectShortName">delayedCorrelationLast</obj_property>
+   </wvobject>
+</wave_config>

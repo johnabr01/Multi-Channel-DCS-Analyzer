@@ -1,0 +1,8 @@
+verilog xil_defaultlib  \
+"../../../../full_dcs_system.gen/sources_1/ip/correlator_mt/ip/single_divider/sim/single_divider.v" \
+"../../../../full_dcs_system.gen/sources_1/ip/correlator_mt/ip/int32_to_single/sim/int32_to_single.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

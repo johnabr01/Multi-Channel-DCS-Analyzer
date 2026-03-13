@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../full_dcs_system.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../full_dcs_system.gen/sources_1/bd/design_1/ipshared/4e49" \
+"../../../../full_dcs_system.ip_user_files/ip/uart_fifo/sim/uart_fifo.v" \
+"../../../../full_dcs_system.ip_user_files/ip/correlatorFIFO/sim/correlatorFIFO.v" \
+"../../../../full_dcs_system.gen/sources_1/ip/intensityFIFO/sim/intensityFIFO.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../full_dcs_system.srcs/sources_1/imports/rtl/comp/uart_clk_div.vhd" \
+"../../../../full_dcs_system.srcs/sources_1/imports/rtl/comp/uart_debouncer.vhd" \
+"../../../../full_dcs_system.srcs/sources_1/imports/rtl/comp/uart_parity.vhd" \
+"../../../../full_dcs_system.srcs/sources_1/imports/rtl/comp/uart_rx.vhd" \
+"../../../../full_dcs_system.srcs/sources_1/imports/rtl/comp/uart_tx.vhd" \
+"../../../../full_dcs_system.srcs/sources_1/imports/rtl/uart.vhd" \
+"../../../../full_dcs_system.srcs/sources_1/new/uart_aggregator.vhd" \
+"../../../../full_dcs_system.srcs/uart_aggregate_sim/new/uart_aggregate_test.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Jun 23 13:43:11 2023
+# Process ID: 109332
+# Current directory: C:/Users/Christopher/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent129600
+# Log file: C:/Users/Christopher/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/Christopher/AppData/Roaming/Xilinx/Vivado\vivado.jou
+# Running On: Topher-Spectre, OS: Windows, CPU Frequency: 1992 MHz, CPU Physical cores: 4, Host memory: 17013 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Christopher/Desktop/Research/full_dcs_system/full_dcs_system.xpr
+update_compile_order -fileset sources_1
+open_run impl_1
+report_ssn -name ssn_1
+report_operating_conditions -grade -return_string
+report_utilization -name utilization_1
+archive_project C:/Users/Christopher/Desktop/full_dcs_system_6_23_23.xpr.zip -temp_dir C:/Users/Christopher/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-109332-Topher-Spectre -force -include_local_ip_cache

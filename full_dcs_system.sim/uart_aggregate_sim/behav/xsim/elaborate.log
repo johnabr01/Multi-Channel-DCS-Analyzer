@@ -1,0 +1,44 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot uart_aggregate_test_behav xil_defaultlib.uart_aggregate_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.env
+Compiling package ieee.math_real
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture rtl of entity xil_defaultlib.UART_DEBOUNCER [uart_debouncer_default]
+Compiling architecture rtl of entity xil_defaultlib.UART_CLK_DIV [\UART_CLK_DIV(div_max_val=2)\]
+Compiling architecture rtl of entity xil_defaultlib.UART_PARITY [\UART_PARITY(parity_type="odd")(...]
+Compiling architecture rtl of entity xil_defaultlib.UART_CLK_DIV [\UART_CLK_DIV(div_mark_pos=3)\]
+Compiling architecture rtl of entity xil_defaultlib.UART_RX [\UART_RX(parity_bit="odd")(1,3)\]
+Compiling architecture rtl of entity xil_defaultlib.UART_CLK_DIV [uart_clk_div_default]
+Compiling architecture rtl of entity xil_defaultlib.UART_TX [\UART_TX(parity_bit="odd")(1,3)\]
+Compiling architecture rtl of entity xil_defaultlib.UART [\UART(clk_freq=100000000,baud_ra...]
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_s...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_p...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
+Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.intensityFIFO
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_s...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_p...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
+Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.correlatorFIFO
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_s...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_p...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
+Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.uart_fifo
+Compiling architecture behavioral of entity xil_defaultlib.uart_aggregator [\uart_aggregator(correlationleng...]
+Compiling architecture behavioral of entity xil_defaultlib.uart_aggregate_test
+Built simulation snapshot uart_aggregate_test_behav
