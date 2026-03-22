@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
---Date        : Fri Feb 27 15:08:22 2026
+--Date        : Fri Mar  6 15:06:47 2026
 --Host        : JohnWorkstat running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -2538,7 +2538,6 @@ architecture STRUCTURE of design_1 is
   port (
     clk_in1_p : in STD_LOGIC;
     clk_in1_n : in STD_LOGIC;
-    reset : in STD_LOGIC;
     clk100MHz : out STD_LOGIC;
     clk300MHz : out STD_LOGIC;
     locked : out STD_LOGIC
@@ -2724,23 +2723,6 @@ architecture STRUCTURE of design_1 is
     S_AXI_RREADY : in STD_LOGIC
   );
   end component design_1_DCS_Analyzer_0_0;
-  component design_1_countCorrelateWrapper_0_0 is
-  port (
-    clk100MHz : in STD_LOGIC;
-    clk300MHz : in STD_LOGIC;
-    resetn : in STD_LOGIC;
-    detectorIn : in STD_LOGIC;
-    dataOut : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    addressOut : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    writeEnable : out STD_LOGIC;
-    interrupt : out STD_LOGIC;
-    countOut : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    countOutValid : out STD_LOGIC;
-    correlationOut : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    correlationOutValid : out STD_LOGIC;
-    correlationOutLast : out STD_LOGIC
-  );
-  end component design_1_countCorrelateWrapper_0_0;
   component design_1_system_ila_0_0 is
   port (
     clk : in STD_LOGIC;
@@ -2787,6 +2769,23 @@ architecture STRUCTURE of design_1 is
     error : out STD_LOGIC
   );
   end component design_1_uart_aggregator_0_0;
+  component design_1_countCorrelateWrapper_0_0 is
+  port (
+    clk100MHz : in STD_LOGIC;
+    clk300MHz : in STD_LOGIC;
+    resetn : in STD_LOGIC;
+    detectorIn : in STD_LOGIC;
+    dataOut : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    addressOut : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    writeEnable : out STD_LOGIC;
+    interrupt : out STD_LOGIC;
+    countOut : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    countOutValid : out STD_LOGIC;
+    correlationOut : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    correlationOutValid : out STD_LOGIC;
+    correlationOutLast : out STD_LOGIC
+  );
+  end component design_1_countCorrelateWrapper_0_0;
   signal DCS_Analyzer_0_interrupt : STD_LOGIC;
   attribute MARK_DEBUG : boolean;
   attribute MARK_DEBUG of DCS_Analyzer_0_interrupt : signal is std.standard.true;
@@ -3114,8 +3113,7 @@ clk_wiz_0: component design_1_clk_wiz_0_0
       clk300MHz => clk300MHz,
       clk_in1_n => sys_clkn_1,
       clk_in1_p => sys_clkp_1,
-      locked => clk_wiz_0_locked,
-      reset => '0'
+      locked => clk_wiz_0_locked
     );
 correlation_bram: component design_1_axi_bram_ctrl_0_bram_0
      port map (

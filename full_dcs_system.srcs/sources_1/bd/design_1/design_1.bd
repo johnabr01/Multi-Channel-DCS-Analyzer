@@ -2,7 +2,7 @@
   "design": {
     "design_info": {
       "boundary_crc": "0x45D4DCC3DDB2D025",
-      "device": "xc7a75tfgg484-3",
+      "device": "xc7a75tfgg484-1",
       "gen_directory": "../../../../full_dcs_system.gen/sources_1/bd/design_1",
       "name": "design_1",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
@@ -18,6 +18,7 @@
         "ilmb_v10": "",
         "lmb_bram": ""
       },
+      "DCS_Analyzer_0": "",
       "correlator_bram_ctrl": "",
       "correlation_bram": "",
       "analyzer_fifo": "",
@@ -40,10 +41,9 @@
       },
       "interrupt_concat": "",
       "rst_clk_wiz_100M": "",
-      "DCS_Analyzer_0": "",
       "system_ila_0": "",
-      "uart_aggregator_0": "",
-      "countCorrelateWrapper_0": ""
+      "countCorrelateWrapper_0": "",
+      "uart_aggregator_0": ""
     },
     "ports": {
       "sys_clkp": {
@@ -51,7 +51,7 @@
         "direction": "I",
         "parameters": {
           "CLK_DOMAIN": {
-            "value": "design_1_sys_clock_pin",
+            "value": "design_1_sys_clkp",
             "value_src": "default"
           },
           "FREQ_HZ": {
@@ -294,6 +294,24 @@
           }
         }
       },
+      "DCS_Analyzer_0": {
+        "vlnv": "xilinx.com:user:DCS_Analyzer:1.0",
+        "xci_name": "design_1_DCS_Analyzer_0_0",
+        "xci_path": "ip\\design_1_DCS_Analyzer_0_0\\design_1_DCS_Analyzer_0_0.xci",
+        "inst_hier_path": "DCS_Analyzer_0",
+        "parameters": {
+          "correlation_length": {
+            "value": "64"
+          }
+        },
+        "interface_ports": {
+          "S_AXI": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Slave",
+            "memory_map_ref": "S_AXI"
+          }
+        }
+      },
       "correlator_bram_ctrl": {
         "vlnv": "xilinx.com:ip:axi_bram_ctrl:4.1",
         "xci_name": "design_1_axi_bram_ctrl_0_0",
@@ -515,6 +533,10 @@
               "PHASE": {
                 "value": "0.0",
                 "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_wiz_0_0_clk100MHz",
+                "value_src": "default_prop"
               }
             }
           },
@@ -1418,24 +1440,6 @@
         "xci_path": "ip\\design_1_rst_clk_wiz_100M_0\\design_1_rst_clk_wiz_100M_0.xci",
         "inst_hier_path": "rst_clk_wiz_100M"
       },
-      "DCS_Analyzer_0": {
-        "vlnv": "xilinx.com:user:DCS_Analyzer:1.0",
-        "xci_name": "design_1_DCS_Analyzer_0_0",
-        "xci_path": "ip\\design_1_DCS_Analyzer_0_0\\design_1_DCS_Analyzer_0_0.xci",
-        "inst_hier_path": "DCS_Analyzer_0",
-        "parameters": {
-          "correlation_length": {
-            "value": "64"
-          }
-        },
-        "interface_ports": {
-          "S_AXI": {
-            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-            "mode": "Slave",
-            "memory_map_ref": "S_AXI"
-          }
-        }
-      },
       "system_ila_0": {
         "vlnv": "xilinx.com:ip:system_ila:1.1",
         "xci_name": "design_1_system_ila_0_0",
@@ -1520,159 +1524,6 @@
           }
         }
       },
-      "uart_aggregator_0": {
-        "vlnv": "xilinx.com:module_ref:uart_aggregator:1.0",
-        "xci_name": "design_1_uart_aggregator_0_0",
-        "xci_path": "ip\\design_1_uart_aggregator_0_0\\design_1_uart_aggregator_0_0.xci",
-        "inst_hier_path": "uart_aggregator_0",
-        "parameters": {
-          "correlationLength": {
-            "value": "64"
-          }
-        },
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "uart_aggregator",
-          "boundary_crc": "0x0"
-        },
-        "interface_ports": {
-          "analyzerFIFOInput": {
-            "mode": "Slave",
-            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-            "vlnv": "xilinx.com:interface:axis_rtl:1.0",
-            "parameters": {
-              "TDATA_NUM_BYTES": {
-                "value": "4",
-                "value_src": "constant"
-              },
-              "TDEST_WIDTH": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "TID_WIDTH": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "TUSER_WIDTH": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "HAS_TREADY": {
-                "value": "1",
-                "value_src": "constant"
-              },
-              "HAS_TSTRB": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "HAS_TKEEP": {
-                "value": "0",
-                "value_src": "constant"
-              },
-              "HAS_TLAST": {
-                "value": "1",
-                "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "ip_prop"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              }
-            },
-            "port_maps": {
-              "TDATA": {
-                "physical_name": "analyzerIn",
-                "direction": "I",
-                "left": "31",
-                "right": "0"
-              },
-              "TLAST": {
-                "physical_name": "analyzerInLast",
-                "direction": "I"
-              },
-              "TVALID": {
-                "physical_name": "analyzerInValid",
-                "direction": "I"
-              },
-              "TREADY": {
-                "physical_name": "analyzerInReady",
-                "direction": "O"
-              }
-            }
-          }
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "ASSOCIATED_BUSIF": {
-                "value": "analyzerFIFOInput",
-                "value_src": "constant"
-              },
-              "ASSOCIATED_RESET": {
-                "value": "resetn",
-                "value_src": "constant"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "ip_prop"
-              },
-              "PHASE": {
-                "value": "0.0",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "resetn": {
-            "type": "rst",
-            "direction": "I",
-            "parameters": {
-              "POLARITY": {
-                "value": "ACTIVE_LOW",
-                "value_src": "constant"
-              }
-            }
-          },
-          "UART_TX": {
-            "direction": "O"
-          },
-          "UART_RX": {
-            "direction": "I"
-          },
-          "intensityIn": {
-            "direction": "I",
-            "left": "15",
-            "right": "0"
-          },
-          "intensityInValid": {
-            "direction": "I"
-          },
-          "correlationIn": {
-            "direction": "I",
-            "left": "31",
-            "right": "0"
-          },
-          "correlationInValid": {
-            "direction": "I"
-          },
-          "correlationInLast": {
-            "direction": "I"
-          },
-          "start": {
-            "direction": "O"
-          },
-          "stop": {
-            "direction": "O"
-          },
-          "error": {
-            "direction": "O"
-          }
-        }
-      },
       "countCorrelateWrapper_0": {
         "vlnv": "xilinx.com:module_ref:countCorrelateWrapper:1.0",
         "xci_name": "design_1_countCorrelateWrapper_0_0",
@@ -1696,7 +1547,7 @@
                 "value_src": "ip_prop"
               },
               "CLK_DOMAIN": {
-                "value": "/clk_wiz_0_clk_out1",
+                "value": "design_1_clk_wiz_0_0_clk100MHz",
                 "value_src": "default_prop"
               }
             }
@@ -1713,7 +1564,7 @@
                 "value_src": "ip_prop"
               },
               "CLK_DOMAIN": {
-                "value": "/clk_wiz_0_clk_out1",
+                "value": "design_1_clk_wiz_0_0_clk100MHz",
                 "value_src": "ip_prop"
               }
             }
@@ -1775,6 +1626,167 @@
             "direction": "O"
           },
           "correlationOutLast": {
+            "direction": "O"
+          }
+        }
+      },
+      "uart_aggregator_0": {
+        "vlnv": "xilinx.com:module_ref:uart_aggregator:1.0",
+        "xci_name": "design_1_uart_aggregator_0_0",
+        "xci_path": "ip\\design_1_uart_aggregator_0_0\\design_1_uart_aggregator_0_0.xci",
+        "inst_hier_path": "uart_aggregator_0",
+        "parameters": {
+          "correlationLength": {
+            "value": "64"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "uart_aggregator",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "analyzerFIFOInput": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+            "parameters": {
+              "TDATA_NUM_BYTES": {
+                "value": "4",
+                "value_src": "constant"
+              },
+              "TDEST_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TID_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TUSER_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TREADY": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "HAS_TSTRB": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TKEEP": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TLAST": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_wiz_0_0_clk100MHz",
+                "value_src": "default_prop"
+              }
+            },
+            "port_maps": {
+              "TDATA": {
+                "physical_name": "analyzerIn",
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "TLAST": {
+                "physical_name": "analyzerInLast",
+                "direction": "I"
+              },
+              "TVALID": {
+                "physical_name": "analyzerInValid",
+                "direction": "I"
+              },
+              "TREADY": {
+                "physical_name": "analyzerInReady",
+                "direction": "O"
+              }
+            }
+          }
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_BUSIF": {
+                "value": "analyzerFIFOInput",
+                "value_src": "constant"
+              },
+              "ASSOCIATED_RESET": {
+                "value": "resetn",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_wiz_0_0_clk100MHz",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "resetn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "UART_TX": {
+            "direction": "O"
+          },
+          "UART_RX": {
+            "direction": "I"
+          },
+          "intensityIn": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "intensityInValid": {
+            "direction": "I"
+          },
+          "correlationIn": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "correlationInValid": {
+            "direction": "I"
+          },
+          "correlationInLast": {
+            "direction": "I"
+          },
+          "start": {
+            "direction": "O"
+          },
+          "stop": {
+            "direction": "O"
+          },
+          "error": {
             "direction": "O"
           }
         }
@@ -1904,6 +1916,7 @@
         "ports": [
           "clk_wiz_0/clk100MHz",
           "microblaze_0_local_memory/LMB_Clk",
+          "DCS_Analyzer_0/S_AXI_ACLK",
           "correlator_bram_ctrl/s_axi_aclk",
           "correlation_bram/clkb",
           "analyzer_fifo/s_axi_aclk",
@@ -1920,10 +1933,9 @@
           "microblaze_0_axi_periph/M03_ACLK",
           "microblaze_0_axi_periph/M04_ACLK",
           "rst_clk_wiz_100M/slowest_sync_clk",
-          "DCS_Analyzer_0/S_AXI_ACLK",
           "system_ila_0/clk",
-          "uart_aggregator_0/clk",
-          "countCorrelateWrapper_0/clk100MHz"
+          "countCorrelateWrapper_0/clk100MHz",
+          "uart_aggregator_0/clk"
         ]
       },
       "clk300MHz": {
@@ -2144,6 +2156,7 @@
       "rst_clk_wiz_100M_peripheral_aresetn": {
         "ports": [
           "rst_clk_wiz_100M/peripheral_aresetn",
+          "DCS_Analyzer_0/S_AXI_ARESETN",
           "correlator_bram_ctrl/s_axi_aresetn",
           "analyzer_fifo/s_axi_aresetn",
           "intensityRebin_0/resetn",
@@ -2156,10 +2169,9 @@
           "microblaze_0_axi_periph/M02_ARESETN",
           "microblaze_0_axi_periph/M03_ARESETN",
           "microblaze_0_axi_periph/M04_ARESETN",
-          "DCS_Analyzer_0/S_AXI_ARESETN",
           "system_ila_0/resetn",
-          "uart_aggregator_0/resetn",
-          "countCorrelateWrapper_0/resetn"
+          "countCorrelateWrapper_0/resetn",
+          "uart_aggregator_0/resetn"
         ]
       },
       "sys_clkn_1": {

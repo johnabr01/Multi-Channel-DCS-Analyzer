@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Mon Feb 23 07:11:39 2026
+// Date        : Fri Mar  6 15:08:00 2026
 // Host        : JohnWorkstat running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top design_1_clk_wiz_0_0 -prefix
 //               design_1_clk_wiz_0_0_ design_1_clk_wiz_0_0_sim_netlist.v
@@ -17,13 +17,11 @@
 module design_1_clk_wiz_0_0
    (clk100MHz,
     clk300MHz,
-    reset,
     locked,
     clk_in1_p,
     clk_in1_n);
   output clk100MHz;
   output clk300MHz;
-  input reset;
   output locked;
   input clk_in1_p;
   input clk_in1_n;
@@ -33,27 +31,23 @@ module design_1_clk_wiz_0_0
   (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) wire clk_in1_n;
   (* DIFF_TERM = 0 *) (* IBUF_LOW_PWR *) wire clk_in1_p;
   wire locked;
-  wire reset;
 
   design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz inst
        (.clk100MHz(clk100MHz),
         .clk300MHz(clk300MHz),
         .clk_in1_n(clk_in1_n),
         .clk_in1_p(clk_in1_p),
-        .locked(locked),
-        .reset(reset));
+        .locked(locked));
 endmodule
 
 module design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz
    (clk100MHz,
     clk300MHz,
-    reset,
     locked,
     clk_in1_p,
     clk_in1_n);
   output clk100MHz;
   output clk300MHz;
-  input reset;
   output locked;
   input clk_in1_p;
   input clk_in1_n;
@@ -68,7 +62,6 @@ module design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz
   wire clkfbout_buf_design_1_clk_wiz_0_0;
   wire clkfbout_design_1_clk_wiz_0_0;
   wire locked;
-  wire reset;
   wire NLW_plle2_adv_inst_CLKOUT2_UNCONNECTED;
   wire NLW_plle2_adv_inst_CLKOUT3_UNCONNECTED;
   wire NLW_plle2_adv_inst_CLKOUT4_UNCONNECTED;
@@ -152,7 +145,7 @@ module design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz
         .DWE(1'b0),
         .LOCKED(locked),
         .PWRDWN(1'b0),
-        .RST(reset));
+        .RST(1'b0));
 endmodule
 `ifndef GLBL
 `define GLBL

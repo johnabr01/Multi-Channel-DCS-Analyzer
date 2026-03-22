@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Mar 18 22:11:08 2026
+# Process ID: 2448
+# Current directory: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/uart_fifo_synth_1
+# Command line: vivado.exe -log uart_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_fifo.tcl
+# Log file: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/uart_fifo_synth_1/uart_fifo.vds
+# Journal file: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/uart_fifo_synth_1\vivado.jou
+# Running On: JohnWorkstat, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 29706 MB
+#-----------------------------------------------------------
+source uart_fifo.tcl -notrace

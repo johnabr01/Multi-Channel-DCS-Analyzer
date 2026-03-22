@@ -2,14 +2,14 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Fri Mar  6 15:08:01 2026
+// Date        : Sat Mar 21 00:37:53 2026
 // Host        : JohnWorkstat running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_uart_aggregator_0_0/design_1_uart_aggregator_0_0_sim_netlist.v
 // Design      : design_1_uart_aggregator_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
-// Device      : xc7a75tfgg484-3
+// Device      : xc7a75tfgg484-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
@@ -33,7 +33,7 @@ module design_1_uart_aggregator_0_0
     start,
     stop,
     error);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF analyzerFIFOInput, ASSOCIATED_RESET resetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input clk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF analyzerFIFOInput, ASSOCIATED_RESET resetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_0_clk100MHz, INSERT_VIP 0" *) input clk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 resetn RST" *) (* x_interface_parameter = "XIL_INTERFACENAME resetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input resetn;
   output UART_TX;
   input UART_RX;
@@ -42,7 +42,7 @@ module design_1_uart_aggregator_0_0
   input [31:0]correlationIn;
   input correlationInValid;
   input correlationInLast;
-  (* x_interface_info = "xilinx.com:interface:axis:1.0 analyzerFIFOInput TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME analyzerFIFOInput, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0" *) input [31:0]analyzerIn;
+  (* x_interface_info = "xilinx.com:interface:axis:1.0 analyzerFIFOInput TDATA" *) (* x_interface_parameter = "XIL_INTERFACENAME analyzerFIFOInput, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_0_clk100MHz, LAYERED_METADATA undef, INSERT_VIP 0" *) input [31:0]analyzerIn;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 analyzerFIFOInput TVALID" *) input analyzerInValid;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 analyzerFIFOInput TLAST" *) input analyzerInLast;
   (* x_interface_info = "xilinx.com:interface:axis:1.0 analyzerFIFOInput TREADY" *) output analyzerInReady;

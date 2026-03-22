@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Fri Mar  6 15:08:21 2026
-# Process ID: 16352
+# Start of session at: Sat Mar 21 22:31:05 2026
+# Process ID: 28280
 # Current directory: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/design_1_wrapper.vds
@@ -18,54 +18,54 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/johny/BOILresearch/f
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.cache/ip 
-add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 570.480 ; gain = 88.074
-Command: synth_design -top design_1_wrapper -part xc7a75tfgg484-3
+add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 571.000 ; gain = 88.348
+Command: synth_design -top design_1_wrapper -part xc7a75tfgg484-1 -incremental_mode off
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a75t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a75t'
-INFO: [Device 21-403] Loading part xc7a75tfgg484-3
+INFO: [Device 21-403] Loading part xc7a75tfgg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16480
+INFO: [Synth 8-7075] Helper process launched with PID 16596
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1388.137 ; gain = 408.230
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1384.168 ; gain = 408.934
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/imports/design_1_wrapper.vhd:25]
 INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:2428' bound to instance 'design_1_i' of component 'design_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/imports/design_1_wrapper.vhd:37]
 INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:2443]
-INFO: [Synth 8-3491] module 'design_1_DCS_Analyzer_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_DCS_Analyzer_0_0_stub.vhdl:6' bound to instance 'DCS_Analyzer_0' of component 'design_1_DCS_Analyzer_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3057]
-INFO: [Synth 8-638] synthesizing module 'design_1_DCS_Analyzer_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_DCS_Analyzer_0_0_stub.vhdl:34]
-INFO: [Synth 8-3491] module 'design_1_axi_fifo_mm_s_0_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_axi_fifo_mm_s_0_1_stub.vhdl:6' bound to instance 'analyzer_fifo' of component 'design_1_axi_fifo_mm_s_0_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3082]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_fifo_mm_s_0_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_axi_fifo_mm_s_0_1_stub.vhdl:37]
-INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_clk_wiz_0_0_stub.vhdl:6' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3110]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_clk_wiz_0_0_stub.vhdl:17]
-INFO: [Synth 8-3491] module 'design_1_axi_bram_ctrl_0_bram_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.vhdl:6' bound to instance 'correlation_bram' of component 'design_1_axi_bram_ctrl_0_bram_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3118]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_bram_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.vhdl:28]
-INFO: [Synth 8-3491] module 'design_1_axi_bram_ctrl_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_axi_bram_ctrl_0_0_stub.vhdl:6' bound to instance 'correlator_bram_ctrl' of component 'design_1_axi_bram_ctrl_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3141]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_axi_bram_ctrl_0_0_stub.vhdl:52]
-INFO: [Synth 8-3491] module 'design_1_countCorrelateWrapper_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_countCorrelateWrapper_0_0_stub.vhdl:6' bound to instance 'countCorrelateWrapper_0' of component 'design_1_countCorrelateWrapper_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3184]
-INFO: [Synth 8-638] synthesizing module 'design_1_countCorrelateWrapper_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_countCorrelateWrapper_0_0_stub.vhdl:25]
-INFO: [Synth 8-3491] module 'design_1_intensityRebin_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_intensityRebin_0_0_stub.vhdl:6' bound to instance 'intensityRebin_0' of component 'design_1_intensityRebin_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3200]
-INFO: [Synth 8-638] synthesizing module 'design_1_intensityRebin_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_intensityRebin_0_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_DCS_Analyzer_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_DCS_Analyzer_0_0_stub.vhdl:6' bound to instance 'DCS_Analyzer_0' of component 'design_1_DCS_Analyzer_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3057]
+INFO: [Synth 8-638] synthesizing module 'design_1_DCS_Analyzer_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_DCS_Analyzer_0_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'design_1_axi_fifo_mm_s_0_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_axi_fifo_mm_s_0_1_stub.vhdl:6' bound to instance 'analyzer_fifo' of component 'design_1_axi_fifo_mm_s_0_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3082]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_fifo_mm_s_0_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_axi_fifo_mm_s_0_1_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_clk_wiz_0_0_stub.vhdl:6' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3110]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_clk_wiz_0_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'design_1_axi_bram_ctrl_0_bram_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.vhdl:6' bound to instance 'correlation_bram' of component 'design_1_axi_bram_ctrl_0_bram_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3118]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_bram_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_axi_bram_ctrl_0_bram_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'design_1_axi_bram_ctrl_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_axi_bram_ctrl_0_0_stub.vhdl:6' bound to instance 'correlator_bram_ctrl' of component 'design_1_axi_bram_ctrl_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3141]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_bram_ctrl_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_axi_bram_ctrl_0_0_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'design_1_countCorrelateWrapper_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_countCorrelateWrapper_0_0_stub.vhdl:6' bound to instance 'countCorrelateWrapper_0' of component 'design_1_countCorrelateWrapper_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3184]
+INFO: [Synth 8-638] synthesizing module 'design_1_countCorrelateWrapper_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_countCorrelateWrapper_0_0_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'design_1_intensityRebin_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_intensityRebin_0_0_stub.vhdl:6' bound to instance 'intensityRebin_0' of component 'design_1_intensityRebin_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3200]
+INFO: [Synth 8-638] synthesizing module 'design_1_intensityRebin_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_intensityRebin_0_0_stub.vhdl:18]
 INFO: [Synth 8-3491] module 'design_1_microblaze_0_xlconcat_1' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_1/synth/design_1_microblaze_0_xlconcat_1.v:53' bound to instance 'interrupt_concat' of component 'design_1_microblaze_0_xlconcat_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3209]
 INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_xlconcat_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_1/synth/design_1_microblaze_0_xlconcat_1.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_xlconcat_1' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_1/synth/design_1_microblaze_0_xlconcat_1.v:53]
-INFO: [Synth 8-3491] module 'design_1_mdm_1_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_mdm_1_1_stub.vhdl:6' bound to instance 'mdm_1' of component 'design_1_mdm_1_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3219]
-INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_mdm_1_1_stub.vhdl:42]
-INFO: [Synth 8-3491] module 'design_1_microblaze_0_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_microblaze_0_1_stub.vhdl:6' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3252]
-INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_microblaze_0_1_stub.vhdl:64]
-INFO: [Synth 8-3491] module 'design_1_microblaze_0_axi_intc_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_microblaze_0_axi_intc_1_stub.vhdl:6' bound to instance 'microblaze_0_axi_intc' of component 'design_1_microblaze_0_axi_intc_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3338]
-INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_intc_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_microblaze_0_axi_intc_1_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_mdm_1_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_mdm_1_1_stub.vhdl:6' bound to instance 'mdm_1' of component 'design_1_mdm_1_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3219]
+INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_mdm_1_1_stub.vhdl:42]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_microblaze_0_1_stub.vhdl:6' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3252]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_microblaze_0_1_stub.vhdl:64]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_axi_intc_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_microblaze_0_axi_intc_1_stub.vhdl:6' bound to instance 'microblaze_0_axi_intc' of component 'design_1_microblaze_0_axi_intc_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3338]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_intc_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_microblaze_0_axi_intc_1_stub.vhdl:37]
 INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_periph_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1530]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_8RVYHO' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:58]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_8RVYHO' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:58]
 INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1UTB3Y5' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:159]
 INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:159]
 INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_7ANRHB' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:276]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_auto_pc_0_stub.vhdl:6' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:446]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_auto_pc_0_stub.vhdl:68]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_auto_pc_0_stub.vhdl:6' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:446]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_auto_pc_0_stub.vhdl:68]
 INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_7ANRHB' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:276]
 INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1W07O72' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:557]
 INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1W07O72' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:557]
@@ -73,29 +73,29 @@ INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_5LX7BU' [c:/Users/john
 INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_5LX7BU' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:664]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1RZP34U' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1327]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1RZP34U' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1327]
-INFO: [Synth 8-3491] module 'design_1_s00_mmu_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_s00_mmu_0_stub.vhdl:6' bound to instance 's00_mmu' of component 'design_1_s00_mmu_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:2263]
-INFO: [Synth 8-638] synthesizing module 'design_1_s00_mmu_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_s00_mmu_0_stub.vhdl:52]
-INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_xbar_0_stub.vhdl:6' bound to instance 'xbar' of component 'design_1_xbar_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:2306]
-INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_xbar_0_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'design_1_s00_mmu_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_s00_mmu_0_stub.vhdl:6' bound to instance 's00_mmu' of component 'design_1_s00_mmu_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:2263]
+INFO: [Synth 8-638] synthesizing module 'design_1_s00_mmu_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_s00_mmu_0_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_xbar_0_stub.vhdl:6' bound to instance 'xbar' of component 'design_1_xbar_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:2306]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_xbar_0_stub.vhdl:52]
 INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_periph_1' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1530]
 INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:748]
-INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_dlmb_bram_if_cntlr_1_stub.vhdl:6' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:962]
-INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_dlmb_bram_if_cntlr_1_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'design_1_dlmb_v10_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_dlmb_v10_1_stub.vhdl:6' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1016]
-INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_dlmb_v10_1_stub.vhdl:37]
-INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_ilmb_bram_if_cntlr_1_stub.vhdl:6' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1044]
-INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_ilmb_bram_if_cntlr_1_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'design_1_ilmb_v10_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_ilmb_v10_1_stub.vhdl:6' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1098]
-INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_ilmb_v10_1_stub.vhdl:37]
-INFO: [Synth 8-3491] module 'design_1_lmb_bram_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_lmb_bram_1_stub.vhdl:6' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1126]
-INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_lmb_bram_1_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_dlmb_bram_if_cntlr_1_stub.vhdl:6' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:962]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_dlmb_bram_if_cntlr_1_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_dlmb_v10_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_dlmb_v10_1_stub.vhdl:6' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1016]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_dlmb_v10_1_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_ilmb_bram_if_cntlr_1_stub.vhdl:6' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1044]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_ilmb_bram_if_cntlr_1_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_ilmb_v10_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_ilmb_v10_1_stub.vhdl:6' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1098]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_ilmb_v10_1_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_lmb_bram_1' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_lmb_bram_1_stub.vhdl:6' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:1126]
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_1' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_lmb_bram_1_stub.vhdl:28]
 INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:748]
-INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_100M_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_rst_clk_wiz_100M_0_stub.vhdl:6' bound to instance 'rst_clk_wiz_100M' of component 'design_1_rst_clk_wiz_100M_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3528]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_100M_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_rst_clk_wiz_100M_0_stub.vhdl:22]
-INFO: [Synth 8-3491] module 'design_1_system_ila_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_system_ila_0_0_stub.vhdl:6' bound to instance 'system_ila_0' of component 'design_1_system_ila_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3541]
-INFO: [Synth 8-638] synthesizing module 'design_1_system_ila_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_system_ila_0_0_stub.vhdl:34]
-INFO: [Synth 8-3491] module 'design_1_uart_aggregator_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_uart_aggregator_0_0_stub.vhdl:6' bound to instance 'uart_aggregator_0' of component 'design_1_uart_aggregator_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3566]
-INFO: [Synth 8-638] synthesizing module 'design_1_uart_aggregator_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-16352-JohnWorkstat/realtime/design_1_uart_aggregator_0_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_100M_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_rst_clk_wiz_100M_0_stub.vhdl:6' bound to instance 'rst_clk_wiz_100M' of component 'design_1_rst_clk_wiz_100M_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3528]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_100M_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_rst_clk_wiz_100M_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'design_1_system_ila_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_system_ila_0_0_stub.vhdl:6' bound to instance 'system_ila_0' of component 'design_1_system_ila_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3541]
+INFO: [Synth 8-638] synthesizing module 'design_1_system_ila_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_system_ila_0_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'design_1_uart_aggregator_0_0' declared at 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_uart_aggregator_0_0_stub.vhdl:6' bound to instance 'uart_aggregator_0' of component 'design_1_uart_aggregator_0_0' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3566]
+INFO: [Synth 8-638] synthesizing module 'design_1_uart_aggregator_0_0' [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/.Xil/Vivado-28280-JohnWorkstat/realtime/design_1_uart_aggregator_0_0_stub.vhdl:28]
 INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:2443]
 INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/imports/design_1_wrapper.vhd:25]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'interrupt_concat'. This will prevent further optimization [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/synth/design_1.vhd:3209]
@@ -201,18 +201,18 @@ WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is eithe
 WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1496.125 ; gain = 516.219
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1492.488 ; gain = 517.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1496.125 ; gain = 516.219
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1492.488 ; gain = 517.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1496.125 ; gain = 516.219
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1492.488 ; gain = 517.254
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1496.125 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1492.488 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -227,6 +227,8 @@ Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_d
 Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_1/design_1_ilmb_v10_1/design_1_ilmb_v10_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
 Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_1/design_1_lmb_bram_1/design_1_lmb_bram_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
 Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_1/design_1_lmb_bram_1/design_1_lmb_bram_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_DCS_Analyzer_0_0/design_1_DCS_Analyzer_0_0/design_1_DCS_Analyzer_0_0_in_context.xdc] for cell 'design_1_i/DCS_Analyzer_0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_DCS_Analyzer_0_0/design_1_DCS_Analyzer_0_0/design_1_DCS_Analyzer_0_0_in_context.xdc] for cell 'design_1_i/DCS_Analyzer_0'
 Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/correlator_bram_ctrl'
 Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_in_context.xdc] for cell 'design_1_i/correlator_bram_ctrl'
 Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0/design_1_axi_bram_ctrl_0_bram_0_in_context.xdc] for cell 'design_1_i/correlation_bram'
@@ -243,149 +245,48 @@ Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_d
 Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1/design_1_microblaze_0_1_in_context.xdc] for cell 'design_1_i/microblaze_0'
 Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_1/design_1_microblaze_0_axi_intc_1/design_1_microblaze_0_axi_intc_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
 Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_1/design_1_microblaze_0_axi_intc_1/design_1_microblaze_0_axi_intc_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
-Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_xbar_0_1/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
-Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_xbar_0_1/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
 Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_pc'
 Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m02_couplers/auto_pc'
 Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_s00_mmu_0/design_1_s00_mmu_0/design_1_s00_mmu_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s00_mmu'
 Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_s00_mmu_0/design_1_s00_mmu_0/design_1_s00_mmu_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/s00_mmu'
 Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_100M_0/design_1_rst_clk_wiz_100M_0/design_1_rst_clk_wiz_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_100M'
 Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_100M_0/design_1_rst_clk_wiz_100M_0/design_1_rst_clk_wiz_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_100M'
-Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_DCS_Analyzer_0_0/design_1_DCS_Analyzer_0_0/design_1_DCS_Analyzer_0_0_in_context.xdc] for cell 'design_1_i/DCS_Analyzer_0'
-Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_DCS_Analyzer_0_0/design_1_DCS_Analyzer_0_0/design_1_DCS_Analyzer_0_0_in_context.xdc] for cell 'design_1_i/DCS_Analyzer_0'
 Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0/design_1_system_ila_0_0_in_context.xdc] for cell 'design_1_i/system_ila_0'
 Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0/design_1_system_ila_0_0_in_context.xdc] for cell 'design_1_i/system_ila_0'
-Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_uart_aggregator_0_0/design_1_uart_aggregator_0_0/design_1_uart_aggregator_0_0_in_context.xdc] for cell 'design_1_i/uart_aggregator_0'
-Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_uart_aggregator_0_0/design_1_uart_aggregator_0_0/design_1_uart_aggregator_0_0_in_context.xdc] for cell 'design_1_i/uart_aggregator_0'
 Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_countCorrelateWrapper_0_0/design_1_countCorrelateWrapper_0_0/design_1_countCorrelateWrapper_0_0_in_context.xdc] for cell 'design_1_i/countCorrelateWrapper_0'
 Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_countCorrelateWrapper_0_0/design_1_countCorrelateWrapper_0_0/design_1_countCorrelateWrapper_0_0_in_context.xdc] for cell 'design_1_i/countCorrelateWrapper_0'
+Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_uart_aggregator_0_0/design_1_uart_aggregator_0_0/design_1_uart_aggregator_0_0_in_context.xdc] for cell 'design_1_i/uart_aggregator_0'
+Finished Parsing XDC File [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_uart_aggregator_0_0/design_1_uart_aggregator_0_0/design_1_uart_aggregator_0_0_in_context.xdc] for cell 'design_1_i/uart_aggregator_0'
 Parsing XDC File [C:/Users/johny/BOILresearch/xem7310.xdc]
-WARNING: [Vivado 12-584] No ports matched 'okHU[0]'. [C:/Users/johny/BOILresearch/xem7310.xdc:18]
-WARNING: [Vivado 12-584] No ports matched 'okHU[1]'. [C:/Users/johny/BOILresearch/xem7310.xdc:19]
-WARNING: [Vivado 12-584] No ports matched 'okHU[2]'. [C:/Users/johny/BOILresearch/xem7310.xdc:20]
-WARNING: [Vivado 12-584] No ports matched 'okHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:21]
-WARNING: [Vivado 12-584] No ports matched 'okHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:22]
-WARNING: [Vivado 12-584] No ports matched 'okUH[0]'. [C:/Users/johny/BOILresearch/xem7310.xdc:24]
-WARNING: [Vivado 12-584] No ports matched 'okUH[1]'. [C:/Users/johny/BOILresearch/xem7310.xdc:25]
-WARNING: [Vivado 12-584] No ports matched 'okUH[2]'. [C:/Users/johny/BOILresearch/xem7310.xdc:26]
-WARNING: [Vivado 12-584] No ports matched 'okUH[3]'. [C:/Users/johny/BOILresearch/xem7310.xdc:27]
-WARNING: [Vivado 12-584] No ports matched 'okUH[4]'. [C:/Users/johny/BOILresearch/xem7310.xdc:28]
-WARNING: [Vivado 12-584] No ports matched 'okUH[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:29]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[0]'. [C:/Users/johny/BOILresearch/xem7310.xdc:31]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[1]'. [C:/Users/johny/BOILresearch/xem7310.xdc:32]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[2]'. [C:/Users/johny/BOILresearch/xem7310.xdc:33]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[3]'. [C:/Users/johny/BOILresearch/xem7310.xdc:34]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[4]'. [C:/Users/johny/BOILresearch/xem7310.xdc:35]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[5]'. [C:/Users/johny/BOILresearch/xem7310.xdc:36]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[6]'. [C:/Users/johny/BOILresearch/xem7310.xdc:37]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[7]'. [C:/Users/johny/BOILresearch/xem7310.xdc:38]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[8]'. [C:/Users/johny/BOILresearch/xem7310.xdc:39]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[9]'. [C:/Users/johny/BOILresearch/xem7310.xdc:40]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[10]'. [C:/Users/johny/BOILresearch/xem7310.xdc:41]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[11]'. [C:/Users/johny/BOILresearch/xem7310.xdc:42]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[12]'. [C:/Users/johny/BOILresearch/xem7310.xdc:43]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[13]'. [C:/Users/johny/BOILresearch/xem7310.xdc:44]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[14]'. [C:/Users/johny/BOILresearch/xem7310.xdc:45]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[15]'. [C:/Users/johny/BOILresearch/xem7310.xdc:46]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[16]'. [C:/Users/johny/BOILresearch/xem7310.xdc:47]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[17]'. [C:/Users/johny/BOILresearch/xem7310.xdc:48]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[18]'. [C:/Users/johny/BOILresearch/xem7310.xdc:49]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[19]'. [C:/Users/johny/BOILresearch/xem7310.xdc:50]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[20]'. [C:/Users/johny/BOILresearch/xem7310.xdc:51]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[21]'. [C:/Users/johny/BOILresearch/xem7310.xdc:52]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[22]'. [C:/Users/johny/BOILresearch/xem7310.xdc:53]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[23]'. [C:/Users/johny/BOILresearch/xem7310.xdc:54]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[24]'. [C:/Users/johny/BOILresearch/xem7310.xdc:55]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[25]'. [C:/Users/johny/BOILresearch/xem7310.xdc:56]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[26]'. [C:/Users/johny/BOILresearch/xem7310.xdc:57]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[27]'. [C:/Users/johny/BOILresearch/xem7310.xdc:58]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[28]'. [C:/Users/johny/BOILresearch/xem7310.xdc:59]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[29]'. [C:/Users/johny/BOILresearch/xem7310.xdc:60]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[30]'. [C:/Users/johny/BOILresearch/xem7310.xdc:61]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[31]'. [C:/Users/johny/BOILresearch/xem7310.xdc:62]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:63]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:64]
-WARNING: [Vivado 12-584] No ports matched 'okAA'. [C:/Users/johny/BOILresearch/xem7310.xdc:66]
-WARNING: [Vivado 12-584] No ports matched 'okAA'. [C:/Users/johny/BOILresearch/xem7310.xdc:67]
-WARNING: [Vivado 12-584] No ports matched 'okUH[0]'. [C:/Users/johny/BOILresearch/xem7310.xdc:70]
-WARNING: [Vivado 12-627] No clocks matched 'okUH0'. [C:/Users/johny/BOILresearch/xem7310.xdc:72]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/xem7310.xdc:72]
-WARNING: [Vivado 12-584] No ports matched 'okUH[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:72]
-WARNING: [Vivado 12-627] No clocks matched 'okUH0'. [C:/Users/johny/BOILresearch/xem7310.xdc:73]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/xem7310.xdc:73]
-WARNING: [Vivado 12-584] No ports matched 'okUH[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:73]
-WARNING: [Vivado 12-584] No ports matched 'okUH[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:74]
-WARNING: [Vivado 12-627] No clocks matched 'okUH0'. [C:/Users/johny/BOILresearch/xem7310.xdc:76]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/xem7310.xdc:76]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:76]
-WARNING: [Vivado 12-627] No clocks matched 'okUH0'. [C:/Users/johny/BOILresearch/xem7310.xdc:77]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/xem7310.xdc:77]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:77]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:78]
-WARNING: [Vivado 12-627] No clocks matched 'okUH0'. [C:/Users/johny/BOILresearch/xem7310.xdc:80]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/xem7310.xdc:80]
-WARNING: [Vivado 12-584] No ports matched 'okHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:80]
-WARNING: [Vivado 12-627] No clocks matched 'okUH0'. [C:/Users/johny/BOILresearch/xem7310.xdc:81]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/xem7310.xdc:81]
-WARNING: [Vivado 12-584] No ports matched 'okHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:81]
-WARNING: [Vivado 12-627] No clocks matched 'okUH0'. [C:/Users/johny/BOILresearch/xem7310.xdc:83]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/xem7310.xdc:83]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:83]
-WARNING: [Vivado 12-627] No clocks matched 'okUH0'. [C:/Users/johny/BOILresearch/xem7310.xdc:84]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/xem7310.xdc:84]
-WARNING: [Vivado 12-584] No ports matched 'okUHU[*]'. [C:/Users/johny/BOILresearch/xem7310.xdc:84]
-CRITICAL WARNING: [Constraints 18-1055] Clock 'sys_clk' completely overrides clock 'sys_clkp', which is referenced by one or more other constraints. Any constraints that refer to the overridden clock will be ignored.
-New: create_clock -period 5.000 -name sys_clk [get_ports sys_clkp], [C:/Users/johny/BOILresearch/xem7310.xdc:98]
-Previous: create_clock -period 5.000 [get_ports sys_clkp], [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc:1]
-Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
-WARNING: [Vivado 12-627] No clocks matched 'mmcm0_clk0'. [C:/Users/johny/BOILresearch/xem7310.xdc:99]
-WARNING: [Vivado 12-627] No clocks matched 'okUH0'. [C:/Users/johny/BOILresearch/xem7310.xdc:99]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/xem7310.xdc:99]
-CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks {mmcm0_clk0 okUH0}]'. [C:/Users/johny/BOILresearch/xem7310.xdc:99]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [C:/Users/johny/BOILresearch/xem7310.xdc:99]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
 WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [C:/Users/johny/BOILresearch/xem7310.xdc:106]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/johny/BOILresearch/xem7310.xdc:110]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [C:/Users/johny/BOILresearch/xem7310.xdc:111]
 Finished Parsing XDC File [C:/Users/johny/BOILresearch/xem7310.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/johny/BOILresearch/xem7310.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/johny/BOILresearch/xem7310.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc]
-WARNING: [Vivado 12-508] No pins matched 'design_1_i/clk_wiz_0/inst/plle2_adv_inst/CLKOUT0'. [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc:3]
-WARNING: [Vivado 12-508] No pins matched 'design_1_i/clk_wiz_0/inst/plle2_adv_inst/CLKOUT1'. [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc:4]
-WARNING: [Vivado 12-627] No clocks matched 'clk300MHz'. [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc:7]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc:7]
-WARNING: [Vivado 12-627] No clocks matched 'clk100MHz'. [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc:7]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc:7]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc:8]
-WARNING: [Vivado 12-627] No clocks matched 'clk300MHz'. [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc:11]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc:11]
-WARNING: [Vivado 12-627] No clocks matched 'clk100MHz'. [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc:14]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc:14]
-Finished Parsing XDC File [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/constrs_1/new/timing.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1496.125 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1506.801 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1496.125 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1506.801 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/correlation_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1496.125 ; gain = 516.219
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1507.273 ; gain = 532.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
-Loading part: xc7a75tfgg484-3
+Loading part: xc7a75tfgg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1496.125 ; gain = 516.219
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1507.273 ; gain = 532.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -400,6 +301,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_mem
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/DCS_Analyzer_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/correlator_bram_ctrl. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/correlation_bram. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/analyzer_fifo. (constraint file  auto generated constraint).
@@ -414,15 +316,14 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_axi_perip
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/interrupt_concat. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_clk_wiz_100M. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/DCS_Analyzer_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/system_ila_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/uart_aggregator_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/countCorrelateWrapper_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/uart_aggregator_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1496.125 ; gain = 516.219
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1507.273 ; gain = 532.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1496.125 ; gain = 516.219
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1507.273 ; gain = 532.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -445,28 +346,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1496.125 ; gain = 516.219
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1507.273 ; gain = 532.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/detectorIn' to pin 'detectorIn'
-INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/reset' to pin 'reset'
-INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1496.125 ; gain = 516.219
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1507.273 ; gain = 532.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1496.125 ; gain = 516.219
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1507.273 ; gain = 532.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1496.125 ; gain = 516.219
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1507.273 ; gain = 532.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -484,37 +382,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1496.125 ; gain = 516.219
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1507.273 ; gain = 532.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1496.125 ; gain = 516.219
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1507.273 ; gain = 532.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1496.125 ; gain = 516.219
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1507.273 ; gain = 532.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1496.125 ; gain = 516.219
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1507.273 ; gain = 532.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1496.125 ; gain = 516.219
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1507.273 ; gain = 532.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1496.125 ; gain = 516.219
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1507.273 ; gain = 532.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -576,25 +474,25 @@ Report Cell Usage:
 |23    |OBUF                                    |     1|
 +------+----------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1496.125 ; gain = 516.219
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1507.273 ; gain = 532.039
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1496.125 ; gain = 516.219
-Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1496.125 ; gain = 516.219
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1507.273 ; gain = 517.254
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1507.273 ; gain = 532.039
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1499.797 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1514.695 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1507.395 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1518.332 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 3acaa893
+Synth Design complete | Checksum: 5ffecb16
 INFO: [Common 17-83] Releasing license: Synthesis
-104 Infos, 182 Warnings, 3 Critical Warnings and 0 Errors encountered.
+88 Infos, 105 Warnings, 2 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1507.395 ; gain = 926.730
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:40 . Memory (MB): peak = 1518.332 ; gain = 937.148
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Mar  6 15:09:03 2026...
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 21 22:31:59 2026...

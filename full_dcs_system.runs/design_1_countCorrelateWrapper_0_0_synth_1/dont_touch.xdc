@@ -4,6 +4,9 @@
 # IP: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/bd/design_1/ip/design_1_countCorrelateWrapper_0_0/design_1_countCorrelateWrapper_0_0.xci
 # IP: The module: 'design_1_countCorrelateWrapper_0_0' is the root of the design. Do not add the DONT_TOUCH constraint.
 
+# IP: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/correlator_mt/correlator_mt.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==correlator_mt || ORIG_REF_NAME==correlator_mt} -quiet] -quiet
+
 # IP: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/single_divide_fast/single_divide_fast.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==single_divide_fast || ORIG_REF_NAME==single_divide_fast} -quiet] -quiet
 
@@ -13,11 +16,11 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==single_mult
 # IP: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/uint32_to_single/uint32_to_single.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uint32_to_single || ORIG_REF_NAME==uint32_to_single} -quiet] -quiet
 
-# IP: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/correlator_mt/correlator_mt.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==correlator_mt || ORIG_REF_NAME==correlator_mt} -quiet] -quiet
-
 # IP: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/bd/design_1/ip/design_1_countCorrelateWrapper_0_0/design_1_countCorrelateWrapper_0_0.xci
 # IP: The module: 'design_1_countCorrelateWrapper_0_0' is the root of the design. Do not add the DONT_TOUCH constraint.
+
+# IP: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/correlator_mt/correlator_mt.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==correlator_mt || ORIG_REF_NAME==correlator_mt} -quiet] -quiet
 
 # IP: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/single_divide_fast/single_divide_fast.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==single_divide_fast || ORIG_REF_NAME==single_divide_fast} -quiet] -quiet
@@ -27,6 +30,3 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==correlator_
 
 # IP: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/uint32_to_single/uint32_to_single.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uint32_to_single || ORIG_REF_NAME==uint32_to_single} -quiet] -quiet
-
-# IP: C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.srcs/sources_1/ip/correlator_mt/correlator_mt.xci
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==correlator_mt || ORIG_REF_NAME==correlator_mt} -quiet] -quiet

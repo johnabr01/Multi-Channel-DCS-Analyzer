@@ -1,6 +1,569 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:37 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uint32_to_single'
+
+1. Summary
+----------
+
+SUCCESS in the update of uint32_to_single (xilinx.com:ip:floating_point:7.1 (Rev. 15)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:31 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uart_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the update of uart_fifo (xilinx.com:ip:fifo_generator:13.2 (Rev. 8)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:29 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'single_multiply'
+
+1. Summary
+----------
+
+SUCCESS in the update of single_multiply (xilinx.com:ip:floating_point:7.1 (Rev. 15)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:22 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'single_divide_fast'
+
+1. Summary
+----------
+
+SUCCESS in the update of single_divide_fast (xilinx.com:ip:floating_point:7.1 (Rev. 15)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:14 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'intensityFIFO'
+
+1. Summary
+----------
+
+SUCCESS in the update of intensityFIFO (xilinx.com:ip:fifo_generator:13.2 (Rev. 8)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:03 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_system_ila_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_system_ila_0_0 (xilinx.com:ip:system_ila:1.1 (Rev. 14)) to current project options.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection and Interface Information
+---------------------------------------
+
+Connection and Interface information can not be compared for deferred elaboration IPs.
+design_1_system_ila_0_0 may have connection or interface changes.
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:03 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_rst_clk_wiz_100M_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_rst_clk_wiz_100M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 13)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:03 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_microblaze_0_xlconcat_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_microblaze_0_xlconcat_1 (xilinx.com:ip:xlconcat:2.1 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:03 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_microblaze_0_axi_periph_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_microblaze_0_axi_periph_1 (xilinx.com:ip:axi_interconnect:2.1 (Rev. 29)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:03 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_microblaze_0_axi_intc_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_microblaze_0_axi_intc_1 (xilinx.com:ip:axi_intc:4.1 (Rev. 17)) to current project options.
+
+2. Upgrade messages
+-------------------
+
+Set parameter C_IVAR_RESET_VALUE to value 0x0000000000000010 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:03 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_microblaze_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_microblaze_0_1 (xilinx.com:ip:microblaze:11.0 (Rev. 11)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:03 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mdm_1_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_mdm_1_1 (xilinx.com:ip:mdm:3.2 (Rev. 24)) to current project options.
+
+2. Upgrade messages
+-------------------
+
+Set parameter C_M_AXIS_ID_WIDTH to value 7 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:03 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_lmb_bram_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_lmb_bram_1 (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 6)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:03 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_intensityRebin_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_intensityRebin_0_0 (xilinx.com:module_ref:intensityRebin:1.0 (Rev. 1)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:03 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_ilmb_v10_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_ilmb_v10_1 (xilinx.com:ip:lmb_v10:3.0 (Rev. 12)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:03 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_ilmb_bram_if_cntlr_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_ilmb_bram_if_cntlr_1 (xilinx.com:ip:lmb_bram_if_cntlr:4.0 (Rev. 22)) to current project options.
+
+2. Upgrade messages
+-------------------
+
+Set parameter C_MASK1 to value 0x0000000000800000 (source 'default')
+Set parameter C_MASK2 to value 0x0000000000800000 (source 'default')
+Set parameter C_MASK3 to value 0x0000000000800000 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:03 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_dlmb_v10_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_dlmb_v10_1 (xilinx.com:ip:lmb_v10:3.0 (Rev. 12)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:03 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_dlmb_bram_if_cntlr_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_dlmb_bram_if_cntlr_1 (xilinx.com:ip:lmb_bram_if_cntlr:4.0 (Rev. 22)) to current project options.
+
+2. Upgrade messages
+-------------------
+
+Set parameter C_MASK1 to value 0x0000000000800000 (source 'default')
+Set parameter C_MASK2 to value 0x0000000000800000 (source 'default')
+Set parameter C_MASK3 to value 0x0000000000800000 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:03 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_clk_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 12)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:03 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_fifo_mm_s_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_axi_fifo_mm_s_0_1 (xilinx.com:ip:axi_fifo_mm_s:4.3) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:03 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_bram_ctrl_0_bram_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_axi_bram_ctrl_0_bram_0 (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 6)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:03 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_bram_ctrl_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_axi_bram_ctrl_0_0 (xilinx.com:ip:axi_bram_ctrl:4.1 (Rev. 8)) to current project options.
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot remove parameter C_SELECT_XPM : there is no parameter called C_SELECT_XPM in axi_bram_ctrl_v4_1
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:38:03 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_DCS_Analyzer_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_DCS_Analyzer_0_0 (xilinx.com:user:DCS_Analyzer:1.0 (Rev. 18)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:33:43 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'correlator_mt'
+
+1. Summary
+----------
+
+SUCCESS in the update of correlator_mt (xilinx.com:user:correlator:1.0 (Rev. 19)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Mar 18 21:33:31 2026
+| Host         : JohnWorkstat running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a75tfgg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'correlatorFIFO'
+
+1. Summary
+----------
+
+SUCCESS in the update of correlatorFIFO (xilinx.com:ip:fifo_generator:13.2 (Rev. 8)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
 | Date         : Mon Feb 23 05:44:34 2026
 | Host         : JohnWorkstat running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

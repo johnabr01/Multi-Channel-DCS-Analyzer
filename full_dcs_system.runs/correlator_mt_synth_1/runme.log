@@ -1,0 +1,902 @@
+
+*** Running vivado
+    with args -log correlator_mt.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source correlator_mt.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source correlator_mt.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 455.973 ; gain = 163.887
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.ipdefs/dcs_analyzer_axil'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.ipdefs/correlator_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: correlator_mt
+Command: synth_design -top correlator_mt -part xc7a75tfgg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Device 21-403] Loading part xc7a75tfgg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12628
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1297.809 ; gain = 408.594
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'correlator_mt' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/synth/correlator_mt.vhd:71]
+	Parameter numChannels bound to: 1 - type: integer 
+	Parameter channelSelectSize bound to: 0 - type: integer 
+	Parameter isMultiTau bound to: 1 - type: bool 
+	Parameter numCombiners bound to: 6 - type: integer 
+	Parameter numDelaysPerCombiner bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'correlatorTop' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/top.vhd:6' bound to instance 'U0' of component 'correlatorTop' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/synth/correlator_mt.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'correlatorTop' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/top.vhd:27]
+WARNING: [Synth 8-506] null port 'channelSelect' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/top.vhd:16]
+	Parameter numChannels bound to: 1 - type: integer 
+	Parameter numCombiners bound to: 6 - type: integer 
+	Parameter numDelaysPerCombiner bound to: 8 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/top.vhd:35]
+INFO: [Synth 8-3491] module 'multi_tau_correlator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:6' bound to instance 'multi_tau' of component 'multi_tau_correlator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/top.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'multi_tau_correlator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:23]
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:13]
+INFO: [Synth 8-3491] module 'int32_to_single' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/ip/int32_to_single/synth/int32_to_single.v:53' bound to instance 'D' of component 'int32_to_single' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:129]
+INFO: [Synth 8-6157] synthesizing module 'int32_to_single' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/ip/int32_to_single/synth/int32_to_single.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79430]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79430]
+INFO: [Synth 8-6155] done synthesizing module 'int32_to_single' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/ip/int32_to_single/synth/int32_to_single.v:53]
+INFO: [Synth 8-3491] module 'int32_to_single' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/ip/int32_to_single/synth/int32_to_single.v:53' bound to instance 'N' of component 'int32_to_single' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:139]
+INFO: [Synth 8-3491] module 'single_divider' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/ip/single_divider/synth/single_divider.v:53' bound to instance 'divider' of component 'single_divider' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:150]
+INFO: [Synth 8-6157] synthesizing module 'single_divider' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/ip/single_divider/synth/single_divider.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'single_divider' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/ip/single_divider/synth/single_divider.v:53]
+	Parameter numChannels bound to: 1 - type: integer 
+	Parameter numDelaysPerCombiner bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'scaler' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/scaler.vhd:6' bound to instance 'scale' of component 'scaler' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'scaler' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/scaler.vhd:19]
+	Parameter numChannels bound to: 1 - type: integer 
+	Parameter numDelaysPerCombiner bound to: 8 - type: integer 
+	Parameter maxVal bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'counter' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/counter.vhd:6' bound to instance 'counter_inst' of component 'counter' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/scaler.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'counter' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/counter.vhd:16]
+	Parameter maxVal bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/counter.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'scaler' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/scaler.vhd:19]
+	Parameter numDelays bound to: 16 - type: integer 
+	Parameter additionalLatency bound to: 6 - type: integer 
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:31]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:40]
+INFO: [Synth 8-3491] module 'correlator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:5' bound to instance 'first_sdc' of component 'correlator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'correlator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:31]
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:12]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:21]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_first' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:30]
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:11]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:20]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:48]
+INFO: [Synth 8-3491] module 'dsp_multiply_and_accumulate' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/dsp_multiply_and_accumulate.vhd:6' bound to instance 'multiplier' of component 'dsp_multiply_and_accumulate' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'dsp_multiply_and_accumulate' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/dsp_multiply_and_accumulate.vhd:22]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/dsp_multiply_and_accumulate.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'dsp_multiply_and_accumulate' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/dsp_multiply_and_accumulate.vhd:22]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:78]
+	Parameter numCha bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'chaNum' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:115]
+INFO: [Synth 8-3491] module 'mac_counter' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/mac_counter.vhd:6' bound to instance 'count' of component 'mac_counter' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'mac_counter' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/mac_counter.vhd:17]
+	Parameter numCha bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'chaNum' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/mac_counter.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mac_counter' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/mac_counter.vhd:17]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:131]
+WARNING: [Synth 8-11358] null range expression ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:158]
+WARNING: [Synth 8-11358] null range expression ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:161]
+WARNING: [Synth 8-3919] null assignment ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:161]
+WARNING: [Synth 8-11358] null range expression ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:164]
+INFO: [Synth 8-256] done synthesizing module 'multiplication_accumulator' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:30]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:107]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:115]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+INFO: [Synth 8-256] done synthesizing module 'correlator' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:31]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:185]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:194]
+WARNING: [Synth 8-6774] Null subtype or type declaration found [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:208]
+WARNING: [Synth 8-3919] null assignment ignored
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:55]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:60]
+INFO: [Synth 8-3491] module 'combiner' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/combiner.vhd:6' bound to instance 'combine_A' of component 'combiner' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:212]
+INFO: [Synth 8-638] synthesizing module 'combiner' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/combiner.vhd:22]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/combiner.vhd:11]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/combiner.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'combiner' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/combiner.vhd:22]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:218]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:223]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:55]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:60]
+INFO: [Synth 8-3491] module 'combiner' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/combiner.vhd:6' bound to instance 'combine_B' of component 'combiner' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:229]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:235]
+	Parameter numDelays bound to: 8 - type: integer 
+	Parameter additionalLatency bound to: 5 - type: integer 
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:31]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:40]
+INFO: [Synth 8-3491] module 'correlator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:5' bound to instance 'sdc' of component 'correlator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'correlator__parameterized1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:31]
+	Parameter numDelays bound to: 8 - type: integer 
+	Parameter additionalLatency bound to: 5 - type: integer 
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:12]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:21]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_first' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:100]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:107]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:115]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+INFO: [Synth 8-256] done synthesizing module 'correlator__parameterized1' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:31]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:256]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:265]
+WARNING: [Synth 8-6774] Null subtype or type declaration found [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:208]
+WARNING: [Synth 8-3919] null assignment ignored
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:55]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:60]
+INFO: [Synth 8-3491] module 'combiner' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/combiner.vhd:6' bound to instance 'combine_A' of component 'combiner' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:212]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:218]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:223]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:55]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:60]
+INFO: [Synth 8-3491] module 'combiner' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/combiner.vhd:6' bound to instance 'combine_B' of component 'combiner' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:229]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:235]
+	Parameter numDelays bound to: 8 - type: integer 
+	Parameter additionalLatency bound to: 4 - type: integer 
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:31]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:40]
+INFO: [Synth 8-3491] module 'correlator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:5' bound to instance 'sdc' of component 'correlator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'correlator__parameterized3' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:31]
+	Parameter numDelays bound to: 8 - type: integer 
+	Parameter additionalLatency bound to: 4 - type: integer 
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:12]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:21]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_first' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:100]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:107]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:115]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:37]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:46]
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+INFO: [Synth 8-256] done synthesizing module 'correlator__parameterized3' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:31]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:256]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:265]
+WARNING: [Synth 8-6774] Null subtype or type declaration found [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:208]
+WARNING: [Synth 8-3919] null assignment ignored
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:55]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:60]
+INFO: [Synth 8-3491] module 'combiner' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/combiner.vhd:6' bound to instance 'combine_A' of component 'combiner' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:212]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:218]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:223]
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:55]
+WARNING: [Synth 8-506] null port 'ChaOutSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:60]
+INFO: [Synth 8-3491] module 'combiner' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/combiner.vhd:6' bound to instance 'combine_B' of component 'combiner' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:229]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:235]
+	Parameter numDelays bound to: 8 - type: integer 
+	Parameter additionalLatency bound to: 3 - type: integer 
+	Parameter numChannels bound to: 1 - type: integer 
+WARNING: [Synth 8-506] null port 'ChaInSel' ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:31]
+INFO: [Common 17-14] Message 'Synth 8-506' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3491] module 'correlator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:5' bound to instance 'sdc' of component 'correlator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'correlator__parameterized5' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:31]
+	Parameter numDelays bound to: 8 - type: integer 
+	Parameter additionalLatency bound to: 3 - type: integer 
+	Parameter numChannels bound to: 1 - type: integer 
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_first' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:100]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:107]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:115]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:134]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:142]
+INFO: [Synth 8-256] done synthesizing module 'correlator__parameterized5' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:31]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:256]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:265]
+WARNING: [Synth 8-6774] Null subtype or type declaration found [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:208]
+WARNING: [Synth 8-3919] null assignment ignored
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'combiner' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/combiner.vhd:6' bound to instance 'combine_A' of component 'combiner' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:212]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:218]
+INFO: [Common 17-14] Message 'Synth 8-6778' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'combiner' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/combiner.vhd:6' bound to instance 'combine_B' of component 'combiner' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:229]
+	Parameter numDelays bound to: 8 - type: integer 
+	Parameter additionalLatency bound to: 2 - type: integer 
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'correlator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:5' bound to instance 'sdc' of component 'correlator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'correlator__parameterized7' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:31]
+	Parameter numDelays bound to: 8 - type: integer 
+	Parameter additionalLatency bound to: 2 - type: integer 
+	Parameter numChannels bound to: 1 - type: integer 
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_first' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:100]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'correlator__parameterized7' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:31]
+WARNING: [Synth 8-6774] Null subtype or type declaration found [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:208]
+WARNING: [Synth 8-3919] null assignment ignored
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'combiner' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/combiner.vhd:6' bound to instance 'combine_A' of component 'combiner' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:212]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'combiner' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/combiner.vhd:6' bound to instance 'combine_B' of component 'combiner' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:229]
+	Parameter numDelays bound to: 8 - type: integer 
+	Parameter additionalLatency bound to: 1 - type: integer 
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'correlator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:5' bound to instance 'sdc' of component 'correlator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'correlator__parameterized9' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:31]
+	Parameter numDelays bound to: 8 - type: integer 
+	Parameter additionalLatency bound to: 1 - type: integer 
+	Parameter numChannels bound to: 1 - type: integer 
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_first' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:100]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'correlator__parameterized9' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:31]
+WARNING: [Synth 8-6774] Null subtype or type declaration found [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:208]
+WARNING: [Synth 8-3919] null assignment ignored
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'combiner' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/combiner.vhd:6' bound to instance 'combine_A' of component 'combiner' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:212]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'combiner' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/combiner.vhd:6' bound to instance 'combine_B' of component 'combiner' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:229]
+	Parameter numDelays bound to: 8 - type: integer 
+	Parameter additionalLatency bound to: 0 - type: integer 
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'correlator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:5' bound to instance 'sdc' of component 'correlator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'correlator__parameterized11' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:31]
+	Parameter numDelays bound to: 8 - type: integer 
+	Parameter additionalLatency bound to: 0 - type: integer 
+	Parameter numChannels bound to: 1 - type: integer 
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_first' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:100]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+	Parameter numChannels bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'multiplication_accumulator' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multiplication_accumulator.vhd:6' bound to instance 'mult_other' of component 'multiplication_accumulator' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'correlator__parameterized11' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/correlator.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'multi_tau_correlator' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/multi_tau_correlator.vhd:23]
+	Parameter maxVal bound to: 63 - type: integer 
+INFO: [Synth 8-3491] module 'counter' declared at 'c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/counter.vhd:6' bound to instance 'counterGen' of component 'counter' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/top.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized1' [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/counter.vhd:16]
+	Parameter maxVal bound to: 63 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized1' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/counter.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'correlatorTop' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/imports/design/top.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'correlator_mt' (0#1) [c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/ip/correlator_mt/synth/correlator_mt.vhd:71]
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[7] in module carry_chain__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized64 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized64 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized64 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized64 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized64 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port NORMALIZE[1] in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIXED_POINT in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIX_MANT_SIGN in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SIGN in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized36 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized36 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized36 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized36 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized36 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized21 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized58 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized62 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized62 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized62 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized60 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized60 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized60 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized56 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized56 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized56 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized50 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized50 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized50 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized54 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized54 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized54 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized52 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized52 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized52 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[31] in module special_detect is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized48 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized48 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized48 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized48 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized48 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ROUND_EXP_INC in module flt_div_exp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized46 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized46 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized46 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized38 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized38 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized38 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized38 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1488.121 ; gain = 598.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1488.121 ; gain = 598.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1488.121 ; gain = 598.906
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.396 . Memory (MB): peak = 1488.121 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1606 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/correlator_mt_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/correlator_mt_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1558.773 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.368 . Memory (MB): peak = 1576.160 ; gain = 17.387
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1576.160 ; gain = 686.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a75tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1576.160 ; gain = 686.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0/\gen_mt_correlator.multi_tau /\normalize.D . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/\gen_mt_correlator.multi_tau /\normalize.N . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/\gen_mt_correlator.multi_tau /\normalize.divider . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1576.160 ; gain = 686.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1576.160 ; gain = 686.945
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'int32_to_single:/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized8) to 'int32_to_single:/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'int32_to_single:/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized8) to 'int32_to_single:/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'int32_to_single:/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized13) to 'int32_to_single:/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'int32_to_single:/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized13) to 'int32_to_single:/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'int32_to_single:/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'int32_to_single:/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'int32_to_single:/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'int32_to_single:/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'int32_to_single:/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'int32_to_single:/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'int32_to_single:/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'int32_to_single:/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'int32_to_single:/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized8) to 'int32_to_single:/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/gen_mt_correlator.multi_tau/normalize.divider/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized8) to 'U0/gen_mt_correlator.multi_tau/normalize.divider/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/gen_mt_correlator.multi_tau/normalize.divider/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized8) to 'U0/gen_mt_correlator.multi_tau/normalize.divider/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'U0/gen_mt_correlator.multi_tau/normalize.divider/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized13) to 'U0/gen_mt_correlator.multi_tau/normalize.divider/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/gen_mt_correlator.multi_tau/normalize.divider/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized13) to 'U0/gen_mt_correlator.multi_tau/normalize.divider/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/gen_mt_correlator.multi_tau/normalize.divider/inst/i_synth/DELAY_ACCUM_OVERFLOW' (delay__parameterized8) to 'U0/gen_mt_correlator.multi_tau/normalize.divider/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 180 (col length:80)
+BRAMs: 210 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 1576.160 ; gain = 686.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:14 . Memory (MB): peak = 1576.160 ; gain = 686.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:16 . Memory (MB): peak = 1576.160 ; gain = 686.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:01:19 . Memory (MB): peak = 1576.160 ; gain = 686.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:21 ; elapsed = 00:01:26 . Memory (MB): peak = 1576.160 ; gain = 686.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:21 ; elapsed = 00:01:26 . Memory (MB): peak = 1576.160 ; gain = 686.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1576.160 ; gain = 686.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1576.160 ; gain = 686.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1576.160 ; gain = 686.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1576.160 ; gain = 686.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                 | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp_multiply_and_accumulate | (P+A*B)'    | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A*B'')'  | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A*B'')'  | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A*B'')'  | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A*B'')'  | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A*B'')'  | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A*B'')'  | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A*B')'   | 30     | 18     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A*B'')'  | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A*B'')'  | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A*B'')'  | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A*B'')'  | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A*B'')'  | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A*B'')'  | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A*B'')'  | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A*B'')'  | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B')'  | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B')'  | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B')'  | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B')'  | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B')'  | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B')'  | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B')'  | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B')'  | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B')'  | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B')'  | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B')'  | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B')'  | 30     | 18     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp_multiply_and_accumulate | (P+A'*B'')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 1    | 
++----------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   373|
+|2     |DSP48E1 |    64|
+|7     |LUT1    |    92|
+|8     |LUT2    |   526|
+|9     |LUT3    |  3947|
+|10    |LUT4    |   102|
+|11    |LUT5    |    75|
+|12    |LUT6    |   148|
+|13    |MUXCY   |   812|
+|14    |SRL16E  |    33|
+|15    |XORCY   |   769|
+|16    |FDRE    |  6836|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1576.160 ; gain = 686.945
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 149 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:01:22 . Memory (MB): peak = 1576.160 ; gain = 598.906
+Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1576.160 ; gain = 686.945
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.346 . Memory (MB): peak = 1576.160 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2018 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1576.160 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 231 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 231 instances
+
+Synth Design complete | Checksum: ef5e28a3
+INFO: [Common 17-83] Releasing license: Synthesis
+172 Infos, 318 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:33 ; elapsed = 00:01:40 . Memory (MB): peak = 1576.160 ; gain = 1086.738
+INFO: [Common 17-1381] The checkpoint 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/correlator_mt_synth_1/correlator_mt.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP correlator_mt, cache-ID = 9e419fd94bc53738
+INFO: [Coretcl 2-1174] Renamed 411 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.runs/correlator_mt_synth_1/correlator_mt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file correlator_mt_utilization_synth.rpt -pb correlator_mt_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 18 22:15:58 2026...

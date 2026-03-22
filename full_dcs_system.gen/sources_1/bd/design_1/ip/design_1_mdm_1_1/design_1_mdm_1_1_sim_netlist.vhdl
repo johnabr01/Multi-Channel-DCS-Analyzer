@@ -2,14 +2,14 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Mon Feb 23 06:09:27 2026
+-- Date        : Wed Mar 18 22:14:20 2026
 -- Host        : JohnWorkstat running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top design_1_mdm_1_1 -prefix
---               design_1_mdm_1_1_ design_1_mdm_1_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_mdm_1_1/design_1_mdm_1_1_sim_netlist.vhdl
 -- Design      : design_1_mdm_1_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
--- Device      : xc7a75tfgg484-3
+-- Device      : xc7a75tfgg484-1
 -- --------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -38,6 +38,8 @@ entity design_1_mdm_1_1_MB_BSCANE2 is
     \shift_Count_reg[0]\ : in STD_LOGIC;
     \Use_Serial_Unified_Completion.completion_status_reg[15]\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_mdm_1_1_MB_BSCANE2 : entity is "MB_BSCANE2";
 end design_1_mdm_1_1_MB_BSCANE2;
 
 architecture STRUCTURE of design_1_mdm_1_1_MB_BSCANE2 is
@@ -161,6 +163,8 @@ entity design_1_mdm_1_1_MB_BUFGCE_1 is
     Dbg_Clk_0 : out STD_LOGIC;
     DRCK : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_mdm_1_1_MB_BUFGCE_1 : entity is "MB_BUFGCE_1";
 end design_1_mdm_1_1_MB_BUFGCE_1;
 
 architecture STRUCTURE of design_1_mdm_1_1_MB_BUFGCE_1 is
@@ -268,6 +272,8 @@ entity design_1_mdm_1_1_MB_FDC_1 is
     Dbg_Rst_0 : in STD_LOGIC;
     Debug_SYS_Rst : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_mdm_1_1_MB_FDC_1 : entity is "MB_FDC_1";
 end design_1_mdm_1_1_MB_FDC_1;
 
 architecture STRUCTURE of design_1_mdm_1_1_MB_FDC_1 is
@@ -839,6 +845,8 @@ entity design_1_mdm_1_1_MB_FDRE is
     tx_Buffer_Empty : in STD_LOGIC;
     S_AXI_ACLK : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_mdm_1_1_MB_FDRE : entity is "MB_FDRE";
 end design_1_mdm_1_1_MB_FDRE;
 
 architecture STRUCTURE of design_1_mdm_1_1_MB_FDRE is
@@ -882,6 +890,8 @@ entity design_1_mdm_1_1_MB_FDRE_1 is
     \Use_UART.fifo_Din_reg[7]_2\ : in STD_LOGIC;
     command : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_mdm_1_1_MB_FDRE_1 : entity is "MB_FDRE_1";
 end design_1_mdm_1_1_MB_FDRE_1;
 
 architecture STRUCTURE of design_1_mdm_1_1_MB_FDRE_1 is
@@ -1556,6 +1566,8 @@ entity design_1_mdm_1_1_MB_LUT1 is
     Dbg_TDI_0 : out STD_LOGIC;
     I0 : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_mdm_1_1_MB_LUT1 : entity is "MB_LUT1";
 end design_1_mdm_1_1_MB_LUT1;
 
 architecture STRUCTURE of design_1_mdm_1_1_MB_LUT1 is
@@ -1597,6 +1609,8 @@ entity design_1_mdm_1_1_MB_MUXCY_XORCY is
     lopt_8 : out STD_LOGIC;
     lopt_9 : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_mdm_1_1_MB_MUXCY_XORCY : entity is "MB_MUXCY_XORCY";
 end design_1_mdm_1_1_MB_MUXCY_XORCY;
 
 architecture STRUCTURE of design_1_mdm_1_1_MB_MUXCY_XORCY is
@@ -1854,6 +1868,8 @@ entity design_1_mdm_1_1_MB_SRL16E is
     A3 : in STD_LOGIC;
     \Use_unisim.MB_SRL16E_I1_1\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_mdm_1_1_MB_SRL16E : entity is "MB_SRL16E";
 end design_1_mdm_1_1_MB_SRL16E;
 
 architecture STRUCTURE of design_1_mdm_1_1_MB_SRL16E is
@@ -2822,6 +2838,8 @@ entity design_1_mdm_1_1_MB_XORCY is
     LO : in STD_LOGIC;
     lopt : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_mdm_1_1_MB_XORCY : entity is "MB_XORCY";
 end design_1_mdm_1_1_MB_XORCY;
 
 architecture STRUCTURE of design_1_mdm_1_1_MB_XORCY is
@@ -2861,6 +2879,8 @@ entity design_1_mdm_1_1_pselect_f is
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]\ : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]_0\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_mdm_1_1_pselect_f : entity is "pselect_f";
 end design_1_mdm_1_1_pselect_f;
 
 architecture STRUCTURE of design_1_mdm_1_1_pselect_f is
@@ -2925,6 +2945,8 @@ entity design_1_mdm_1_1_SRL_FIFO is
     Bus_RNW_reg : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_mdm_1_1_SRL_FIFO : entity is "SRL_FIFO";
 end design_1_mdm_1_1_SRL_FIFO;
 
 architecture STRUCTURE of design_1_mdm_1_1_SRL_FIFO is
@@ -3538,6 +3560,8 @@ entity design_1_mdm_1_1_address_decoder is
     \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_2\ : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_3\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_mdm_1_1_address_decoder : entity is "address_decoder";
 end design_1_mdm_1_1_address_decoder;
 
 architecture STRUCTURE of design_1_mdm_1_1_address_decoder is
@@ -3973,6 +3997,8 @@ entity design_1_mdm_1_1_JTAG_CONTROL is
     \Use_Serial_Unified_Completion.Data_Read_Status.count_reg[5]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \shift_Count_reg[0]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_mdm_1_1_JTAG_CONTROL : entity is "JTAG_CONTROL";
 end design_1_mdm_1_1_JTAG_CONTROL;
 
 architecture STRUCTURE of design_1_mdm_1_1_JTAG_CONTROL is
@@ -5956,6 +5982,8 @@ entity design_1_mdm_1_1_slave_attachment is
     S_AXI_ARADDR : in STD_LOGIC_VECTOR ( 1 downto 0 );
     S_AXI_AWADDR : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_mdm_1_1_slave_attachment : entity is "slave_attachment";
 end design_1_mdm_1_1_slave_attachment;
 
 architecture STRUCTURE of design_1_mdm_1_1_slave_attachment is
@@ -6409,6 +6437,8 @@ entity design_1_mdm_1_1_MDM_Core is
     AR : in STD_LOGIC_VECTOR ( 0 to 0 );
     \^sel\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_mdm_1_1_MDM_Core : entity is "MDM_Core";
 end design_1_mdm_1_1_MDM_Core;
 
 architecture STRUCTURE of design_1_mdm_1_1_MDM_Core is
@@ -7070,6 +7100,8 @@ entity design_1_mdm_1_1_axi_lite_ipif is
     S_AXI_ARADDR : in STD_LOGIC_VECTOR ( 1 downto 0 );
     S_AXI_AWADDR : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_mdm_1_1_axi_lite_ipif : entity is "axi_lite_ipif";
 end design_1_mdm_1_1_axi_lite_ipif;
 
 architecture STRUCTURE of design_1_mdm_1_1_axi_lite_ipif is
@@ -8709,6 +8741,8 @@ entity design_1_mdm_1_1_MDM is
   attribute C_USE_CROSS_TRIGGER of design_1_mdm_1_1_MDM : entity is 0;
   attribute C_USE_UART : integer;
   attribute C_USE_UART of design_1_mdm_1_1_MDM : entity is 1;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_mdm_1_1_MDM : entity is "MDM";
   attribute bscan_debug_core : string;
   attribute bscan_debug_core of design_1_mdm_1_1_MDM : entity is "FALSE";
   attribute dont_touch : string;
@@ -15532,7 +15566,7 @@ architecture STRUCTURE of design_1_mdm_1_1 is
   attribute x_interface_info of Interrupt : signal is "xilinx.com:signal:interrupt:1.0 INTERRUPT.INTERRUPT INTERRUPT";
   attribute x_interface_parameter of Interrupt : signal is "XIL_INTERFACENAME INTERRUPT.INTERRUPT, SENSITIVITY EDGE_RISING, SUGGESTED_PRIORITY HIGH, PORTWIDTH 1";
   attribute x_interface_info of S_AXI_ACLK : signal is "xilinx.com:signal:clock:1.0 CLK.S_AXI_ACLK CLK";
-  attribute x_interface_parameter of S_AXI_ACLK : signal is "XIL_INTERFACENAME CLK.S_AXI_ACLK, ASSOCIATED_BUSIF S_AXI:MBDEBUG_AXI_0:MBDEBUG_AXI_1:MBDEBUG_AXI_2:MBDEBUG_AXI_3:MBDEBUG_AXI_4:MBDEBUG_AXI_5:MBDEBUG_AXI_6:MBDEBUG_AXI_7:MBDEBUG_AXI_8:MBDEBUG_AXI_9:MBDEBUG_AXI_10:MBDEBUG_AXI_11:MBDEBUG_AXI_12:MBDEBUG_AXI_13:MBDEBUG_AXI_14:MBDEBUG_AXI_15:MBDEBUG_AXI_16:MBDEBUG_AXI_17:MBDEBUG_AXI_18:MBDEBUG_AXI_19:MBDEBUG_AXI_20:MBDEBUG_AXI_21:MBDEBUG_AXI_22:MBDEBUG_AXI_23:MBDEBUG_AXI_24:MBDEBUG_AXI_25:MBDEBUG_AXI_26:MBDEBUG_AXI_27:MBDEBUG_AXI_28:MBDEBUG_AXI_29:MBDEBUG_AXI_30:MBDEBUG_AXI_31, ASSOCIATED_RESET S_AXI_ARESETN, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
+  attribute x_interface_parameter of S_AXI_ACLK : signal is "XIL_INTERFACENAME CLK.S_AXI_ACLK, ASSOCIATED_BUSIF S_AXI:MBDEBUG_AXI_0:MBDEBUG_AXI_1:MBDEBUG_AXI_2:MBDEBUG_AXI_3:MBDEBUG_AXI_4:MBDEBUG_AXI_5:MBDEBUG_AXI_6:MBDEBUG_AXI_7:MBDEBUG_AXI_8:MBDEBUG_AXI_9:MBDEBUG_AXI_10:MBDEBUG_AXI_11:MBDEBUG_AXI_12:MBDEBUG_AXI_13:MBDEBUG_AXI_14:MBDEBUG_AXI_15:MBDEBUG_AXI_16:MBDEBUG_AXI_17:MBDEBUG_AXI_18:MBDEBUG_AXI_19:MBDEBUG_AXI_20:MBDEBUG_AXI_21:MBDEBUG_AXI_22:MBDEBUG_AXI_23:MBDEBUG_AXI_24:MBDEBUG_AXI_25:MBDEBUG_AXI_26:MBDEBUG_AXI_27:MBDEBUG_AXI_28:MBDEBUG_AXI_29:MBDEBUG_AXI_30:MBDEBUG_AXI_31, ASSOCIATED_RESET S_AXI_ARESETN, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_0_clk100MHz, INSERT_VIP 0";
   attribute x_interface_info of S_AXI_ARESETN : signal is "xilinx.com:signal:reset:1.0 RST.S_AXI_ARESETN RST";
   attribute x_interface_parameter of S_AXI_ARESETN : signal is "XIL_INTERFACENAME RST.S_AXI_ARESETN, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of S_AXI_ARREADY : signal is "xilinx.com:interface:aximm:1.0 S_AXI ARREADY";
@@ -15548,7 +15582,7 @@ architecture STRUCTURE of design_1_mdm_1_1 is
   attribute x_interface_info of Dbg_Reg_En_0 : signal is "xilinx.com:interface:mbdebug:3.0 MBDEBUG_0 REG_EN";
   attribute x_interface_info of S_AXI_ARADDR : signal is "xilinx.com:interface:aximm:1.0 S_AXI ARADDR";
   attribute x_interface_info of S_AXI_AWADDR : signal is "xilinx.com:interface:aximm:1.0 S_AXI AWADDR";
-  attribute x_interface_parameter of S_AXI_AWADDR : signal is "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute x_interface_parameter of S_AXI_AWADDR : signal is "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_0_clk100MHz, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute x_interface_info of S_AXI_BRESP : signal is "xilinx.com:interface:aximm:1.0 S_AXI BRESP";
   attribute x_interface_info of S_AXI_RDATA : signal is "xilinx.com:interface:aximm:1.0 S_AXI RDATA";
   attribute x_interface_info of S_AXI_RRESP : signal is "xilinx.com:interface:aximm:1.0 S_AXI RRESP";

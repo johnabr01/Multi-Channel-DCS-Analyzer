@@ -1,12 +1,12 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Fri Mar  6 15:08:17 2026
+| Date         : Sat Mar 21 00:38:08 2026
 | Host         : JohnWorkstat running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_countCorrelateWrapper_0_0_utilization_synth.rpt -pb design_1_countCorrelateWrapper_0_0_utilization_synth.pb
 | Design       : design_1_countCorrelateWrapper_0_0
-| Device       : xc7a75tfgg484-3
-| Speed File   : -3
+| Device       : xc7a75tfgg484-1
+| Speed File   : -1
 | Design State : Synthesized
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 

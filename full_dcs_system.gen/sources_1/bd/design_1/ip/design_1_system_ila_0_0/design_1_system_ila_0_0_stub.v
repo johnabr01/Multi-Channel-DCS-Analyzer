@@ -2,13 +2,13 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Fri Feb 27 15:10:56 2026
+// Date        : Sat Mar 21 00:38:46 2026
 // Host        : JohnWorkstat running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub -rename_top design_1_system_ila_0_0 -prefix
-//               design_1_system_ila_0_0_ design_1_system_ila_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub
+//               c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_stub.v
 // Design      : design_1_system_ila_0_0
 // Purpose     : Stub declaration of top-level module interface
-// Device      : xc7a75tfgg484-3
+// Device      : xc7a75tfgg484-1
 // --------------------------------------------------------------------------------
 
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.

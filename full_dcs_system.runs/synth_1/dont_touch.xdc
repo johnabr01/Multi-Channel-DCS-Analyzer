@@ -3,8 +3,6 @@
 
 # XDC: C:/Users/johny/BOILresearch/xem7310.xdc
 
-# XDC: new/timing.xdc
-
 # IP: ip/single_divide_fast/single_divide_fast.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==single_divide_fast || ORIG_REF_NAME==single_divide_fast} -quiet] -quiet
 
@@ -13,9 +11,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==single_mult
 
 # IP: ip/uint32_to_single/uint32_to_single.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uint32_to_single || ORIG_REF_NAME==uint32_to_single} -quiet] -quiet
-
-# IP: ip/correlator_mt/correlator_mt.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==correlator_mt || ORIG_REF_NAME==correlator_mt} -quiet] -quiet
 
 # Block Designs: bd/design_1/design_1.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1 || ORIG_REF_NAME==design_1} -quiet] -quiet
@@ -34,6 +29,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_il
 
 # IP: bd/design_1/ip/design_1_lmb_bram_1/design_1_lmb_bram_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_lmb_bram_1 || ORIG_REF_NAME==design_1_lmb_bram_1} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_DCS_Analyzer_0_0/design_1_DCS_Analyzer_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_DCS_Analyzer_0_0 || ORIG_REF_NAME==design_1_DCS_Analyzer_0_0} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_bram_ctrl_0_0 || ORIG_REF_NAME==design_1_axi_bram_ctrl_0_0} -quiet] -quiet
@@ -62,6 +60,12 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_mi
 # IP: bd/design_1/ip/design_1_xbar_0_1/design_1_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xbar_0 || ORIG_REF_NAME==design_1_xbar_0} -quiet] -quiet
 
+# IP: bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_0 || ORIG_REF_NAME==design_1_auto_pc_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_s00_mmu_0/design_1_s00_mmu_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_s00_mmu_0 || ORIG_REF_NAME==design_1_s00_mmu_0} -quiet] -quiet
+
 # IP: bd/design_1/ip/design_1_microblaze_0_axi_periph_1/design_1_microblaze_0_axi_periph_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_microblaze_0_axi_periph_1 || ORIG_REF_NAME==design_1_microblaze_0_axi_periph_1} -quiet] -quiet
 
@@ -71,11 +75,14 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_mi
 # IP: bd/design_1/ip/design_1_rst_clk_wiz_100M_0/design_1_rst_clk_wiz_100M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_rst_clk_wiz_100M_0 || ORIG_REF_NAME==design_1_rst_clk_wiz_100M_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_DCS_Analyzer_0_0/design_1_DCS_Analyzer_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_DCS_Analyzer_0_0 || ORIG_REF_NAME==design_1_DCS_Analyzer_0_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_system_ila_0_0 || ORIG_REF_NAME==design_1_system_ila_0_0} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_countCorrelateWrapper_0_0/design_1_countCorrelateWrapper_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_countCorrelateWrapper_0_0 || ORIG_REF_NAME==design_1_countCorrelateWrapper_0_0} -quiet] -quiet
+
+# IP: ip/correlator_mt/correlator_mt.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==correlator_mt || ORIG_REF_NAME==correlator_mt} -quiet] -quiet
 
 # IP: ip/single_divide_fast/single_divide_fast.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==single_divide_fast || ORIG_REF_NAME==single_divide_fast} -quiet] -quiet
@@ -85,12 +92,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_co
 
 # IP: ip/uint32_to_single/uint32_to_single.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==uint32_to_single || ORIG_REF_NAME==uint32_to_single} -quiet] -quiet
-
-# IP: ip/correlator_mt/correlator_mt.xci
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==correlator_mt || ORIG_REF_NAME==correlator_mt} -quiet] -quiet
-
-# IP: bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_system_ila_0_0 || ORIG_REF_NAME==design_1_system_ila_0_0} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_uart_aggregator_0_0/design_1_uart_aggregator_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_uart_aggregator_0_0 || ORIG_REF_NAME==design_1_uart_aggregator_0_0} -quiet] -quiet
@@ -103,11 +104,5 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==correlatorF
 
 # IP: ip/intensityFIFO/intensityFIFO.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==intensityFIFO || ORIG_REF_NAME==intensityFIFO} -quiet] -quiet
-
-# IP: bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_0 || ORIG_REF_NAME==design_1_auto_pc_0} -quiet] -quiet
-
-# IP: bd/design_1/ip/design_1_s00_mmu_0/design_1_s00_mmu_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_s00_mmu_0 || ORIG_REF_NAME==design_1_s00_mmu_0} -quiet] -quiet
 
 # XDC: c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/design_1_ooc.xdc

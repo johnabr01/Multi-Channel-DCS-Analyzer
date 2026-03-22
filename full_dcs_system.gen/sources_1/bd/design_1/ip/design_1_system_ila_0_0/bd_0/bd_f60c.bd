@@ -3,7 +3,7 @@
     "design_info": {
       "boundary_crc": "0xF9C2BF6AED3EAD46",
       "design_src": "SBD",
-      "device": "xc7a75tfgg484-3",
+      "device": "xc7a75tfgg484-1",
       "name": "bd_f60c",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "scoped": "true",
@@ -22,8 +22,8 @@
         "vlnv": "xilinx.com:interface:axis_rtl:1.0",
         "parameters": {
           "CLK_DOMAIN": {
-            "value": "/clk_wiz_0_clk_out1",
-            "value_src": "default"
+            "value": "design_1_clk_wiz_0_0_clk100MHz",
+            "value_src": "default_prop"
           },
           "FREQ_HZ": {
             "value": "100000000",
@@ -88,7 +88,7 @@
             "value": "resetn"
           },
           "CLK_DOMAIN": {
-            "value": "/clk_wiz_0_clk_out1",
+            "value": "design_1_clk_wiz_0_0_clk100MHz",
             "value_src": "default_prop"
           },
           "FREQ_HZ": {

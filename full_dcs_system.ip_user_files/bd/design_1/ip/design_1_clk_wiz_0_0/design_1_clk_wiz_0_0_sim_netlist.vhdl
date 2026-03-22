@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Mon Feb 23 07:11:39 2026
+-- Date        : Fri Mar  6 15:08:00 2026
 -- Host        : JohnWorkstat running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top design_1_clk_wiz_0_0 -prefix
 --               design_1_clk_wiz_0_0_ design_1_clk_wiz_0_0_sim_netlist.vhdl
@@ -19,7 +19,6 @@ entity design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz is
   port (
     clk100MHz : out STD_LOGIC;
     clk300MHz : out STD_LOGIC;
-    reset : in STD_LOGIC;
     locked : out STD_LOGIC;
     clk_in1_p : in STD_LOGIC;
     clk_in1_n : in STD_LOGIC
@@ -130,7 +129,7 @@ plle2_adv_inst: unisim.vcomponents.PLLE2_ADV
       DWE => '0',
       LOCKED => locked,
       PWRDWN => '0',
-      RST => reset
+      RST => '0'
     );
 end STRUCTURE;
 library IEEE;
@@ -141,7 +140,6 @@ entity design_1_clk_wiz_0_0 is
   port (
     clk100MHz : out STD_LOGIC;
     clk300MHz : out STD_LOGIC;
-    reset : in STD_LOGIC;
     locked : out STD_LOGIC;
     clk_in1_p : in STD_LOGIC;
     clk_in1_n : in STD_LOGIC
@@ -158,7 +156,6 @@ inst: entity work.design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz
       clk300MHz => clk300MHz,
       clk_in1_n => clk_in1_n,
       clk_in1_p => clk_in1_p,
-      locked => locked,
-      reset => reset
+      locked => locked
     );
 end STRUCTURE;

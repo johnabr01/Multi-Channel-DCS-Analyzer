@@ -5,77 +5,77 @@
    "Addressing View_TopLeft":"0,-112",
    "Color Coded_ExpandedHierarchyInLayout":"",
    "Color Coded_Layers":"/reset_2:true|/clk300MHz:true|/sys_clkp_1:true|/countCorrelateWrapper_0_interrupt:true|/clk100MHz:true|/sys_clkn_1:true|/rst_clk_wiz_100M_bus_struct_reset:true|/rst_clk_wiz_100M_peripheral_aresetn:true|/analyzer_fifo_interrupt:true|/rst_clk_wiz_100M_mb_reset:true|/mdm_1_Debug_SYS_Rst:true|/DCS_Analyzer_0_interrupt:true|",
-   "Color Coded_Layout":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 threadsafe
+   "Color Coded_Layout":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
 #  -string -flagsOSRD
 preplace port port-id_sys_clkp -pg 1 -lvl 0 -x -20 -y 540 -defaultsOSRD
 preplace port port-id_reset -pg 1 -lvl 0 -x -20 -y 620 -defaultsOSRD
 preplace port port-id_detectorIn -pg 1 -lvl 0 -x -20 -y 280 -defaultsOSRD
 preplace port port-id_UART_RX -pg 1 -lvl 0 -x -20 -y 790 -defaultsOSRD
-preplace port port-id_UART_TX -pg 1 -lvl 11 -x 3600 -y 860 -defaultsOSRD
+preplace port port-id_UART_TX -pg 1 -lvl 11 -x 3770 -y 860 -defaultsOSRD
 preplace port port-id_sys_clkn -pg 1 -lvl 0 -x -20 -y 510 -defaultsOSRD
-preplace inst microblaze_0_local_memory -pg 1 -lvl 7 -x 2240 -y 840 -defaultsOSRD
-preplace inst correlator_bram_ctrl -pg 1 -lvl 8 -x 2620 -y 370 -defaultsOSRD
-preplace inst correlation_bram -pg 1 -lvl 9 -x 3080 -y 290 -defaultsOSRD
-preplace inst analyzer_fifo -pg 1 -lvl 8 -x 2620 -y 710 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 7 -x 2360 -y 840 -defaultsOSRD
+preplace inst DCS_Analyzer_0 -pg 1 -lvl 8 -x 2770 -y 540 -defaultsOSRD
+preplace inst correlator_bram_ctrl -pg 1 -lvl 8 -x 2770 -y 370 -defaultsOSRD
+preplace inst correlation_bram -pg 1 -lvl 9 -x 3236 -y 290 -defaultsOSRD
+preplace inst analyzer_fifo -pg 1 -lvl 8 -x 2770 -y 710 -defaultsOSRD
 preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 140 -y 530 -defaultsOSRD
-preplace inst intensityRebin_0 -pg 1 -lvl 8 -x 2620 -y 160 -defaultsOSRD
-preplace inst mdm_1 -pg 1 -lvl 5 -x 1410 -y 690 -defaultsOSRD
-preplace inst microblaze_0 -pg 1 -lvl 6 -x 1800 -y 680 -defaultsOSRD
-preplace inst microblaze_0_axi_intc -pg 1 -lvl 5 -x 1410 -y 480 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 25 23 24 26 22} -defaultsOSRD
-preplace inst microblaze_0_axi_periph -pg 1 -lvl 7 -x 2240 -y 530 -defaultsOSRD
-preplace inst interrupt_concat -pg 1 -lvl 4 -x 1140 -y 480 -defaultsOSRD
+preplace inst intensityRebin_0 -pg 1 -lvl 8 -x 2770 -y 160 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 5 -x 1433 -y 690 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 6 -x 1830 -y 680 -defaultsOSRD
+preplace inst microblaze_0_axi_intc -pg 1 -lvl 5 -x 1433 -y 480 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 25 23 24 26 22} -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 7 -x 2360 -y 530 -defaultsOSRD
+preplace inst interrupt_concat -pg 1 -lvl 4 -x 1146 -y 480 -defaultsOSRD
 preplace inst rst_clk_wiz_100M -pg 1 -lvl 2 -x 460 -y 510 -defaultsOSRD
-preplace inst DCS_Analyzer_0 -pg 1 -lvl 8 -x 2620 -y 540 -defaultsOSRD
-preplace inst system_ila_0 -pg 1 -lvl 10 -x 3480 -y 620 -defaultsOSRD
-preplace inst uart_aggregator_0 -pg 1 -lvl 9 -x 3080 -y 530 -defaultsOSRD
-preplace inst countCorrelateWrapper_0 -pg 1 -lvl 3 -x 800 -y 250 -defaultsOSRD
-preplace netloc DCS_Analyzer_0_interrupt 1 3 7 1050 800 NJ 800 NJ 800 2100J 740 2430J 790 2790 730 3340
-preplace netloc UART_RX_0_1 1 0 9 NJ 790 NJ 790 NJ 790 NJ 790 NJ 790 NJ 790 2080J 730 2430J 460 2890J
-preplace netloc analyzer_fifo_interrupt 1 3 7 1000 810 NJ 810 1570J 780 2090J 750 2380J 810 2770 740 3330
-preplace netloc clk100MHz 1 1 9 270 610 640 610 NJ 610 1260 780 1560 770 2070 300 2470 270 2870 710 3260
+preplace inst system_ila_0 -pg 1 -lvl 10 -x 3642 -y 620 -defaultsOSRD
+preplace inst countCorrelateWrapper_0 -pg 1 -lvl 3 -x 810 -y 250 -defaultsOSRD
+preplace inst uart_aggregator_0 -pg 1 -lvl 9 -x 3236 -y 530 -defaultsOSRD
+preplace netloc DCS_Analyzer_0_interrupt 1 3 7 1056 790 NJ 790 NJ 790 2090J 730 2540J 820 2940 730 3480
+preplace netloc UART_RX_0_1 1 0 9 NJ 790 NJ 790 NJ 790 960J 800 NJ 800 NJ 800 2220J 740 2550J 800 2930J
+preplace netloc analyzer_fifo_interrupt 1 3 7 1036 810 NJ 810 NJ 810 2060J 750 2500J 810 2920 750 3500
+preplace netloc clk100MHz 1 1 9 280 610 650 610 NJ 610 1283 770 1600 770 2210 310 2580 830 3056 740 3430
 preplace netloc clk300MHz 1 1 2 260J 270 630
 preplace netloc clk_wiz_0_locked 1 1 1 N 550
-preplace netloc correlator_write_con_0_writeEnable 1 3 7 950 20 NJ 20 NJ 20 NJ 20 NJ 20 2920 150 3290
-preplace netloc countCorrelateWrapper_0_addressOut 1 3 7 960 30 NJ 30 NJ 30 NJ 30 NJ 30 2930J 140 3350
-preplace netloc countCorrelateWrapper_0_correlationOut 1 3 7 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 2850 690 3350
-preplace netloc countCorrelateWrapper_0_correlationOutLast 1 3 7 960J 280 NJ 280 NJ 280 NJ 280 NJ 280 2860 700 N
-preplace netloc countCorrelateWrapper_0_correlationOutValid 1 3 7 950J 260 NJ 260 NJ 260 NJ 260 NJ 260 2880 720 N
-preplace netloc countCorrelateWrapper_0_countOut 1 3 7 1030J 230 NJ 230 NJ 230 NJ 230 2380 40 N 40 3360
-preplace netloc countCorrelateWrapper_0_countOutValid 1 3 7 NJ 270 NJ 270 NJ 270 NJ 270 2450 820 2930 760 N
-preplace netloc countCorrelateWrapper_0_dataOut 1 3 7 970 50 NJ 50 NJ 50 NJ 50 NJ 50 2910J 160 3310
-preplace netloc countCorrelateWrapper_0_interrupt 1 3 7 1010 60 N 60 N 60 N 60 N 60 N 60 3320
+preplace netloc correlator_write_con_0_writeEnable 1 3 7 960 30 NJ 30 NJ 30 NJ 30 NJ 30 3076 160 3460
+preplace netloc countCorrelateWrapper_0_addressOut 1 3 7 970 40 NJ 40 NJ 40 NJ 40 NJ 40 3086J 170 3450
+preplace netloc countCorrelateWrapper_0_correlationOut 1 3 7 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 3016 690 3510
+preplace netloc countCorrelateWrapper_0_correlationOutLast 1 3 7 960J 260 NJ 260 NJ 260 NJ 260 NJ 260 3026 700 N
+preplace netloc countCorrelateWrapper_0_correlationOutValid 1 3 7 970J 280 NJ 280 NJ 280 NJ 280 NJ 280 2996 720 N
+preplace netloc countCorrelateWrapper_0_countOut 1 3 7 NJ 250 NJ 250 NJ 250 NJ 250 2590 840 N 840 3530
+preplace netloc countCorrelateWrapper_0_countOutValid 1 3 7 980J 300 NJ 300 NJ 300 NJ 300 2620 790 3006 760 N
+preplace netloc countCorrelateWrapper_0_dataOut 1 3 7 980 50 NJ 50 NJ 50 NJ 50 NJ 50 3066J 150 3530
+preplace netloc countCorrelateWrapper_0_interrupt 1 3 7 1026 60 N 60 N 60 N 60 N 60 N 60 3520
 preplace netloc detectorIn_0_1 1 0 3 NJ 280 NJ 280 NJ
-preplace netloc intensityRebin_0_intensityOut 1 8 2 2900 680 3270
-preplace netloc intensityRebin_0_intensityOutValid 1 8 2 2770 670 3280
-preplace netloc mdm_1_Debug_SYS_Rst 1 1 5 290 820 NJ 820 NJ 820 NJ 820 1540
-preplace netloc microblaze_0_intr 1 4 1 1230 480n
-preplace netloc reset_2 1 0 2 NJ 620 280J
-preplace netloc rst_clk_wiz_100M_bus_struct_reset 1 2 5 NJ 490 950J 590 NJ 590 NJ 590 2050
-preplace netloc rst_clk_wiz_100M_mb_reset 1 2 4 NJ 470 960J 600 1250 770 1550J
-preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 2 8 650 390 1020J 370 1240 370 NJ 370 2100 310 2460 800 2910 800 N
-preplace netloc sys_clkn_1 1 0 1 0 510n
+preplace netloc intensityRebin_0_intensityOut 1 8 2 3036 710 3490
+preplace netloc intensityRebin_0_intensityOutValid 1 8 2 3046 680 3440
+preplace netloc mdm_1_Debug_SYS_Rst 1 1 5 290 780 NJ 780 NJ 780 NJ 780 1570
+preplace netloc microblaze_0_intr 1 4 1 1263 480n
+preplace netloc reset_2 1 0 2 10J 450 270J
+preplace netloc rst_clk_wiz_100M_bus_struct_reset 1 2 5 NJ 490 960J 600 NJ 600 1590J 590 2080
+preplace netloc rst_clk_wiz_100M_mb_reset 1 2 4 NJ 470 970J 590 1253 590 1580J
+preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 2 8 660 390 960J 370 1273 370 NJ 370 2220 330 2610 460 2986 800 N
+preplace netloc sys_clkn_1 1 0 1 20 510n
 preplace netloc sys_clkp_1 1 0 1 0 540n
-preplace netloc uart_aggregator_0_UART_TX 1 9 2 3250 860 N
-preplace netloc uart_aggregator_0_error 1 3 7 1030 320 NJ 320 NJ 320 NJ 320 2410J 830 NJ 830 3300
-preplace netloc uart_aggregator_0_start 1 3 7 1050 330 NJ 330 NJ 330 NJ 330 2400J 840 NJ 840 3230
-preplace netloc uart_aggregator_0_stop 1 3 7 1040 70 NJ 70 NJ 70 NJ 70 NJ 70 NJ 70 3240
-preplace netloc analyzer_fifo_AXI_STR_TXD 1 8 2 2780 170 3340
-preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 8 1 2890 230n
-preplace netloc microblaze_0_axi_dp 1 6 1 2030 390n
-preplace netloc microblaze_0_axi_periph_M01_AXI 1 4 4 1270 240 NJ 240 NJ 240 2390
-preplace netloc microblaze_0_axi_periph_M02_AXI 1 7 1 2420 350n
-preplace netloc microblaze_0_axi_periph_M03_AXI 1 7 1 2440 520n
-preplace netloc microblaze_0_axi_periph_M04_AXI 1 7 1 2420 570n
+preplace netloc uart_aggregator_0_UART_TX 1 9 2 3420 860 N
+preplace netloc uart_aggregator_0_error 1 3 7 1036 320 NJ 320 NJ 320 NJ 320 2520J 850 NJ 850 3470
+preplace netloc uart_aggregator_0_start 1 3 7 1046 270 NJ 270 NJ 270 NJ 270 2530J 860 NJ 860 3410
+preplace netloc uart_aggregator_0_stop 1 3 7 1056 70 NJ 70 NJ 70 NJ 70 NJ 70 NJ 70 3400
+preplace netloc analyzer_fifo_AXI_STR_TXD 1 8 2 3006 670 3390
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 8 1 2940 230n
+preplace netloc microblaze_0_axi_dp 1 6 1 2060 390n
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 4 4 1293 230 NJ 230 NJ 230 2510
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 7 1 2540 350n
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 7 1 2600 520n
+preplace netloc microblaze_0_axi_periph_M04_AXI 1 7 1 2600 570n
 preplace netloc microblaze_0_debug 1 5 1 N 670
-preplace netloc microblaze_0_dlmb_1 1 6 1 2060 660n
-preplace netloc microblaze_0_ilmb_1 1 6 1 2040 680n
-preplace netloc microblaze_0_intc_axi 1 4 4 1280 250 NJ 250 NJ 250 2380
-preplace netloc microblaze_0_interrupt 1 5 1 1540 480n
-levelinfo -pg 1 -20 140 460 800 1140 1410 1800 2240 2620 3080 3480 3600
-pagesize -pg 1 -db -bbox -sgen -140 0 3710 920
+preplace netloc microblaze_0_dlmb_1 1 6 1 2100 660n
+preplace netloc microblaze_0_ilmb_1 1 6 1 2070 680n
+preplace netloc microblaze_0_intc_axi 1 4 4 1303 240 NJ 240 NJ 240 2500
+preplace netloc microblaze_0_interrupt 1 5 1 1600 480n
+levelinfo -pg 1 -20 140 460 810 1146 1433 1830 2360 2770 3236 3642 3770
+pagesize -pg 1 -db -bbox -sgen -140 0 5170 1750
 ",
-   "Color Coded_ScaleFactor":"0.739979",
-   "Color Coded_TopLeft":"-134,-487",
+   "Color Coded_ScaleFactor":"0.974195",
+   "Color Coded_TopLeft":"-135,-10",
    "Default View_Layers":"/mdm_1_Debug_SYS_Rst:true|/reset_1:true|/rst_clk_wiz_100M_mb_reset:true|/microblaze_0_Clk:true|/rst_clk_wiz_100M_peripheral_aresetn:true|/rst_clk_wiz_100M_bus_struct_reset:true|/reset_2:true|/clk300MHz:true|/sys_clkp_1:true|/countCorrelateWrapper_0_interrupt:true|/clk100MHz:true|/sys_clkn_1:true|/analyzer_fifo_interrupt:true|/DCS_Analyzer_0_interrupt:true|",
    "Default View_ScaleFactor":"0.701431",
    "Default View_TopLeft":"-230,-242",

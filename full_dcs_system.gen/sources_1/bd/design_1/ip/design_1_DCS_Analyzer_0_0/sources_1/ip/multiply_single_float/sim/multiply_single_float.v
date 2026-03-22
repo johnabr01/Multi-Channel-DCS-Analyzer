@@ -94,7 +94,7 @@ output wire m_axis_result_tlast;
 
   floating_point_v7_1_15 #(
     .C_XDEVICEFAMILY("artix7"),
-    .C_PART("xc7a75tfgg484-3"),
+    .C_PART("xc7a75tfgg484-1"),
     .C_HAS_ADD(0),
     .C_HAS_SUBTRACT(0),
     .C_HAS_MULTIPLY(1),

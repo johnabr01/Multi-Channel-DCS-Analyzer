@@ -2,14 +2,14 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Mon Feb 23 06:27:52 2026
+-- Date        : Wed Mar 18 22:14:05 2026
 -- Host        : JohnWorkstat running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top design_1_axi_fifo_mm_s_0_1 -prefix
---               design_1_axi_fifo_mm_s_0_1_ design_1_axi_fifo_mm_s_0_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_axi_fifo_mm_s_0_1/design_1_axi_fifo_mm_s_0_1_sim_netlist.vhdl
 -- Design      : design_1_axi_fifo_mm_s_0_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
--- Device      : xc7a75tfgg484-3
+-- Device      : xc7a75tfgg484-1
 -- --------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -20,6 +20,8 @@ entity design_1_axi_fifo_mm_s_0_1_pselect_f is
     ce_expnd_i_20 : out STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]\ : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_fifo_mm_s_0_1_pselect_f : entity is "pselect_f";
 end design_1_axi_fifo_mm_s_0_1_pselect_f;
 
 architecture STRUCTURE of design_1_axi_fifo_mm_s_0_1_pselect_f is
@@ -587,6 +589,8 @@ entity design_1_axi_fifo_mm_s_0_1_xpm_cdc_sync_rst is
   attribute INIT of design_1_axi_fifo_mm_s_0_1_xpm_cdc_sync_rst : entity is "0";
   attribute INIT_SYNC_FF : integer;
   attribute INIT_SYNC_FF of design_1_axi_fifo_mm_s_0_1_xpm_cdc_sync_rst : entity is 1;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_fifo_mm_s_0_1_xpm_cdc_sync_rst : entity is "xpm_cdc_sync_rst";
   attribute SIM_ASSERT_CHK : integer;
   attribute SIM_ASSERT_CHK of design_1_axi_fifo_mm_s_0_1_xpm_cdc_sync_rst : entity is 0;
   attribute VERSION : integer;
@@ -3146,6 +3150,8 @@ entity design_1_axi_fifo_mm_s_0_1_xpm_fifo_reg_bit is
     ram_rd_en_pf_q : in STD_LOGIC;
     prog_full : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_fifo_mm_s_0_1_xpm_fifo_reg_bit : entity is "xpm_fifo_reg_bit";
 end design_1_axi_fifo_mm_s_0_1_xpm_fifo_reg_bit;
 
 architecture STRUCTURE of design_1_axi_fifo_mm_s_0_1_xpm_fifo_reg_bit is
@@ -3279,6 +3285,8 @@ entity design_1_axi_fifo_mm_s_0_1_xpm_fifo_rst is
     \gen_pntr_flags_cc.wrp_eq_rdp_pf_cc.gpe_cc_sym.diff_pntr_pe_reg[3]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     wr_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_fifo_mm_s_0_1_xpm_fifo_rst : entity is "xpm_fifo_rst";
 end design_1_axi_fifo_mm_s_0_1_xpm_fifo_rst;
 
 architecture STRUCTURE of design_1_axi_fifo_mm_s_0_1_xpm_fifo_rst is
@@ -3499,6 +3507,8 @@ entity design_1_axi_fifo_mm_s_0_1_xpm_memory_base is
   attribute MESSAGE_CONTROL of design_1_axi_fifo_mm_s_0_1_xpm_memory_base : entity is 0;
   attribute NUM_CHAR_LOC : integer;
   attribute NUM_CHAR_LOC of design_1_axi_fifo_mm_s_0_1_xpm_memory_base : entity is 0;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_fifo_mm_s_0_1_xpm_memory_base : entity is "xpm_memory_base";
   attribute P_ECC_MODE : string;
   attribute P_ECC_MODE of design_1_axi_fifo_mm_s_0_1_xpm_memory_base : entity is "no_ecc";
   attribute P_ENABLE_BYTE_WRITE_A : integer;
@@ -3997,6 +4007,8 @@ entity design_1_axi_fifo_mm_s_0_1_address_decoder is
     mm2s_prmry_reset_out_n : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[9].ce_out_i_reg[9]_0\ : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_fifo_mm_s_0_1_address_decoder : entity is "address_decoder";
 end design_1_axi_fifo_mm_s_0_1_address_decoder;
 
 architecture STRUCTURE of design_1_axi_fifo_mm_s_0_1_address_decoder is
@@ -4082,10 +4094,10 @@ architecture STRUCTURE of design_1_axi_fifo_mm_s_0_1_address_decoder is
   signal \sig_txd_wr_data[31]_i_5_n_0\ : STD_LOGIC;
   signal sig_txd_wr_en_i_3_n_0 : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of IP2Bus_Error_i_4 : label is "soft_lutpair42";
+  attribute SOFT_HLUTNM of IP2Bus_Error_i_4 : label is "soft_lutpair43";
   attribute SOFT_HLUTNM of IP2Bus_Error_i_5 : label is "soft_lutpair32";
-  attribute SOFT_HLUTNM of IP2Bus_RdAck_i_2 : label is "soft_lutpair43";
-  attribute SOFT_HLUTNM of IP2Bus_WrAck_i_1 : label is "soft_lutpair43";
+  attribute SOFT_HLUTNM of IP2Bus_RdAck_i_2 : label is "soft_lutpair42";
+  attribute SOFT_HLUTNM of IP2Bus_WrAck_i_1 : label is "soft_lutpair42";
   attribute SOFT_HLUTNM of \sig_ip2bus_data[0]_i_1\ : label is "soft_lutpair34";
   attribute SOFT_HLUTNM of \sig_ip2bus_data[0]_i_3\ : label is "soft_lutpair36";
   attribute SOFT_HLUTNM of \sig_ip2bus_data[0]_i_4\ : label is "soft_lutpair39";
@@ -4095,7 +4107,7 @@ architecture STRUCTURE of design_1_axi_fifo_mm_s_0_1_address_decoder is
   attribute SOFT_HLUTNM of \sig_register_array[0][3]_i_4\ : label is "soft_lutpair31";
   attribute SOFT_HLUTNM of \sig_register_array[0][4]_i_2\ : label is "soft_lutpair41";
   attribute SOFT_HLUTNM of \sig_register_array[0][6]_i_12\ : label is "soft_lutpair34";
-  attribute SOFT_HLUTNM of \sig_register_array[0][6]_i_3\ : label is "soft_lutpair42";
+  attribute SOFT_HLUTNM of \sig_register_array[0][6]_i_3\ : label is "soft_lutpair43";
   attribute SOFT_HLUTNM of \sig_register_array[0][6]_i_4\ : label is "soft_lutpair40";
   attribute SOFT_HLUTNM of \sig_register_array[0][6]_i_6\ : label is "soft_lutpair37";
   attribute SOFT_HLUTNM of \sig_register_array[0][6]_i_7\ : label is "soft_lutpair38";
@@ -5524,6 +5536,8 @@ entity design_1_axi_fifo_mm_s_0_1_xpm_fifo_base is
   attribute FULL_RESET_VALUE of design_1_axi_fifo_mm_s_0_1_xpm_fifo_base : entity is 1;
   attribute FULL_RST_VAL : string;
   attribute FULL_RST_VAL of design_1_axi_fifo_mm_s_0_1_xpm_fifo_base : entity is "1'b1";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_fifo_mm_s_0_1_xpm_fifo_base : entity is "xpm_fifo_base";
   attribute PE_THRESH_ADJ : integer;
   attribute PE_THRESH_ADJ of design_1_axi_fifo_mm_s_0_1_xpm_fifo_base : entity is 3;
   attribute PE_THRESH_MAX : integer;
@@ -6814,6 +6828,8 @@ entity design_1_axi_fifo_mm_s_0_1_slave_attachment is
     mm2s_prmry_reset_out_n : in STD_LOGIC;
     \s_axi_rdata_i_reg[31]_0\ : in STD_LOGIC_VECTOR ( 25 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_fifo_mm_s_0_1_slave_attachment : entity is "slave_attachment";
 end design_1_axi_fifo_mm_s_0_1_slave_attachment;
 
 architecture STRUCTURE of design_1_axi_fifo_mm_s_0_1_slave_attachment is
@@ -7601,6 +7617,8 @@ entity design_1_axi_fifo_mm_s_0_1_xpm_fifo_axis is
   attribute FIFO_MEMORY_TYPE of design_1_axi_fifo_mm_s_0_1_xpm_fifo_axis : entity is "BRAM";
   attribute LOG_DEPTH_AXIS : integer;
   attribute LOG_DEPTH_AXIS of design_1_axi_fifo_mm_s_0_1_xpm_fifo_axis : entity is 9;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_fifo_mm_s_0_1_xpm_fifo_axis : entity is "xpm_fifo_axis";
   attribute PACKET_FIFO : string;
   attribute PACKET_FIFO of design_1_axi_fifo_mm_s_0_1_xpm_fifo_axis : entity is "true";
   attribute PKT_SIZE_LT8 : string;
@@ -9494,6 +9512,8 @@ entity design_1_axi_fifo_mm_s_0_1_axi_lite_ipif is
     mm2s_prmry_reset_out_n : in STD_LOGIC;
     \s_axi_rdata_i_reg[31]\ : in STD_LOGIC_VECTOR ( 25 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_fifo_mm_s_0_1_axi_lite_ipif : entity is "axi_lite_ipif";
 end design_1_axi_fifo_mm_s_0_1_axi_lite_ipif;
 
 architecture STRUCTURE of design_1_axi_fifo_mm_s_0_1_axi_lite_ipif is
@@ -9614,6 +9634,8 @@ entity design_1_axi_fifo_mm_s_0_1_axis_fg is
     sig_txd_prog_full_d1 : in STD_LOGIC;
     sig_txd_prog_empty_d1 : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_fifo_mm_s_0_1_axis_fg : entity is "axis_fg";
 end design_1_axi_fifo_mm_s_0_1_axis_fg;
 
 architecture STRUCTURE of design_1_axi_fifo_mm_s_0_1_axis_fg is
@@ -10093,6 +10115,8 @@ entity design_1_axi_fifo_mm_s_0_1_fifo is
     sig_txd_prog_full_d1 : in STD_LOGIC;
     sig_txd_prog_empty_d1 : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_fifo_mm_s_0_1_fifo : entity is "fifo";
 end design_1_axi_fifo_mm_s_0_1_fifo;
 
 architecture STRUCTURE of design_1_axi_fifo_mm_s_0_1_fifo is
@@ -10847,6 +10871,8 @@ entity design_1_axi_fifo_mm_s_0_1_ipic2axi_s is
     \sig_register_array_reg[1][0]_0\ : in STD_LOGIC_VECTOR ( 16 downto 0 );
     \sig_txd_wr_data_reg[31]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_fifo_mm_s_0_1_ipic2axi_s : entity is "ipic2axi_s";
 end design_1_axi_fifo_mm_s_0_1_ipic2axi_s;
 
 architecture STRUCTURE of design_1_axi_fifo_mm_s_0_1_ipic2axi_s is
@@ -13748,6 +13774,8 @@ entity design_1_axi_fifo_mm_s_0_1_axi_fifo_mm_s is
   attribute C_USE_TX_CUT_THROUGH of design_1_axi_fifo_mm_s_0_1_axi_fifo_mm_s : entity is 0;
   attribute C_USE_TX_DATA : integer;
   attribute C_USE_TX_DATA of design_1_axi_fifo_mm_s_0_1_axi_fifo_mm_s : entity is 1;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_axi_fifo_mm_s_0_1_axi_fifo_mm_s : entity is "axi_fifo_mm_s";
 end design_1_axi_fifo_mm_s_0_1_axi_fifo_mm_s;
 
 architecture STRUCTURE of design_1_axi_fifo_mm_s_0_1_axi_fifo_mm_s is
@@ -14408,13 +14436,13 @@ architecture STRUCTURE of design_1_axi_fifo_mm_s_0_1 is
   attribute x_interface_info of axi_str_txd_tready : signal is "xilinx.com:interface:axis:1.0 AXI_STR_TXD TREADY";
   attribute x_interface_info of axi_str_txd_tvalid : signal is "xilinx.com:interface:axis:1.0 AXI_STR_TXD TVALID";
   attribute x_interface_parameter : string;
-  attribute x_interface_parameter of axi_str_txd_tvalid : signal is "XIL_INTERFACENAME AXI_STR_TXD, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute x_interface_parameter of axi_str_txd_tvalid : signal is "XIL_INTERFACENAME AXI_STR_TXD, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_0_clk100MHz, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute x_interface_info of interrupt : signal is "xilinx.com:signal:interrupt:1.0 interrupt_intf INTERRUPT";
   attribute x_interface_parameter of interrupt : signal is "XIL_INTERFACENAME interrupt_intf, SENSITIVITY LEVEL_HIGH, PORTWIDTH 1";
   attribute x_interface_info of mm2s_prmry_reset_out_n : signal is "xilinx.com:signal:reset:1.0 rst_axi_str_txd RST";
   attribute x_interface_parameter of mm2s_prmry_reset_out_n : signal is "XIL_INTERFACENAME rst_axi_str_txd, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of s_axi_aclk : signal is "xilinx.com:signal:clock:1.0 aclk_s_axi CLK";
-  attribute x_interface_parameter of s_axi_aclk : signal is "XIL_INTERFACENAME aclk_s_axi, ASSOCIATED_BUSIF S_AXI:S_AXI_FULL:AXI_STR_TXD:AXI_STR_TXC:AXI_STR_RXD, ASSOCIATED_RESET s_axi_aresetn:mm2s_prmry_reset_out_n:mm2s_cntrl_reset_out_n:s2mm_prmry_reset_out_n, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
+  attribute x_interface_parameter of s_axi_aclk : signal is "XIL_INTERFACENAME aclk_s_axi, ASSOCIATED_BUSIF S_AXI:S_AXI_FULL:AXI_STR_TXD:AXI_STR_TXC:AXI_STR_RXD, ASSOCIATED_RESET s_axi_aresetn:mm2s_prmry_reset_out_n:mm2s_cntrl_reset_out_n:s2mm_prmry_reset_out_n, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_0_clk100MHz, INSERT_VIP 0";
   attribute x_interface_info of s_axi_aresetn : signal is "xilinx.com:signal:reset:1.0 rst_s_axi RST";
   attribute x_interface_parameter of s_axi_aresetn : signal is "XIL_INTERFACENAME rst_s_axi, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute x_interface_info of s_axi_arready : signal is "xilinx.com:interface:aximm:1.0 S_AXI ARREADY";
@@ -14430,7 +14458,7 @@ architecture STRUCTURE of design_1_axi_fifo_mm_s_0_1 is
   attribute x_interface_info of axi_str_txd_tdata : signal is "xilinx.com:interface:axis:1.0 AXI_STR_TXD TDATA";
   attribute x_interface_info of s_axi_araddr : signal is "xilinx.com:interface:aximm:1.0 S_AXI ARADDR";
   attribute x_interface_info of s_axi_awaddr : signal is "xilinx.com:interface:aximm:1.0 S_AXI AWADDR";
-  attribute x_interface_parameter of s_axi_awaddr : signal is "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute x_interface_parameter of s_axi_awaddr : signal is "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN design_1_clk_wiz_0_0_clk100MHz, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute x_interface_info of s_axi_bresp : signal is "xilinx.com:interface:aximm:1.0 S_AXI BRESP";
   attribute x_interface_info of s_axi_rdata : signal is "xilinx.com:interface:aximm:1.0 S_AXI RDATA";
   attribute x_interface_info of s_axi_rresp : signal is "xilinx.com:interface:aximm:1.0 S_AXI RRESP";

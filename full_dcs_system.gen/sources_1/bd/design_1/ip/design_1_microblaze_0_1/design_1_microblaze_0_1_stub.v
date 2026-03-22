@@ -2,13 +2,13 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Mon Feb 23 06:10:08 2026
+// Date        : Wed Mar 18 22:15:25 2026
 // Host        : JohnWorkstat running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub -rename_top design_1_microblaze_0_1 -prefix
-//               design_1_microblaze_0_1_ design_1_microblaze_0_1_stub.v
+// Command     : write_verilog -force -mode synth_stub
+//               c:/Users/johny/BOILresearch/full_dcs_system_6_23_23.xpr/full_dcs_system/full_dcs_system.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_1/design_1_microblaze_0_1_stub.v
 // Design      : design_1_microblaze_0_1
 // Purpose     : Stub declaration of top-level module interface
-// Device      : xc7a75tfgg484-3
+// Device      : xc7a75tfgg484-1
 // --------------------------------------------------------------------------------
 
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
